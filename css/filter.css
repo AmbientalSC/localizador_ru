@@ -5,10 +5,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
-    background-color: rgba(150, 193, 31, 0.752);
+    background-color: rgba(255, 255, 255, 0.752);
     padding: 5px;
     border-radius: 10px;
     height:65px;
+  
 
   }
 .filterselect{
@@ -19,12 +20,14 @@
   margin-right: 0px;
   margin-bottom: 10px;
   height: 100px;
-  background-color: transparent;
+  
+  /* background-color: transparent; */
 
 }
 .filterselect input, .filterselect select {
     /* display: block; */
     width: 100%;
+    
 }
 .filterselect p{
   
@@ -33,6 +36,7 @@
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 0px;
+  
 }
 .filterlabel {
     font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -42,6 +46,7 @@
     padding: 0px;
     border: 0px;
     clear: left;
+    
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
 
 }
