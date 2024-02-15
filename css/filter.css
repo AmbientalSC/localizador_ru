@@ -2,7 +2,7 @@
 #menu {
     position: absolute;
     top: 12%;
-    left: 10%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
     background-color: rgba(150, 193, 31, 0.752);
