@@ -5,10 +5,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
-    background-color: rgba(149, 193, 31, 0.5); /* Adiciona um fundo semi-transparente */
+    background-color: rgba(150, 193, 31, 0.752);
     padding: 5px;
-    border-radius: 5px;
-    height:70px;
+    border-radius: 10px;
+    height:65px;
 
   }
 .filterselect{
@@ -37,17 +37,21 @@
 .filterlabel {
     font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
     width: 100%;
-    float: right;
+    float: left;
     margin-right: 10px;
     padding: 0px;
     border: 0px;
     clear: left;
+    z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
+
 }
 .filterlabel + .filterlabel {
     clear: none;
     text-align: right;
-    color: #999;
-}
+    color: #000000a1;
+    font-weight: bold;
+
+    }
 .slider {
   font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin-top: 10px;
