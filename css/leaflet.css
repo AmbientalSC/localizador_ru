@@ -466,16 +466,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-popup {
 	position: absolute;
 	text-align: center;
-	margin-bottom: 0px;
-	}
+	margin-bottom:30px;
+
+}
 .leaflet-popup-content-wrapper {
 	padding: 1px;
 	text-align: left;
 	border-radius:20px;
+	
+	
 	}
 .leaflet-popup-content {
 	margin: 13px 19px;
 	line-height: 1.5;
+		bottom: 20px; /* Move a caixa 10 pixels para cima */
+
+	
 	}
 .leaflet-popup-content p {
 	margin: 18px 0;
