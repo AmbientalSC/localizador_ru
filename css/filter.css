@@ -1,23 +1,21 @@
 @charset "UTF-8";
 #menu {
     position: absolute;
-    top: 7%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
     background-color: rgba(255, 255, 255, 0.752);
     padding: 5px;
     border-radius: 10px;
-    height:65px;
-  
-
+    height:75px;
   }
 .filterselect{
   
-  /* font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif; */
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 0px;
+  /* font: 10px, Arial, Helvetica, sans-serif;  */
+  margin-top: 5%;
+  margin-left: 5px;
+  margin-right: 4px;
   margin-bottom: 10px;
   height: 100px;
   
@@ -45,15 +43,14 @@
     margin-right: 10px;
     padding: 0px;
     border: 0px;
-    clear: left;
-    
+    clear: left;    
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
 
 }
 .filterlabel + .filterlabel {
     clear: none;
     text-align: right;
-    color: #000000a1;
+    color: #050000a1;
     font-weight: bold;
 
     }
