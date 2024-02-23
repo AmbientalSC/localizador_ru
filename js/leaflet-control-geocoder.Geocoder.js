@@ -8,10 +8,10 @@ module.exports = {
 		options: {
 			showResultIcons: false,
 			collapsed: true,
-			expand: 'click', // options: touch, click, anythingelse
+			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Pesquisar...',
-			errorMessage: 'Não encontrado.',
+			placeholder: 'Search...',
+			errorMessage: 'Nothing found.',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
 			defaultMarkGeocode: true
