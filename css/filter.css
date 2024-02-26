@@ -8,7 +8,7 @@
     background-color: rgba(255, 255, 255, 0.752);
     padding: 5px;
     border-radius: 10px;
-    height:75px;
+    height:100px;
   }
 .filterselect{
   
@@ -25,6 +25,7 @@
 .filterselect input, .filterselect select {
     /* display: block; */
     width: 100%;
+    font-size: 19px;
     
 }
 .filterselect p{
