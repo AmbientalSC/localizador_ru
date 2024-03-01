@@ -1,5 +1,3 @@
-
-
 /*!
  * leaflet.wms.js
  * A collection of Leaflet utilities for working with Web Mapping services.

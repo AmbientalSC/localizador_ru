@@ -6,9 +6,9 @@ var L = (typeof window !== "undefined" ? window['L'] : typeof global !== "undefi
 module.exports = {
 	"class": L.Control.extend({
 		options: {
-			showResultIcons: true,
-			collapsed: false,
-			expand: 'click', // options: touch, click, anythingelse
+			showResultIcons: false,
+			collapsed: true,
+			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
 			placeholder: 'Pesquisar...',
 			errorMessage: 'Nothing found.',
@@ -73,7 +73,7 @@ module.exports = {
 						}
 					}, this);
 				}
-				else if (L.Browser.touch && this.options.expand === 'click') {
+				else if (L.Browser.touch && this.options.expand === 'touch') {
 					L.DomEvent.addListener(container, 'touchstart mousedown', function(e) {
 						this._toggle();
 						e.preventDefault(); // mobile: clicking focuses the icon, so UI expands and immediately collapses
@@ -189,7 +189,7 @@ module.exports = {
 			// L.DomUtil.removeClass(this._container, 'leaflet-control-geocoder-expanded');
 			// L.DomUtil.addClass(this._alts, 'leaflet-control-geocoder-alternatives-minimized');
 			// L.DomUtil.removeClass(this._errorElement, 'leaflet-control-geocoder-error');
-			// this._input.blur(); 
+			// this._input.blur(); // mobile: keyboard shouldn't stay expanded
 			// this.fire('collapse');
 		},
 
