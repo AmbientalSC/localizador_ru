@@ -35,8 +35,8 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/tailDT.js"></script>
-<script src="js/nouislider.min.js"></script>
-<script src="js/wNumb.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/wNumb.js"></script>
         <script src="data/Domiciliar_1.js"></script>
         <script src="data/Seletiva_2.js"></script>
         <script>
@@ -44,7 +44,7 @@
             zoomControl:true, maxZoom:20, minZoom:1
         }).fitBounds([[-26.373432632697924,-49.12007657009327],[-26.10242842019795,-48.64058388956774]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix(' <a href="https://github.com/AlyssonKrombauer" title="Ambiental Limpeza Urbana e Saneamento Ltda">Alysson Krombauer</a> &middot;<a href="https://ambiental.sc/" target="_blank">Ambiental.sc</a> &middot;');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
@@ -65,23 +65,23 @@
         function pop_Domiciliar_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">SETOR</th>\
+                        <th scope="row">Setor:</th>\
                         <td>' + (feature.properties['SETOR'] !== null ? autolinker.link(feature.properties['SETOR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">TURNO</th>\
+                        <th scope="row">Turno:</th>\
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">FREQUENCIA</th>\
+                        <th scope="row">Frequência:</th>\
                         <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">HORARIO</th>\
+                        <th scope="row">Horário:</th>\
                         <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">OPERACAO</th>\
+                        <th scope="row">Operação:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -2631,23 +2631,23 @@
         function pop_Seletiva_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">SETOR</th>\
+                        <th scope="row">Setor:</th>\
                         <td>' + (feature.properties['SETOR'] !== null ? autolinker.link(feature.properties['SETOR'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">TURNO</th>\
+                        <th scope="row">Turno:</th>\
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">HORARIO</th>\
+                        <th scope="row">Horário:</th>\
                         <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">FREQUENCIA</th>\
+                        <th scope="row">Frequência:</th>\
                         <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">OPERACAO</th>\
+                        <th scope="row">Operação:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
