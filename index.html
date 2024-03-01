@@ -42,7 +42,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:20, minZoom:1
-        }).fitBounds([[-26.325795173469412,-48.84480904558557],[-26.308857410188164,-48.81913293624786]]);
+        }).fitBounds([[-26.373432632697924,-49.12007657009327],[-26.10242842019795,-48.64058388956774]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -89,12 +89,12 @@
         }
 
         function style_Domiciliar_1_0(feature) {
-            switch(String(feature.properties['Name'])) {
+            switch(String(feature.properties['SETOR'])) {
                 case '01':
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(57,208,110,1.0)',
+                color: 'rgba(79,69,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -107,7 +107,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(233,17,64,1.0)',
+                color: 'rgba(34,117,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -120,7 +120,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(223,139,236,1.0)',
+                color: 'rgba(109,117,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -133,7 +133,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(96,219,127,1.0)',
+                color: 'rgba(102,109,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -146,7 +146,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(112,166,220,1.0)',
+                color: 'rgba(70,224,238,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -159,7 +159,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(226,168,92,1.0)',
+                color: 'rgba(93,57,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -172,7 +172,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(191,77,220,1.0)',
+                color: 'rgba(167,52,213,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -185,7 +185,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(40,200,61,1.0)',
+                color: 'rgba(93,214,23,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -198,7 +198,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(126,184,231,1.0)',
+                color: 'rgba(117,197,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -211,7 +211,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(175,104,203,1.0)',
+                color: 'rgba(224,35,117,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -224,7 +224,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(207,75,148,1.0)',
+                color: 'rgba(188,57,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -237,7 +237,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(239,159,141,1.0)',
+                color: 'rgba(222,15,191,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -250,7 +250,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(239,154,109,1.0)',
+                color: 'rgba(127,223,58,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -263,7 +263,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(95,30,208,1.0)',
+                color: 'rgba(230,14,60,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -276,7 +276,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(45,207,199,1.0)',
+                color: 'rgba(106,83,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -289,7 +289,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(94,206,112,1.0)',
+                color: 'rgba(125,162,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -302,7 +302,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(222,103,194,1.0)',
+                color: 'rgba(68,229,226,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -315,7 +315,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(225,15,222,1.0)',
+                color: 'rgba(189,240,72,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -328,7 +328,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(129,211,228,1.0)',
+                color: 'rgba(208,135,19,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -341,7 +341,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(102,202,175,1.0)',
+                color: 'rgba(71,50,203,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -354,7 +354,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(221,42,173,1.0)',
+                color: 'rgba(116,81,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -367,7 +367,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(232,51,129,1.0)',
+                color: 'rgba(228,56,88,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -380,7 +380,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(110,122,233,1.0)',
+                color: 'rgba(191,29,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -393,7 +393,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(119,116,213,1.0)',
+                color: 'rgba(98,239,63,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -406,7 +406,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(151,18,212,1.0)',
+                color: 'rgba(232,18,75,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -419,7 +419,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(204,114,144,1.0)',
+                color: 'rgba(215,77,174,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -432,7 +432,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(211,89,164,1.0)',
+                color: 'rgba(55,96,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -445,7 +445,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(76,201,164,1.0)',
+                color: 'rgba(238,228,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -458,7 +458,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(234,61,87,1.0)',
+                color: 'rgba(206,123,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -471,7 +471,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(206,208,82,1.0)',
+                color: 'rgba(230,124,175,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -484,7 +484,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(40,47,238,1.0)',
+                color: 'rgba(116,230,106,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -497,7 +497,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(215,105,237,1.0)',
+                color: 'rgba(96,176,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -510,7 +510,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(170,131,221,1.0)',
+                color: 'rgba(229,46,73,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -523,7 +523,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(203,123,114,1.0)',
+                color: 'rgba(117,208,168,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -536,7 +536,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(71,215,225,1.0)',
+                color: 'rgba(111,182,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -549,7 +549,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(104,218,178,1.0)',
+                color: 'rgba(212,87,73,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -562,7 +562,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(183,122,215,1.0)',
+                color: 'rgba(206,77,79,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -575,7 +575,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(27,41,235,1.0)',
+                color: 'rgba(32,201,193,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -588,7 +588,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(214,229,47,1.0)',
+                color: 'rgba(214,87,117,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -601,7 +601,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(148,224,120,1.0)',
+                color: 'rgba(67,201,159,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -614,7 +614,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(42,228,17,1.0)',
+                color: 'rgba(214,36,134,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -627,7 +627,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(236,136,166,1.0)',
+                color: 'rgba(239,25,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -640,7 +640,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(136,207,50,1.0)',
+                color: 'rgba(71,225,110,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -653,7 +653,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(177,206,82,1.0)',
+                color: 'rgba(213,199,126,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -666,7 +666,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(236,231,72,1.0)',
+                color: 'rgba(48,157,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -679,7 +679,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(41,165,210,1.0)',
+                color: 'rgba(97,203,102,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -692,7 +692,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(129,217,227,1.0)',
+                color: 'rgba(20,61,209,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -705,7 +705,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(205,104,86,1.0)',
+                color: 'rgba(165,119,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -718,7 +718,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(108,13,204,1.0)',
+                color: 'rgba(235,69,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -731,7 +731,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(123,223,173,1.0)',
+                color: 'rgba(79,74,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -744,7 +744,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(214,193,130,1.0)',
+                color: 'rgba(96,143,214,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -757,7 +757,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(106,151,211,1.0)',
+                color: 'rgba(202,196,31,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -770,7 +770,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(211,167,117,1.0)',
+                color: 'rgba(26,205,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -783,7 +783,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(235,164,33,1.0)',
+                color: 'rgba(169,123,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -796,7 +796,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(115,227,184,1.0)',
+                color: 'rgba(118,129,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -809,7 +809,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(216,72,89,1.0)',
+                color: 'rgba(239,213,42,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -822,7 +822,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(202,55,182,1.0)',
+                color: 'rgba(224,239,61,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -835,7 +835,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(83,83,206,1.0)',
+                color: 'rgba(98,204,46,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -848,7 +848,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(203,35,80,1.0)',
+                color: 'rgba(34,222,112,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -861,7 +861,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(57,201,21,1.0)',
+                color: 'rgba(70,212,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -874,7 +874,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(62,209,67,1.0)',
+                color: 'rgba(91,238,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -887,7 +887,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(233,132,228,1.0)',
+                color: 'rgba(233,122,85,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -900,7 +900,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(143,238,53,1.0)',
+                color: 'rgba(24,196,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -913,7 +913,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(187,230,118,1.0)',
+                color: 'rgba(222,98,67,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -926,7 +926,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(231,21,168,1.0)',
+                color: 'rgba(236,113,65,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -939,7 +939,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(76,177,224,1.0)',
+                color: 'rgba(234,14,25,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -952,7 +952,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(230,131,65,1.0)',
+                color: 'rgba(140,47,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -965,7 +965,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(170,80,203,1.0)',
+                color: 'rgba(17,221,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -978,7 +978,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(86,213,84,1.0)',
+                color: 'rgba(109,215,77,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -991,7 +991,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(232,43,153,1.0)',
+                color: 'rgba(49,240,74,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1004,7 +1004,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(230,142,101,1.0)',
+                color: 'rgba(231,154,53,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1017,7 +1017,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(155,105,231,1.0)',
+                color: 'rgba(212,49,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1030,7 +1030,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(173,233,131,1.0)',
+                color: 'rgba(231,80,168,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1043,7 +1043,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(101,45,215,1.0)',
+                color: 'rgba(115,188,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1056,7 +1056,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(214,85,65,1.0)',
+                color: 'rgba(120,194,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1069,7 +1069,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(95,85,204,1.0)',
+                color: 'rgba(197,215,59,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1082,7 +1082,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(225,155,101,1.0)',
+                color: 'rgba(223,117,67,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1095,7 +1095,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(238,86,75,1.0)',
+                color: 'rgba(44,201,143,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1108,7 +1108,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(220,67,16,1.0)',
+                color: 'rgba(220,26,197,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1121,7 +1121,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(139,232,92,1.0)',
+                color: 'rgba(130,218,36,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1134,7 +1134,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(202,221,58,1.0)',
+                color: 'rgba(216,104,73,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1147,7 +1147,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(160,78,219,1.0)',
+                color: 'rgba(95,133,209,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1160,7 +1160,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(238,213,53,1.0)',
+                color: 'rgba(235,133,65,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1173,7 +1173,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(208,44,223,1.0)',
+                color: 'rgba(14,208,150,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1186,7 +1186,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(121,202,139,1.0)',
+                color: 'rgba(130,226,175,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1199,7 +1199,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(215,18,90,1.0)',
+                color: 'rgba(210,93,128,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1212,7 +1212,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(226,143,121,1.0)',
+                color: 'rgba(149,60,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1225,7 +1225,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(114,232,212,1.0)',
+                color: 'rgba(141,235,107,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1238,7 +1238,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(222,109,105,1.0)',
+                color: 'rgba(48,222,141,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1251,7 +1251,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(202,43,125,1.0)',
+                color: 'rgba(230,114,91,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1264,7 +1264,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(141,121,226,1.0)',
+                color: 'rgba(237,137,74,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1277,7 +1277,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(102,214,104,1.0)',
+                color: 'rgba(231,186,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1290,7 +1290,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(207,205,111,1.0)',
+                color: 'rgba(57,226,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1303,7 +1303,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(91,207,13,1.0)',
+                color: 'rgba(125,128,214,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1316,7 +1316,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(65,167,230,1.0)',
+                color: 'rgba(228,92,88,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1329,7 +1329,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(159,223,90,1.0)',
+                color: 'rgba(96,210,119,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1342,7 +1342,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(187,219,124,1.0)',
+                color: 'rgba(208,160,87,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1355,7 +1355,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(211,122,144,1.0)',
+                color: 'rgba(84,205,113,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1368,7 +1368,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(79,207,50,1.0)',
+                color: 'rgba(231,43,159,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1381,7 +1381,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(51,230,41,1.0)',
+                color: 'rgba(111,226,61,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1394,7 +1394,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(26,129,203,1.0)',
+                color: 'rgba(199,87,236,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1407,7 +1407,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(129,96,211,1.0)',
+                color: 'rgba(28,212,59,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1420,7 +1420,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(129,209,213,1.0)',
+                color: 'rgba(120,212,155,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1433,7 +1433,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(232,156,90,1.0)',
+                color: 'rgba(209,210,128,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1446,7 +1446,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(39,201,55,1.0)',
+                color: 'rgba(172,121,239,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1459,7 +1459,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(127,236,211,1.0)',
+                color: 'rgba(155,117,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1472,7 +1472,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(60,208,117,1.0)',
+                color: 'rgba(74,212,136,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1485,7 +1485,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(98,209,150,1.0)',
+                color: 'rgba(89,24,229,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1498,7 +1498,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(120,73,228,1.0)',
+                color: 'rgba(136,203,94,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1511,7 +1511,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(48,215,182,1.0)',
+                color: 'rgba(240,164,23,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1524,7 +1524,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(56,208,99,1.0)',
+                color: 'rgba(157,134,225,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1537,7 +1537,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(48,202,240,1.0)',
+                color: 'rgba(206,101,21,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1550,7 +1550,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(208,67,180,1.0)',
+                color: 'rgba(56,240,148,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1563,7 +1563,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(154,238,129,1.0)',
+                color: 'rgba(229,190,16,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1576,7 +1576,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(158,217,110,1.0)',
+                color: 'rgba(226,29,154,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1589,7 +1589,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(120,191,202,1.0)',
+                color: 'rgba(219,233,142,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1602,7 +1602,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(99,213,200,1.0)',
+                color: 'rgba(122,122,232,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1615,7 +1615,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(154,201,24,1.0)',
+                color: 'rgba(55,99,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1628,7 +1628,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(200,92,202,1.0)',
+                color: 'rgba(62,213,43,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1641,7 +1641,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(80,223,66,1.0)',
+                color: 'rgba(209,104,97,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1654,7 +1654,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(76,65,236,1.0)',
+                color: 'rgba(170,202,115,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1667,7 +1667,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(102,164,218,1.0)',
+                color: 'rgba(99,211,93,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1680,7 +1680,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(82,47,209,1.0)',
+                color: 'rgba(220,18,18,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1693,7 +1693,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(223,168,49,1.0)',
+                color: 'rgba(205,224,119,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1706,7 +1706,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(61,226,155,1.0)',
+                color: 'rgba(147,216,58,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1719,7 +1719,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(200,100,100,1.0)',
+                color: 'rgba(134,152,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1732,7 +1732,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(238,213,114,1.0)',
+                color: 'rgba(202,128,88,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1745,7 +1745,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(201,128,25,1.0)',
+                color: 'rgba(59,164,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1758,7 +1758,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(32,216,219,1.0)',
+                color: 'rgba(42,203,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1771,7 +1771,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(211,95,50,1.0)',
+                color: 'rgba(103,118,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1784,7 +1784,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(194,240,115,1.0)',
+                color: 'rgba(43,225,107,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1797,7 +1797,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(214,80,169,1.0)',
+                color: 'rgba(225,176,53,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1810,7 +1810,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(60,86,232,1.0)',
+                color: 'rgba(175,208,85,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1823,7 +1823,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(104,153,226,1.0)',
+                color: 'rgba(62,223,30,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1836,7 +1836,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(109,218,117,1.0)',
+                color: 'rgba(200,43,106,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1849,7 +1849,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(148,226,114,1.0)',
+                color: 'rgba(20,214,75,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1862,7 +1862,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(239,132,202,1.0)',
+                color: 'rgba(29,216,88,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1875,7 +1875,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(138,42,216,1.0)',
+                color: 'rgba(132,240,44,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1888,7 +1888,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(222,210,49,1.0)',
+                color: 'rgba(196,18,232,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1901,7 +1901,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(113,142,203,1.0)',
+                color: 'rgba(215,60,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1914,7 +1914,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(230,186,116,1.0)',
+                color: 'rgba(45,223,63,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1927,7 +1927,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(198,205,63,1.0)',
+                color: 'rgba(232,114,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1940,7 +1940,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(60,211,33,1.0)',
+                color: 'rgba(201,74,171,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1953,7 +1953,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(203,86,216,1.0)',
+                color: 'rgba(112,201,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1966,7 +1966,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(106,117,207,1.0)',
+                color: 'rgba(141,237,139,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1979,7 +1979,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(17,203,97,1.0)',
+                color: 'rgba(200,106,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -1992,7 +1992,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(233,201,121,1.0)',
+                color: 'rgba(164,238,53,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2005,7 +2005,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(208,117,200,1.0)',
+                color: 'rgba(231,37,102,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2018,7 +2018,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(132,45,213,1.0)',
+                color: 'rgba(234,126,232,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2031,7 +2031,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(29,74,211,1.0)',
+                color: 'rgba(219,178,131,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2044,7 +2044,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(132,118,235,1.0)',
+                color: 'rgba(19,115,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2057,7 +2057,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(176,238,30,1.0)',
+                color: 'rgba(16,222,174,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2070,7 +2070,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(179,135,229,1.0)',
+                color: 'rgba(230,34,178,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2083,7 +2083,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(212,191,86,1.0)',
+                color: 'rgba(116,219,198,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2096,7 +2096,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(121,154,236,1.0)',
+                color: 'rgba(117,69,201,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2109,7 +2109,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(220,98,102,1.0)',
+                color: 'rgba(234,180,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2122,7 +2122,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(116,232,48,1.0)',
+                color: 'rgba(170,64,236,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2135,7 +2135,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(225,169,137,1.0)',
+                color: 'rgba(93,233,103,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2148,7 +2148,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(49,82,225,1.0)',
+                color: 'rgba(95,146,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2161,7 +2161,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(105,64,229,1.0)',
+                color: 'rgba(212,173,32,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2174,7 +2174,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(230,88,95,1.0)',
+                color: 'rgba(180,122,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2187,7 +2187,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(68,157,205,1.0)',
+                color: 'rgba(78,55,214,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2200,7 +2200,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(180,95,233,1.0)',
+                color: 'rgba(202,53,213,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2213,7 +2213,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(85,210,191,1.0)',
+                color: 'rgba(172,201,113,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2226,7 +2226,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(84,226,224,1.0)',
+                color: 'rgba(111,173,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2239,7 +2239,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(240,181,122,1.0)',
+                color: 'rgba(166,221,98,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2252,7 +2252,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(208,238,38,1.0)',
+                color: 'rgba(176,80,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2265,7 +2265,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(221,95,200,1.0)',
+                color: 'rgba(181,207,95,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2278,7 +2278,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(37,233,99,1.0)',
+                color: 'rgba(226,137,58,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2291,7 +2291,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(47,88,235,1.0)',
+                color: 'rgba(98,128,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2304,7 +2304,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(23,163,218,1.0)',
+                color: 'rgba(203,153,44,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2317,7 +2317,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(202,219,129,1.0)',
+                color: 'rgba(129,206,116,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2330,7 +2330,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(71,123,227,1.0)',
+                color: 'rgba(154,96,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2343,7 +2343,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(33,236,118,1.0)',
+                color: 'rgba(234,28,104,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2356,7 +2356,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(216,112,131,1.0)',
+                color: 'rgba(149,240,63,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2369,7 +2369,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(205,31,45,1.0)',
+                color: 'rgba(227,134,176,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2382,7 +2382,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(219,47,127,1.0)',
+                color: 'rgba(44,208,47,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2395,7 +2395,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(224,185,57,1.0)',
+                color: 'rgba(178,68,229,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2408,7 +2408,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(211,234,118,1.0)',
+                color: 'rgba(135,124,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2421,7 +2421,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(199,18,209,1.0)',
+                color: 'rgba(195,217,117,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2434,7 +2434,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(222,87,206,1.0)',
+                color: 'rgba(83,208,239,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2447,7 +2447,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(87,194,227,1.0)',
+                color: 'rgba(219,70,82,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2460,7 +2460,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(127,107,238,1.0)',
+                color: 'rgba(210,46,21,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2473,7 +2473,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(106,163,229,1.0)',
+                color: 'rgba(196,205,23,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2486,7 +2486,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(119,221,187,1.0)',
+                color: 'rgba(200,119,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2499,7 +2499,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(192,114,216,1.0)',
+                color: 'rgba(208,208,104,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2512,7 +2512,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(188,239,117,1.0)',
+                color: 'rgba(232,77,180,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2525,7 +2525,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(213,128,162,1.0)',
+                color: 'rgba(201,189,20,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2538,7 +2538,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(82,211,108,1.0)',
+                color: 'rgba(67,211,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2551,7 +2551,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(206,81,141,1.0)',
+                color: 'rgba(141,234,209,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2564,7 +2564,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(117,215,169,1.0)',
+                color: 'rgba(18,205,174,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2577,7 +2577,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(28,216,200,1.0)',
+                color: 'rgba(191,100,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2590,7 +2590,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(64,119,213,1.0)',
+                color: 'rgba(45,112,229,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2603,7 +2603,7 @@
                     return {
                 pane: 'pane_Domiciliar_1',
                 opacity: 1,
-                color: 'rgba(237,221,77,1.0)',
+                color: 'rgba(238,118,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2655,12 +2655,12 @@
         }
 
         function style_Seletiva_2_0(feature) {
-            switch(String(feature.properties['Name'])) {
+            switch(String(feature.properties['SETOR'])) {
                 case '001 - BUCAREIN':
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(117,210,205,1.0)',
+                color: 'rgba(210,31,25,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2673,7 +2673,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(136,139,229,1.0)',
+                color: 'rgba(233,96,105,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2686,7 +2686,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(201,47,201,1.0)',
+                color: 'rgba(184,220,53,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2699,7 +2699,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(136,206,23,1.0)',
+                color: 'rgba(213,163,114,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2712,7 +2712,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(202,27,152,1.0)',
+                color: 'rgba(182,233,124,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2725,7 +2725,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(76,200,225,1.0)',
+                color: 'rgba(177,238,112,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2738,7 +2738,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(68,66,213,1.0)',
+                color: 'rgba(220,232,86,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2751,7 +2751,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(221,142,68,1.0)',
+                color: 'rgba(211,89,87,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2764,7 +2764,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(237,113,134,1.0)',
+                color: 'rgba(211,53,13,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2777,7 +2777,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(47,128,203,1.0)',
+                color: 'rgba(201,213,121,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2790,7 +2790,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(55,202,158,1.0)',
+                color: 'rgba(12,46,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2803,7 +2803,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(233,47,34,1.0)',
+                color: 'rgba(57,65,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2816,7 +2816,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(213,179,66,1.0)',
+                color: 'rgba(236,77,106,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2829,7 +2829,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(225,52,43,1.0)',
+                color: 'rgba(48,51,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2842,7 +2842,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(172,121,239,1.0)',
+                color: 'rgba(121,36,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2855,7 +2855,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(205,223,115,1.0)',
+                color: 'rgba(193,106,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2868,7 +2868,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(235,158,137,1.0)',
+                color: 'rgba(178,14,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2881,7 +2881,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(201,123,89,1.0)',
+                color: 'rgba(222,70,143,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2894,7 +2894,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(31,80,227,1.0)',
+                color: 'rgba(72,223,94,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2907,7 +2907,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(87,228,197,1.0)',
+                color: 'rgba(187,23,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2920,7 +2920,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(124,229,31,1.0)',
+                color: 'rgba(225,227,130,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2933,7 +2933,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(229,215,92,1.0)',
+                color: 'rgba(95,145,238,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2946,7 +2946,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(86,202,102,1.0)',
+                color: 'rgba(120,110,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2959,7 +2959,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(230,90,153,1.0)',
+                color: 'rgba(222,134,165,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2972,7 +2972,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(227,55,25,1.0)',
+                color: 'rgba(18,233,144,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2985,7 +2985,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(219,63,167,1.0)',
+                color: 'rgba(124,95,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -2998,7 +2998,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(18,207,179,1.0)',
+                color: 'rgba(145,45,233,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3011,7 +3011,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(239,85,142,1.0)',
+                color: 'rgba(205,110,140,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3024,7 +3024,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(24,157,202,1.0)',
+                color: 'rgba(27,202,91,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3037,7 +3037,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(41,231,82,1.0)',
+                color: 'rgba(105,201,27,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3050,7 +3050,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(236,175,126,1.0)',
+                color: 'rgba(82,169,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3063,7 +3063,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(110,135,224,1.0)',
+                color: 'rgba(83,161,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3076,7 +3076,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(66,121,210,1.0)',
+                color: 'rgba(107,227,181,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3089,7 +3089,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(201,120,147,1.0)',
+                color: 'rgba(163,130,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3102,7 +3102,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(127,223,103,1.0)',
+                color: 'rgba(213,45,163,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3115,7 +3115,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(112,212,185,1.0)',
+                color: 'rgba(19,232,108,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3128,7 +3128,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(205,221,115,1.0)',
+                color: 'rgba(25,216,187,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3141,7 +3141,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(191,123,204,1.0)',
+                color: 'rgba(187,79,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3154,7 +3154,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(61,234,170,1.0)',
+                color: 'rgba(17,167,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3167,7 +3167,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(233,139,166,1.0)',
+                color: 'rgba(110,143,219,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3180,7 +3180,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(111,222,55,1.0)',
+                color: 'rgba(66,206,122,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3193,7 +3193,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(204,74,87,1.0)',
+                color: 'rgba(232,71,56,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3206,7 +3206,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(119,25,234,1.0)',
+                color: 'rgba(68,237,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3219,7 +3219,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(126,221,180,1.0)',
+                color: 'rgba(120,130,226,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3232,7 +3232,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(229,151,63,1.0)',
+                color: 'rgba(103,142,200,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3245,7 +3245,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(211,79,196,1.0)',
+                color: 'rgba(82,171,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3258,7 +3258,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(151,227,75,1.0)',
+                color: 'rgba(159,224,74,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3271,7 +3271,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(216,88,19,1.0)',
+                color: 'rgba(126,149,234,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3284,7 +3284,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(31,22,204,1.0)',
+                color: 'rgba(132,192,219,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3297,7 +3297,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(217,144,128,1.0)',
+                color: 'rgba(239,232,134,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3310,7 +3310,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(133,104,213,1.0)',
+                color: 'rgba(97,207,219,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3323,7 +3323,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(78,198,202,1.0)',
+                color: 'rgba(213,229,130,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3336,7 +3336,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(224,69,216,1.0)',
+                color: 'rgba(147,205,114,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3349,7 +3349,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(125,240,135,1.0)',
+                color: 'rgba(145,208,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3362,7 +3362,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(197,212,85,1.0)',
+                color: 'rgba(150,209,118,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3375,7 +3375,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(68,224,221,1.0)',
+                color: 'rgba(65,147,201,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3388,7 +3388,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(67,67,221,1.0)',
+                color: 'rgba(135,67,230,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3401,7 +3401,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(217,153,116,1.0)',
+                color: 'rgba(111,189,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3414,7 +3414,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(132,195,236,1.0)',
+                color: 'rgba(14,218,167,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3427,7 +3427,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(194,222,104,1.0)',
+                color: 'rgba(195,99,233,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3440,7 +3440,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(137,218,45,1.0)',
+                color: 'rgba(228,134,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3453,7 +3453,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(55,114,232,1.0)',
+                color: 'rgba(40,93,239,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3466,7 +3466,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,34,39,1.0)',
+                color: 'rgba(63,109,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3479,7 +3479,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(82,233,218,1.0)',
+                color: 'rgba(86,223,76,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3492,7 +3492,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(65,51,221,1.0)',
+                color: 'rgba(59,223,193,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3505,7 +3505,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(26,150,212,1.0)',
+                color: 'rgba(217,47,143,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3518,7 +3518,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(119,195,200,1.0)',
+                color: 'rgba(216,96,158,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3531,7 +3531,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(34,238,224,1.0)',
+                color: 'rgba(229,83,122,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3544,7 +3544,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(83,219,108,1.0)',
+                color: 'rgba(89,209,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3557,7 +3557,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(101,187,208,1.0)',
+                color: 'rgba(60,84,238,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3570,7 +3570,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(121,22,227,1.0)',
+                color: 'rgba(114,237,116,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3583,7 +3583,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(235,74,16,1.0)',
+                color: 'rgba(203,189,38,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3596,7 +3596,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(224,219,123,1.0)',
+                color: 'rgba(79,208,148,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3609,7 +3609,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(40,138,236,1.0)',
+                color: 'rgba(232,142,15,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3622,7 +3622,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(67,202,130,1.0)',
+                color: 'rgba(26,13,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3635,7 +3635,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(153,235,94,1.0)',
+                color: 'rgba(210,18,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3648,7 +3648,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(221,130,176,1.0)',
+                color: 'rgba(202,20,159,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3661,7 +3661,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(177,101,218,1.0)',
+                color: 'rgba(37,221,209,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3674,7 +3674,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(199,78,232,1.0)',
+                color: 'rgba(233,124,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3687,7 +3687,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(68,205,59,1.0)',
+                color: 'rgba(226,71,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3700,7 +3700,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(153,128,214,1.0)',
+                color: 'rgba(230,78,80,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3713,7 +3713,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(187,239,144,1.0)',
+                color: 'rgba(223,86,59,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3726,7 +3726,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(208,109,219,1.0)',
+                color: 'rgba(202,85,30,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3739,7 +3739,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(148,211,109,1.0)',
+                color: 'rgba(71,217,85,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3752,7 +3752,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(88,130,227,1.0)',
+                color: 'rgba(217,172,83,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3765,7 +3765,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(203,149,113,1.0)',
+                color: 'rgba(68,23,232,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3778,7 +3778,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(128,232,234,1.0)',
+                color: 'rgba(74,223,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3791,7 +3791,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(221,191,126,1.0)',
+                color: 'rgba(160,78,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3804,7 +3804,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(239,80,77,1.0)',
+                color: 'rgba(104,162,223,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3817,7 +3817,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(204,204,13,1.0)',
+                color: 'rgba(221,228,84,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3830,7 +3830,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(139,56,203,1.0)',
+                color: 'rgba(138,240,43,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3843,7 +3843,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(59,83,237,1.0)',
+                color: 'rgba(143,111,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3856,7 +3856,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(189,202,46,1.0)',
+                color: 'rgba(207,94,14,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3869,7 +3869,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(154,206,124,1.0)',
+                color: 'rgba(140,232,181,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3882,7 +3882,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(19,235,131,1.0)',
+                color: 'rgba(166,200,66,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3895,7 +3895,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(180,236,102,1.0)',
+                color: 'rgba(181,138,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3908,7 +3908,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(234,115,133,1.0)',
+                color: 'rgba(45,213,98,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3921,7 +3921,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(83,89,206,1.0)',
+                color: 'rgba(77,200,20,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3934,7 +3934,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(157,34,210,1.0)',
+                color: 'rgba(219,25,167,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3947,7 +3947,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(122,232,124,1.0)',
+                color: 'rgba(204,109,145,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3960,7 +3960,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(233,125,224,1.0)',
+                color: 'rgba(83,227,92,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3973,7 +3973,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(239,205,84,1.0)',
+                color: 'rgba(200,72,55,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3986,7 +3986,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(159,108,210,1.0)',
+                color: 'rgba(53,82,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3999,7 +3999,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(233,149,40,1.0)',
+                color: 'rgba(237,147,44,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4012,7 +4012,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(236,233,27,1.0)',
+                color: 'rgba(45,236,109,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4025,7 +4025,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(163,124,220,1.0)',
+                color: 'rgba(150,214,130,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4038,7 +4038,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(240,101,79,1.0)',
+                color: 'rgba(191,211,12,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4051,7 +4051,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(53,218,133,1.0)',
+                color: 'rgba(169,15,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4064,7 +4064,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(14,214,124,1.0)',
+                color: 'rgba(126,176,223,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4077,7 +4077,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(56,231,190,1.0)',
+                color: 'rgba(94,197,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4090,7 +4090,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(169,137,239,1.0)',
+                color: 'rgba(44,218,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4103,7 +4103,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(109,203,90,1.0)',
+                color: 'rgba(232,76,28,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4116,7 +4116,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(117,237,195,1.0)',
+                color: 'rgba(209,95,112,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4129,7 +4129,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(226,184,121,1.0)',
+                color: 'rgba(84,228,76,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4142,7 +4142,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(213,73,155,1.0)',
+                color: 'rgba(232,113,16,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4155,7 +4155,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(82,202,102,1.0)',
+                color: 'rgba(224,22,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4168,7 +4168,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(203,91,181,1.0)',
+                color: 'rgba(167,91,230,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4181,7 +4181,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(117,103,203,1.0)',
+                color: 'rgba(96,216,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4194,7 +4194,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,110,128,1.0)',
+                color: 'rgba(79,202,141,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4207,7 +4207,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(106,238,196,1.0)',
+                color: 'rgba(190,116,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4220,7 +4220,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(154,200,48,1.0)',
+                color: 'rgba(78,229,22,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4233,7 +4233,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(146,223,52,1.0)',
+                color: 'rgba(212,212,119,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4246,7 +4246,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(219,128,216,1.0)',
+                color: 'rgba(203,80,154,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4259,7 +4259,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(198,37,207,1.0)',
+                color: 'rgba(100,80,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4272,7 +4272,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(89,49,219,1.0)',
+                color: 'rgba(178,216,107,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4285,7 +4285,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(191,63,237,1.0)',
+                color: 'rgba(200,44,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4298,7 +4298,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(227,45,118,1.0)',
+                color: 'rgba(211,94,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4311,7 +4311,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(230,31,170,1.0)',
+                color: 'rgba(143,215,88,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4324,7 +4324,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(218,187,101,1.0)',
+                color: 'rgba(87,224,103,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4337,7 +4337,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(42,146,230,1.0)',
+                color: 'rgba(165,84,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4350,7 +4350,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(88,209,40,1.0)',
+                color: 'rgba(95,147,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4363,7 +4363,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(236,205,68,1.0)',
+                color: 'rgba(116,238,195,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4376,7 +4376,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(210,182,117,1.0)',
+                color: 'rgba(80,236,189,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4389,7 +4389,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(83,215,83,1.0)',
+                color: 'rgba(226,102,40,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4402,7 +4402,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,93,177,1.0)',
+                color: 'rgba(238,195,142,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4415,7 +4415,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(224,112,114,1.0)',
+                color: 'rgba(200,183,57,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4428,7 +4428,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(170,209,103,1.0)',
+                color: 'rgba(208,171,25,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4441,7 +4441,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(202,45,111,1.0)',
+                color: 'rgba(200,163,30,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4454,7 +4454,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(210,184,56,1.0)',
+                color: 'rgba(229,136,209,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4467,7 +4467,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(96,194,240,1.0)',
+                color: 'rgba(24,190,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4480,7 +4480,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(211,201,94,1.0)',
+                color: 'rgba(233,141,182,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4493,7 +4493,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,178,35,1.0)',
+                color: 'rgba(59,150,220,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4506,7 +4506,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(90,171,203,1.0)',
+                color: 'rgba(212,123,46,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4519,7 +4519,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(115,229,161,1.0)',
+                color: 'rgba(185,210,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4532,7 +4532,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(228,128,185,1.0)',
+                color: 'rgba(120,200,135,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4545,7 +4545,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(19,201,28,1.0)',
+                color: 'rgba(235,107,22,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4558,7 +4558,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(236,95,80,1.0)',
+                color: 'rgba(224,189,128,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4571,7 +4571,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(41,220,109,1.0)',
+                color: 'rgba(226,13,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4584,7 +4584,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(217,96,187,1.0)',
+                color: 'rgba(223,101,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4597,7 +4597,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(64,28,228,1.0)',
+                color: 'rgba(139,136,239,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4610,7 +4610,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(23,178,205,1.0)',
+                color: 'rgba(24,204,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4623,7 +4623,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(229,66,169,1.0)',
+                color: 'rgba(202,22,145,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4636,7 +4636,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(118,233,187,1.0)',
+                color: 'rgba(225,140,111,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4649,7 +4649,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(238,193,121,1.0)',
+                color: 'rgba(138,73,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4662,7 +4662,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(23,142,211,1.0)',
+                color: 'rgba(50,237,200,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4675,7 +4675,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(125,217,153,1.0)',
+                color: 'rgba(103,233,177,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4688,7 +4688,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(209,98,213,1.0)',
+                color: 'rgba(204,90,70,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4701,7 +4701,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(110,220,148,1.0)',
+                color: 'rgba(134,223,193,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4714,7 +4714,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(71,214,27,1.0)',
+                color: 'rgba(95,95,200,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4727,7 +4727,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(153,239,116,1.0)',
+                color: 'rgba(146,135,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4740,7 +4740,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(211,236,137,1.0)',
+                color: 'rgba(163,202,56,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4753,7 +4753,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(73,92,235,1.0)',
+                color: 'rgba(209,97,142,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4766,7 +4766,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(138,177,232,1.0)',
+                color: 'rgba(161,230,134,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4779,7 +4779,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(43,176,216,1.0)',
+                color: 'rgba(89,229,157,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4792,7 +4792,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(26,202,102,1.0)',
+                color: 'rgba(230,214,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4805,7 +4805,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(215,134,97,1.0)',
+                color: 'rgba(46,203,83,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4818,7 +4818,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(187,220,57,1.0)',
+                color: 'rgba(67,36,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4831,7 +4831,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,89,225,1.0)',
+                color: 'rgba(208,171,113,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4844,7 +4844,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(113,180,228,1.0)',
+                color: 'rgba(166,88,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4857,7 +4857,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(129,114,202,1.0)',
+                color: 'rgba(215,92,199,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4870,7 +4870,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(223,125,185,1.0)',
+                color: 'rgba(141,211,128,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4883,7 +4883,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(192,100,200,1.0)',
+                color: 'rgba(113,208,138,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4896,7 +4896,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(29,102,228,1.0)',
+                color: 'rgba(232,193,76,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4909,7 +4909,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(220,159,94,1.0)',
+                color: 'rgba(196,51,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4922,7 +4922,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(193,137,234,1.0)',
+                color: 'rgba(98,201,29,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4935,7 +4935,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(225,125,132,1.0)',
+                color: 'rgba(82,222,61,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4948,7 +4948,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(16,103,203,1.0)',
+                color: 'rgba(79,184,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4961,7 +4961,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(226,97,209,1.0)',
+                color: 'rgba(212,46,96,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4974,7 +4974,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(237,110,139,1.0)',
+                color: 'rgba(85,235,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4987,7 +4987,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(58,41,207,1.0)',
+                color: 'rgba(224,199,36,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5000,7 +5000,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(161,98,200,1.0)',
+                color: 'rgba(211,126,146,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5013,7 +5013,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(93,119,225,1.0)',
+                color: 'rgba(221,216,57,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5026,7 +5026,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(157,96,210,1.0)',
+                color: 'rgba(143,223,13,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5039,7 +5039,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(125,222,92,1.0)',
+                color: 'rgba(102,203,91,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5052,7 +5052,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(189,78,206,1.0)',
+                color: 'rgba(201,166,86,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5065,7 +5065,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(215,53,94,1.0)',
+                color: 'rgba(215,54,75,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5078,7 +5078,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(214,23,115,1.0)',
+                color: 'rgba(152,127,226,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5091,7 +5091,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(74,217,107,1.0)',
+                color: 'rgba(128,77,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5104,7 +5104,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(209,215,46,1.0)',
+                color: 'rgba(79,145,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5117,7 +5117,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(68,200,64,1.0)',
+                color: 'rgba(32,233,39,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5130,7 +5130,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(71,93,201,1.0)',
+                color: 'rgba(71,225,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5143,7 +5143,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(57,230,103,1.0)',
+                color: 'rgba(80,111,203,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5156,7 +5156,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(178,111,211,1.0)',
+                color: 'rgba(96,214,70,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5169,7 +5169,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(71,220,237,1.0)',
+                color: 'rgba(103,47,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5182,7 +5182,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(214,157,113,1.0)',
+                color: 'rgba(220,116,180,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5195,7 +5195,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(125,132,216,1.0)',
+                color: 'rgba(220,50,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5208,7 +5208,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(32,240,98,1.0)',
+                color: 'rgba(204,96,53,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5221,7 +5221,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(161,206,47,1.0)',
+                color: 'rgba(233,36,78,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5234,7 +5234,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(203,56,73,1.0)',
+                color: 'rgba(127,135,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5247,7 +5247,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(106,159,230,1.0)',
+                color: 'rgba(100,216,123,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5260,7 +5260,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,210,65,1.0)',
+                color: 'rgba(106,53,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5273,7 +5273,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(43,96,232,1.0)',
+                color: 'rgba(129,216,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5286,7 +5286,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(201,143,36,1.0)',
+                color: 'rgba(183,113,233,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5299,7 +5299,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(38,227,192,1.0)',
+                color: 'rgba(181,212,119,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5312,7 +5312,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(99,209,84,1.0)',
+                color: 'rgba(240,51,60,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5325,7 +5325,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(88,195,209,1.0)',
+                color: 'rgba(222,98,111,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5338,7 +5338,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(188,43,237,1.0)',
+                color: 'rgba(229,22,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5351,7 +5351,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(236,31,96,1.0)',
+                color: 'rgba(81,212,177,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5364,7 +5364,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(44,204,60,1.0)',
+                color: 'rgba(211,121,70,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5377,7 +5377,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(200,68,139,1.0)',
+                color: 'rgba(61,219,21,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5390,7 +5390,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(164,227,38,1.0)',
+                color: 'rgba(213,124,118,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5403,7 +5403,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(149,108,223,1.0)',
+                color: 'rgba(201,176,113,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5416,7 +5416,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(60,226,31,1.0)',
+                color: 'rgba(78,184,213,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5429,7 +5429,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(202,91,58,1.0)',
+                color: 'rgba(217,56,126,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5442,7 +5442,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(57,234,40,1.0)',
+                color: 'rgba(48,202,92,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5455,7 +5455,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(219,43,190,1.0)',
+                color: 'rgba(224,57,166,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5468,7 +5468,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(29,234,207,1.0)',
+                color: 'rgba(191,227,32,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5481,7 +5481,7 @@
                     return {
                 pane: 'pane_Seletiva_2',
                 opacity: 1,
-                color: 'rgba(139,103,202,1.0)',
+                color: 'rgba(28,99,214,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5526,7 +5526,7 @@
         col1.className="col9";
         col1.id = "mapWindow";
         col1.style.height = "99%";
-        col1.style.width = "80%";
+        col1.style.width = "100%";
         col1.style.display = "inline-block";
         var col2 = document.createElement('div');
         col2.className="col3";
@@ -5645,7 +5645,7 @@
             lab_OPERACAO.className = 'filterlabel';
             div_OPERACAO.appendChild(lab_OPERACAO);
             var reset_OPERACAO = document.createElement('div');
-            reset_OPERACAO.innerHTML = 'clear filter';
+            reset_OPERACAO.innerHTML = 'Limpar Filtro';
             reset_OPERACAO.className = 'filterlabel';
             reset_OPERACAO.onclick = function() {
                 var options = document.getElementById("sel_OPERACAO").options;
