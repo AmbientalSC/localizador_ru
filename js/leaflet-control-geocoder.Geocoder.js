@@ -6,11 +6,11 @@ var L = (typeof window !== "undefined" ? window['L'] : typeof global !== "undefi
 module.exports = {
 	"class": L.Control.extend({
 		options: {
-			showResultIcons: false,
-			collapsed: true,
-			expand: 'touch', // options: touch, click, anythingelse
+			showResultIcons: true,
+			collapsed: false,
+			expand: 'click', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Search...',
+			placeholder: 'Pesquisar...',
 			errorMessage: 'Nothing found.',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
@@ -73,7 +73,7 @@ module.exports = {
 						}
 					}, this);
 				}
-				else if (L.Browser.touch && this.options.expand === 'touch') {
+				else if (L.Browser.touch && this.options.expand === 'click') {
 					L.DomEvent.addListener(container, 'touchstart mousedown', function(e) {
 						this._toggle();
 						e.preventDefault(); // mobile: clicking focuses the icon, so UI expands and immediately collapses
@@ -186,11 +186,11 @@ module.exports = {
 		},
 
 		_collapse: function () {
-			L.DomUtil.removeClass(this._container, 'leaflet-control-geocoder-expanded');
-			L.DomUtil.addClass(this._alts, 'leaflet-control-geocoder-alternatives-minimized');
-			L.DomUtil.removeClass(this._errorElement, 'leaflet-control-geocoder-error');
-			this._input.blur(); // mobile: keyboard shouldn't stay expanded
-			this.fire('collapse');
+			// L.DomUtil.removeClass(this._container, 'leaflet-control-geocoder-expanded');
+			// L.DomUtil.addClass(this._alts, 'leaflet-control-geocoder-alternatives-minimized');
+			// L.DomUtil.removeClass(this._errorElement, 'leaflet-control-geocoder-error');
+			// this._input.blur(); 
+			// this.fire('collapse');
 		},
 
 		_clearResults: function () {

@@ -5509,13 +5509,13 @@
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
-            text: 'Search',
+            text: 'Pesquisar',
             title: 'Testing'
         }).addTo(map);
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .className += ' fa fa-search';
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .title += 'Search for a place';
+        .title += 'Pesquisar um local';
         setBounds();
         var mapDiv = document.getElementById('map');
         var row = document.createElement('div');
