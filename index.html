@@ -5307,7 +5307,14 @@
         });
         bounds_group.addLayer(layer_Mesclado_1);
         map.addLayer(layer_Mesclado_1);
-        var osmGeocoder = new L.Control.Geocoder({
+        // var osmGeocoder = new L.Control.Geocoder({
+        //     collapsed: true,
+        //     position: 'topleft',
+        //     text: 'Search',
+        //     title: 'Testing'
+        // }).addTo(map);
+        var googleGeocoder = new L.Control.Geocoder({
+            geocoder: L.Control.Geocoder.google('AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38', {}),
             collapsed: true,
             position: 'topleft',
             text: 'Search',
