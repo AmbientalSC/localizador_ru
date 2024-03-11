@@ -45,7 +45,7 @@
             zoomControl:true, maxZoom:20, minZoom:1
         }).fitBounds([[-27.949165162119982,-51.19023138624001],[-25.25522636211997,-46.59544936895998]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/AlyssonKrombauer/localizador_ru" target="_blank">Criado por Alysson Krombauer</a> &middot; <a href="https://ambiental.sc/" title="Ambiental.sc">Ambiental.sc</a> &middot;');
+        map.attributionControl.setPrefix('<a href="https://github.com/AlyssonKrombauer/localizador_ru" target="_blank">Alysson Krombauer</a> &middot; <a href="https://ambiental.sc/" title="Ambiental.sc">Ambiental.sc</a> &middot;');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         function removeEmptyRowsFromPopupContent(content, feature) {
          var tempDiv = document.createElement('div');
@@ -5174,7 +5174,7 @@
                     return {
                 pane: 'pane_Domiciliar_2',
                 opacity: 1,
-                color: 'rgba(61,217,155,1.0)',
+                color: 'rgba(111,127,255,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5597,7 +5597,7 @@
         // }).addTo(map);
         var googleGeocoder = new L.Control.Geocoder({
             geocoder: L.Control.Geocoder.google('AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38', {}),
-            collapsed: true,
+            collapsed: false,
             position: 'topleft',
             text: 'Search',
             title: 'Testing'
