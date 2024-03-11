@@ -10,7 +10,7 @@ module.exports = {
 			collapsed: true,
 			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Search...',
+			placeholder: ' RUA + NUMERO + CIDADE',
 			errorMessage: 'Nothing found.',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
@@ -186,11 +186,11 @@ module.exports = {
 		},
 
 		_collapse: function () {
-			// L.DomUtil.removeClass(this._container, 'leaflet-control-geocoder-expanded');
-			// L.DomUtil.addClass(this._alts, 'leaflet-control-geocoder-alternatives-minimized');
-			// L.DomUtil.removeClass(this._errorElement, 'leaflet-control-geocoder-error');
-			// this._input.blur(); // mobile: keyboard shouldn't stay expanded
-			// this.fire('collapse');
+			L.DomUtil.removeClass(this._container, 'leaflet-control-geocoder-expanded');
+			L.DomUtil.addClass(this._alts, 'leaflet-control-geocoder-alternatives-minimized');
+			L.DomUtil.removeClass(this._errorElement, 'leaflet-control-geocoder-error');
+			this._input.blur(); // mobile: keyboard shouldn't stay expanded
+			this.fire('collapse');
 		},
 
 		_clearResults: function () {
