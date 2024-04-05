@@ -22,7 +22,8 @@
         }
         </style>
         <title>Consulta de setores</title>
-        <link rel="shortcut icon" type="image/jpg" href="icon.ico"/>    </head>    </head>
+        <link rel="shortcut icon" type="image/jpg" href="icon.ico"/>
+    </head>
     <body>
         <div id="map">
         </div>
@@ -48,10 +49,11 @@
         <script src="data/DOMXANXERE_6.js"></script>
         <script src="data/DOMSJ_7.js"></script>
         <script src="data/DOMBCBT_8.js"></script>
-        <script src="data/DOMITAPEMABT_9.js"></script>
-        <script src="data/DOMSFSBT_10.js"></script>
-        <script src="data/DOMCF_11.js"></script>
-        <script src="data/DOMJOINVILLE_12.js"></script>
+        <script src="data/DOMITAJAIAT_9.js"></script>
+        <script src="data/DOMITAPEMABT_10.js"></script>
+        <script src="data/DOMSFSBT_11.js"></script>
+        <script src="data/DOMCF_12.js"></script>
+        <script src="data/DOMJOINVILLE_13.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -69,8 +71,8 @@
             }
         }
         var map = L.map('map', {
-            zoomControl:false, maxZoom:20, minZoom:1
-        }).fitBounds([[-26.33951635777495,-48.86700825999159],[-26.28751603594966,-48.79958013184164]]);
+            zoomControl:true, maxZoom:20, minZoom:1
+        }).fitBounds([[-29.422027658597855,-52.73308837520174],[-24.429996763370056,-43.139968763288074]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/AlyssonKrombauer/localizador_ru" target="_blank">Alysson Krombauer</a> &middot; <a href="https://ambiental.sc/" title="Ambiental.sc">Ambiental.sc</a> &middot;');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -143,10 +145,6 @@
                     <tr>\
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -530,10 +528,6 @@
                     <tr>\
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1022,10 +1016,6 @@
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -1278,10 +1268,6 @@
                     <tr>\
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -3128,15 +3114,12 @@
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">HORÁRIO:</th>\
+                        <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -3365,10 +3348,6 @@
                         <th scope="row">TURNO:</th>\
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -3543,10 +3522,6 @@
                     <tr>\
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -4243,10 +4218,6 @@
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -4715,7 +4686,7 @@
         });
         bounds_group.addLayer(layer_DOMBCBT_8);
         map.addLayer(layer_DOMBCBT_8);
-        function pop_DOMITAPEMABT_9(feature, layer) {
+        function pop_DOMITAJAIAT_9(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -4747,9 +4718,752 @@
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+            var popup = layer.getPopup();
+            var content = popup.getContent();
+            var updatedContent = removeEmptyRowsFromPopupContent(content, feature);
+            popup.setContent(updatedContent);
+        }
+
+        function style_DOMITAJAIAT_9_0(feature) {
+            switch(String(feature.properties['Name'])) {
+                case 'M01':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(39,67,223,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M02':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(207,96,159,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M03':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(234,148,78,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M04':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(214,198,51,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M05':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(199,81,217,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M06':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(229,233,17,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M07':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(218,63,205,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M08':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(213,230,87,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M09':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(32,190,222,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M10':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(202,92,130,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M11':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(95,140,213,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M12':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(239,63,43,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M13':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(138,235,219,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M14':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(110,221,85,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M15':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(37,205,197,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M16':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(238,30,196,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M17':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(169,208,97,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'M18':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(63,207,149,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'MK01':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(115,106,236,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'MK02':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(110,114,236,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'MK03':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(80,235,140,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'MK04':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(97,235,117,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'MK05':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(223,101,184,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N01':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(217,123,76,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N02':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(216,95,109,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N03':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(63,190,240,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N04':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(92,29,238,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N05':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(222,134,224,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N06':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(84,121,222,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N07':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(13,113,220,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N08':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(138,239,131,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N09':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(76,43,220,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N10':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(203,173,64,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N11':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(125,209,30,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N12':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(231,93,158,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N13':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(85,205,117,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'N14':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(110,41,206,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'Sem setor':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(238,20,20,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T01':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(164,39,237,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T02':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(205,70,33,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T03':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(113,233,21,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T04':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(171,207,54,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T05':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(70,198,205,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T06':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(212,150,73,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T07':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(97,205,47,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T08':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(205,43,80,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T09':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(90,179,238,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T10':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(219,173,80,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T11':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(202,114,232,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T12':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(52,221,173,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T13':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(35,229,45,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'T14':
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(176,107,236,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                default:
+                    return {
+                pane: 'pane_DOMITAJAIAT_9',
+                opacity: 1,
+                color: 'rgba(25,210,117,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_DOMITAJAIAT_9');
+        map.getPane('pane_DOMITAJAIAT_9').style.zIndex = 409;
+        map.getPane('pane_DOMITAJAIAT_9').style['mix-blend-mode'] = 'normal';
+        var layer_DOMITAJAIAT_9 = new L.geoJson(json_DOMITAJAIAT_9, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_DOMITAJAIAT_9',
+            layerName: 'layer_DOMITAJAIAT_9',
+            pane: 'pane_DOMITAJAIAT_9',
+            onEachFeature: pop_DOMITAJAIAT_9,
+            style: style_DOMITAJAIAT_9_0,
+        });
+        bounds_group.addLayer(layer_DOMITAJAIAT_9);
+        map.addLayer(layer_DOMITAJAIAT_9);
+        function pop_DOMITAPEMABT_10(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    for (var i in e.target._eventParents) {
+                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
+                            e.target._eventParents[i].resetStyle(e.target);
+                        }
+                    }
+                },
+                mouseover: highlightFeature,
+            });
+            var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">SETOR:</th>\
+                        <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">TURNO:</th>\
+                        <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">FREQUÊNCIA:</th>\
+                        <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">HORÁRIO:</th>\
+                        <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">OPERAÇÃO:</th>\
+                        <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -4759,11 +5473,11 @@
             popup.setContent(updatedContent);
         }
 
-        function style_DOMITAPEMABT_9_0(feature) {
+        function style_DOMITAPEMABT_10_0(feature) {
             switch(String(feature.properties['Name'])) {
                 case 'M01':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(202,144,111,1.0)',
                 dashArray: '',
@@ -4776,7 +5490,7 @@
                     break;
                 case 'M02':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(123,212,28,1.0)',
                 dashArray: '',
@@ -4789,7 +5503,7 @@
                     break;
                 case 'M03':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(201,119,178,1.0)',
                 dashArray: '',
@@ -4802,7 +5516,7 @@
                     break;
                 case 'M04':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(129,186,221,1.0)',
                 dashArray: '',
@@ -4815,7 +5529,7 @@
                     break;
                 case 'M05':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(175,208,42,1.0)',
                 dashArray: '',
@@ -4828,7 +5542,7 @@
                     break;
                 case 'M06':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(120,92,233,1.0)',
                 dashArray: '',
@@ -4841,7 +5555,7 @@
                     break;
                 case 'MK01':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(213,148,28,1.0)',
                 dashArray: '',
@@ -4854,7 +5568,7 @@
                     break;
                 case 'MK02':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(16,200,120,1.0)',
                 dashArray: '',
@@ -4867,7 +5581,7 @@
                     break;
                 case 'MK03':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(218,104,216,1.0)',
                 dashArray: '',
@@ -4880,7 +5594,7 @@
                     break;
                 case 'N01':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(148,67,239,1.0)',
                 dashArray: '',
@@ -4893,7 +5607,7 @@
                     break;
                 case 'N02':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(15,82,206,1.0)',
                 dashArray: '',
@@ -4906,7 +5620,7 @@
                     break;
                 case 'N03':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(224,34,13,1.0)',
                 dashArray: '',
@@ -4919,7 +5633,7 @@
                     break;
                 case 'N04':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(235,223,62,1.0)',
                 dashArray: '',
@@ -4932,7 +5646,7 @@
                     break;
                 case 'N05':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(51,232,105,1.0)',
                 dashArray: '',
@@ -4945,7 +5659,7 @@
                     break;
                 case 'N06':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(219,82,143,1.0)',
                 dashArray: '',
@@ -4958,7 +5672,7 @@
                     break;
                 case 'T01':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(137,232,106,1.0)',
                 dashArray: '',
@@ -4971,7 +5685,7 @@
                     break;
                 case 'T02':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(123,219,124,1.0)',
                 dashArray: '',
@@ -4984,7 +5698,7 @@
                     break;
                 case 'T03':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(93,100,204,1.0)',
                 dashArray: '',
@@ -4997,7 +5711,7 @@
                     break;
                 case 'T04':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(207,83,104,1.0)',
                 dashArray: '',
@@ -5010,7 +5724,7 @@
                     break;
                 case 'T05':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(96,200,183,1.0)',
                 dashArray: '',
@@ -5023,7 +5737,7 @@
                     break;
                 case 'T06':
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(35,195,216,1.0)',
                 dashArray: '',
@@ -5036,7 +5750,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane_DOMITAPEMABT_9',
+                pane: 'pane_DOMITAPEMABT_10',
                 opacity: 1,
                 color: 'rgba(200,120,227,1.0)',
                 dashArray: '',
@@ -5049,21 +5763,21 @@
                     break;
             }
         }
-        map.createPane('pane_DOMITAPEMABT_9');
-        map.getPane('pane_DOMITAPEMABT_9').style.zIndex = 409;
-        map.getPane('pane_DOMITAPEMABT_9').style['mix-blend-mode'] = 'normal';
-        var layer_DOMITAPEMABT_9 = new L.geoJson(json_DOMITAPEMABT_9, {
+        map.createPane('pane_DOMITAPEMABT_10');
+        map.getPane('pane_DOMITAPEMABT_10').style.zIndex = 410;
+        map.getPane('pane_DOMITAPEMABT_10').style['mix-blend-mode'] = 'normal';
+        var layer_DOMITAPEMABT_10 = new L.geoJson(json_DOMITAPEMABT_10, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_DOMITAPEMABT_9',
-            layerName: 'layer_DOMITAPEMABT_9',
-            pane: 'pane_DOMITAPEMABT_9',
-            onEachFeature: pop_DOMITAPEMABT_9,
-            style: style_DOMITAPEMABT_9_0,
+            dataVar: 'json_DOMITAPEMABT_10',
+            layerName: 'layer_DOMITAPEMABT_10',
+            pane: 'pane_DOMITAPEMABT_10',
+            onEachFeature: pop_DOMITAPEMABT_10,
+            style: style_DOMITAPEMABT_10_0,
         });
-        bounds_group.addLayer(layer_DOMITAPEMABT_9);
-        map.addLayer(layer_DOMITAPEMABT_9);
-        function pop_DOMSFSBT_10(feature, layer) {
+        bounds_group.addLayer(layer_DOMITAPEMABT_10);
+        map.addLayer(layer_DOMITAPEMABT_10);
+        function pop_DOMSFSBT_11(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -5095,10 +5809,6 @@
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -5107,11 +5817,11 @@
             popup.setContent(updatedContent);
         }
 
-        function style_DOMSFSBT_10_0(feature) {
+        function style_DOMSFSBT_11_0(feature) {
             switch(String(feature.properties['Name'])) {
                 case 'CENTRO':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(162,231,43,1.0)',
                 dashArray: '',
@@ -5124,7 +5834,7 @@
                     break;
                 case 'M1':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(104,210,42,1.0)',
                 dashArray: '',
@@ -5137,7 +5847,7 @@
                     break;
                 case 'M2':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(13,201,98,1.0)',
                 dashArray: '',
@@ -5150,7 +5860,7 @@
                     break;
                 case 'M3':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(130,67,238,1.0)',
                 dashArray: '',
@@ -5163,7 +5873,7 @@
                     break;
                 case 'M4':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(64,229,94,1.0)',
                 dashArray: '',
@@ -5176,7 +5886,7 @@
                     break;
                 case 'M5':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(214,228,55,1.0)',
                 dashArray: '',
@@ -5189,7 +5899,7 @@
                     break;
                 case 'M6':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(215,89,44,1.0)',
                 dashArray: '',
@@ -5202,7 +5912,7 @@
                     break;
                 case 'M7':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(219,113,199,1.0)',
                 dashArray: '',
@@ -5215,7 +5925,7 @@
                     break;
                 case 'N1':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(231,27,85,1.0)',
                 dashArray: '',
@@ -5228,7 +5938,7 @@
                     break;
                 case 'N2':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(30,233,233,1.0)',
                 dashArray: '',
@@ -5241,7 +5951,7 @@
                     break;
                 case 'N3':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(214,101,227,1.0)',
                 dashArray: '',
@@ -5254,7 +5964,7 @@
                     break;
                 case 'N4':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(40,202,159,1.0)',
                 dashArray: '',
@@ -5267,7 +5977,7 @@
                     break;
                 case 'N5':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(224,53,53,1.0)',
                 dashArray: '',
@@ -5280,7 +5990,7 @@
                     break;
                 case 'N6':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(174,119,206,1.0)',
                 dashArray: '',
@@ -5293,7 +6003,7 @@
                     break;
                 case 'REPASSE':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(217,77,154,1.0)',
                 dashArray: '',
@@ -5306,7 +6016,7 @@
                     break;
                 case 'T1':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(108,231,97,1.0)',
                 dashArray: '',
@@ -5319,7 +6029,7 @@
                     break;
                 case 'T2':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(76,167,200,1.0)',
                 dashArray: '',
@@ -5332,7 +6042,7 @@
                     break;
                 case 'T3':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(211,147,74,1.0)',
                 dashArray: '',
@@ -5345,7 +6055,7 @@
                     break;
                 case 'T4':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(233,203,83,1.0)',
                 dashArray: '',
@@ -5358,7 +6068,7 @@
                     break;
                 case 'T5':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(49,34,213,1.0)',
                 dashArray: '',
@@ -5371,7 +6081,7 @@
                     break;
                 case 'T6':
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(43,72,201,1.0)',
                 dashArray: '',
@@ -5384,7 +6094,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane_DOMSFSBT_10',
+                pane: 'pane_DOMSFSBT_11',
                 opacity: 1,
                 color: 'rgba(61,125,204,1.0)',
                 dashArray: '',
@@ -5397,21 +6107,21 @@
                     break;
             }
         }
-        map.createPane('pane_DOMSFSBT_10');
-        map.getPane('pane_DOMSFSBT_10').style.zIndex = 410;
-        map.getPane('pane_DOMSFSBT_10').style['mix-blend-mode'] = 'normal';
-        var layer_DOMSFSBT_10 = new L.geoJson(json_DOMSFSBT_10, {
+        map.createPane('pane_DOMSFSBT_11');
+        map.getPane('pane_DOMSFSBT_11').style.zIndex = 411;
+        map.getPane('pane_DOMSFSBT_11').style['mix-blend-mode'] = 'normal';
+        var layer_DOMSFSBT_11 = new L.geoJson(json_DOMSFSBT_11, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_DOMSFSBT_10',
-            layerName: 'layer_DOMSFSBT_10',
-            pane: 'pane_DOMSFSBT_10',
-            onEachFeature: pop_DOMSFSBT_10,
-            style: style_DOMSFSBT_10_0,
+            dataVar: 'json_DOMSFSBT_11',
+            layerName: 'layer_DOMSFSBT_11',
+            pane: 'pane_DOMSFSBT_11',
+            onEachFeature: pop_DOMSFSBT_11,
+            style: style_DOMSFSBT_11_0,
         });
-        bounds_group.addLayer(layer_DOMSFSBT_10);
-        map.addLayer(layer_DOMSFSBT_10);
-        function pop_DOMCF_11(feature, layer) {
+        bounds_group.addLayer(layer_DOMSFSBT_11);
+        map.addLayer(layer_DOMSFSBT_11);
+        function pop_DOMCF_12(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -5443,10 +6153,6 @@
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -5455,11 +6161,11 @@
             popup.setContent(updatedContent);
         }
 
-        function style_DOMCF_11_0(feature) {
+        function style_DOMCF_12_0(feature) {
             switch(String(feature.properties['SETOR'])) {
                 case 'RSU01':
                     return {
-                pane: 'pane_DOMCF_11',
+                pane: 'pane_DOMCF_12',
                 opacity: 1,
                 color: 'rgba(203,214,86,1.0)',
                 dashArray: '',
@@ -5472,7 +6178,7 @@
                     break;
                 case 'RSU02':
                     return {
-                pane: 'pane_DOMCF_11',
+                pane: 'pane_DOMCF_12',
                 opacity: 1,
                 color: 'rgba(94,165,236,1.0)',
                 dashArray: '',
@@ -5485,7 +6191,7 @@
                     break;
                 case 'RSU03':
                     return {
-                pane: 'pane_DOMCF_11',
+                pane: 'pane_DOMCF_12',
                 opacity: 1,
                 color: 'rgba(209,45,61,1.0)',
                 dashArray: '',
@@ -5498,7 +6204,7 @@
                     break;
                 case 'RSU04':
                     return {
-                pane: 'pane_DOMCF_11',
+                pane: 'pane_DOMCF_12',
                 opacity: 1,
                 color: 'rgba(117,229,149,1.0)',
                 dashArray: '',
@@ -5511,7 +6217,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane_DOMCF_11',
+                pane: 'pane_DOMCF_12',
                 opacity: 1,
                 color: 'rgba(167,68,209,1.0)',
                 dashArray: '',
@@ -5524,21 +6230,21 @@
                     break;
             }
         }
-        map.createPane('pane_DOMCF_11');
-        map.getPane('pane_DOMCF_11').style.zIndex = 411;
-        map.getPane('pane_DOMCF_11').style['mix-blend-mode'] = 'normal';
-        var layer_DOMCF_11 = new L.geoJson(json_DOMCF_11, {
+        map.createPane('pane_DOMCF_12');
+        map.getPane('pane_DOMCF_12').style.zIndex = 412;
+        map.getPane('pane_DOMCF_12').style['mix-blend-mode'] = 'normal';
+        var layer_DOMCF_12 = new L.geoJson(json_DOMCF_12, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_DOMCF_11',
-            layerName: 'layer_DOMCF_11',
-            pane: 'pane_DOMCF_11',
-            onEachFeature: pop_DOMCF_11,
-            style: style_DOMCF_11_0,
+            dataVar: 'json_DOMCF_12',
+            layerName: 'layer_DOMCF_12',
+            pane: 'pane_DOMCF_12',
+            onEachFeature: pop_DOMCF_12,
+            style: style_DOMCF_12_0,
         });
-        bounds_group.addLayer(layer_DOMCF_11);
-        map.addLayer(layer_DOMCF_11);
-        function pop_DOMJOINVILLE_12(feature, layer) {
+        bounds_group.addLayer(layer_DOMCF_12);
+        map.addLayer(layer_DOMCF_12);
+        function pop_DOMJOINVILLE_13(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -5570,10 +6276,6 @@
                         <th scope="row">OPERAÇÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <th scope="row">FILIAL:</th>\
-                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
@@ -5582,13 +6284,13 @@
             popup.setContent(updatedContent);
         }
 
-        function style_DOMJOINVILLE_12_0(feature) {
+        function style_DOMJOINVILLE_13_0(feature) {
             switch(String(feature.properties['Name'])) {
                 case '01':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(140,108,220,1.0)',
+                color: 'rgba(122,231,159,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5599,9 +6301,9 @@
                     break;
                 case '02':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(139,125,217,1.0)',
+                color: 'rgba(120,215,199,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5612,9 +6314,9 @@
                     break;
                 case '03':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(237,182,119,1.0)',
+                color: 'rgba(51,215,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5625,9 +6327,9 @@
                     break;
                 case '04':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(136,228,38,1.0)',
+                color: 'rgba(216,27,20,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5638,9 +6340,9 @@
                     break;
                 case '05':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(232,90,102,1.0)',
+                color: 'rgba(74,113,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5651,9 +6353,9 @@
                     break;
                 case '06':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(23,146,208,1.0)',
+                color: 'rgba(129,145,232,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5664,9 +6366,9 @@
                     break;
                 case '07':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(221,50,87,1.0)',
+                color: 'rgba(215,146,116,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5677,9 +6379,9 @@
                     break;
                 case '08':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(39,36,211,1.0)',
+                color: 'rgba(235,170,85,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5690,9 +6392,9 @@
                     break;
                 case '09':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(237,36,25,1.0)',
+                color: 'rgba(223,96,82,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5703,9 +6405,9 @@
                     break;
                 case '10':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(135,205,91,1.0)',
+                color: 'rgba(207,76,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5716,9 +6418,9 @@
                     break;
                 case '11':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(51,85,233,1.0)',
+                color: 'rgba(218,119,225,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5729,9 +6431,9 @@
                     break;
                 case '12':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(213,178,40,1.0)',
+                color: 'rgba(232,55,147,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5742,9 +6444,9 @@
                     break;
                 case '13':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(176,200,116,1.0)',
+                color: 'rgba(157,204,100,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5755,9 +6457,9 @@
                     break;
                 case '14':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(232,109,212,1.0)',
+                color: 'rgba(139,221,230,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5768,9 +6470,9 @@
                     break;
                 case '18':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(125,209,167,1.0)',
+                color: 'rgba(51,222,39,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5781,9 +6483,9 @@
                     break;
                 case '19':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(220,112,232,1.0)',
+                color: 'rgba(226,119,146,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5794,9 +6496,9 @@
                     break;
                 case '20':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(202,194,38,1.0)',
+                color: 'rgba(114,116,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5807,9 +6509,9 @@
                     break;
                 case '21':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(91,208,175,1.0)',
+                color: 'rgba(16,231,16,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5820,9 +6522,9 @@
                     break;
                 case '22':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(17,239,113,1.0)',
+                color: 'rgba(92,142,234,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5833,9 +6535,9 @@
                     break;
                 case '23':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(42,210,92,1.0)',
+                color: 'rgba(183,91,229,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5846,9 +6548,9 @@
                     break;
                 case '24':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(169,132,218,1.0)',
+                color: 'rgba(15,109,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5859,9 +6561,9 @@
                     break;
                 case '25':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(230,163,61,1.0)',
+                color: 'rgba(203,148,94,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5872,9 +6574,9 @@
                     break;
                 case '26':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(90,58,207,1.0)',
+                color: 'rgba(210,172,84,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5885,9 +6587,9 @@
                     break;
                 case '27':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(90,31,200,1.0)',
+                color: 'rgba(72,181,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5898,9 +6600,9 @@
                     break;
                 case '28':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(235,87,129,1.0)',
+                color: 'rgba(154,210,114,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5911,9 +6613,9 @@
                     break;
                 case '29':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(117,237,219,1.0)',
+                color: 'rgba(216,145,91,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5924,9 +6626,9 @@
                     break;
                 case '30':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(76,219,91,1.0)',
+                color: 'rgba(205,214,29,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5937,9 +6639,9 @@
                     break;
                 case '31':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(129,223,119,1.0)',
+                color: 'rgba(155,206,107,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5950,9 +6652,9 @@
                     break;
                 case '32':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(211,109,21,1.0)',
+                color: 'rgba(225,101,124,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5963,9 +6665,9 @@
                     break;
                 case '35':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(96,150,237,1.0)',
+                color: 'rgba(138,122,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5976,9 +6678,9 @@
                     break;
                 case '36':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(227,131,96,1.0)',
+                color: 'rgba(62,209,72,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5989,9 +6691,9 @@
                     break;
                 case '37':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(86,192,200,1.0)',
+                color: 'rgba(126,96,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6002,9 +6704,9 @@
                     break;
                 case '38':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(227,46,18,1.0)',
+                color: 'rgba(201,224,131,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6015,9 +6717,9 @@
                     break;
                 case '39':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(70,85,202,1.0)',
+                color: 'rgba(42,220,113,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6028,9 +6730,9 @@
                     break;
                 case '40':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(131,36,227,1.0)',
+                color: 'rgba(235,213,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6041,9 +6743,9 @@
                     break;
                 case '41':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(38,195,219,1.0)',
+                color: 'rgba(210,69,170,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6054,9 +6756,9 @@
                     break;
                 case '42':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(181,117,200,1.0)',
+                color: 'rgba(57,221,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6067,9 +6769,9 @@
                     break;
                 case '43':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(231,35,182,1.0)',
+                color: 'rgba(18,207,150,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6080,9 +6782,9 @@
                     break;
                 case '44':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(67,221,123,1.0)',
+                color: 'rgba(172,232,76,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6093,9 +6795,9 @@
                     break;
                 case '45':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(201,129,216,1.0)',
+                color: 'rgba(84,94,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6106,9 +6808,9 @@
                     break;
                 case '46':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(127,222,130,1.0)',
+                color: 'rgba(39,30,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6119,9 +6821,9 @@
                     break;
                 case '47':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(97,231,202,1.0)',
+                color: 'rgba(29,203,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6132,9 +6834,9 @@
                     break;
                 case '48':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(49,99,207,1.0)',
+                color: 'rgba(233,79,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6145,9 +6847,9 @@
                     break;
                 case '49':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(112,169,207,1.0)',
+                color: 'rgba(118,223,101,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6158,9 +6860,9 @@
                     break;
                 case '50':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(120,195,222,1.0)',
+                color: 'rgba(38,151,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6171,9 +6873,9 @@
                     break;
                 case '51':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(238,189,56,1.0)',
+                color: 'rgba(95,208,125,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6184,9 +6886,9 @@
                     break;
                 case '52':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(226,27,136,1.0)',
+                color: 'rgba(148,120,203,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6197,9 +6899,9 @@
                     break;
                 case '53':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(233,116,134,1.0)',
+                color: 'rgba(155,61,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6210,9 +6912,9 @@
                     break;
                 case '54':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(38,134,218,1.0)',
+                color: 'rgba(203,221,67,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6223,9 +6925,9 @@
                     break;
                 case '55':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(66,74,230,1.0)',
+                color: 'rgba(73,55,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6236,9 +6938,9 @@
                     break;
                 case '56':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(234,16,227,1.0)',
+                color: 'rgba(170,127,236,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6249,9 +6951,9 @@
                     break;
                 case '57':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(199,93,203,1.0)',
+                color: 'rgba(211,60,118,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6262,9 +6964,9 @@
                     break;
                 case '58':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(202,71,134,1.0)',
+                color: 'rgba(209,84,182,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6275,9 +6977,9 @@
                     break;
                 case '59':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(203,102,35,1.0)',
+                color: 'rgba(158,238,138,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6288,9 +6990,9 @@
                     break;
                 case '60':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(71,208,197,1.0)',
+                color: 'rgba(230,87,152,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6301,9 +7003,9 @@
                     break;
                 case '61':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(204,206,91,1.0)',
+                color: 'rgba(206,18,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6314,9 +7016,9 @@
                     break;
                 case '62':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(130,208,114,1.0)',
+                color: 'rgba(214,207,124,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6327,9 +7029,9 @@
                     break;
                 case '63':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(99,228,39,1.0)',
+                color: 'rgba(238,70,90,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6340,9 +7042,9 @@
                     break;
                 case '64':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(230,215,121,1.0)',
+                color: 'rgba(226,195,22,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6353,9 +7055,9 @@
                     break;
                 case '68':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(188,200,119,1.0)',
+                color: 'rgba(212,35,138,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6366,9 +7068,9 @@
                     break;
                 case '69':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(166,84,214,1.0)',
+                color: 'rgba(196,231,39,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6379,9 +7081,9 @@
                     break;
                 case '70':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(197,229,82,1.0)',
+                color: 'rgba(177,68,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6392,9 +7094,9 @@
                     break;
                 case '71':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(233,50,175,1.0)',
+                color: 'rgba(232,230,126,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6405,9 +7107,9 @@
                     break;
                 case '72':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(85,231,168,1.0)',
+                color: 'rgba(219,103,107,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6418,9 +7120,9 @@
                     break;
                 case '73':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(219,14,17,1.0)',
+                color: 'rgba(36,72,201,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6431,9 +7133,9 @@
                     break;
                 case '74':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(84,221,219,1.0)',
+                color: 'rgba(202,91,193,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6444,9 +7146,9 @@
                     break;
                 case '75':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(71,174,200,1.0)',
+                color: 'rgba(28,239,190,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6457,9 +7159,9 @@
                     break;
                 case '76':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(222,148,130,1.0)',
+                color: 'rgba(192,20,219,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6470,9 +7172,9 @@
                     break;
                 case '77':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(110,229,188,1.0)',
+                color: 'rgba(25,221,149,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6483,9 +7185,9 @@
                     break;
                 case '78':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(233,108,185,1.0)',
+                color: 'rgba(88,148,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6496,9 +7198,9 @@
                     break;
                 case '79':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(160,235,100,1.0)',
+                color: 'rgba(74,205,26,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6509,9 +7211,9 @@
                     break;
                 case '80':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(239,207,142,1.0)',
+                color: 'rgba(136,229,148,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6522,9 +7224,9 @@
                     break;
                 case '81':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(224,38,115,1.0)',
+                color: 'rgba(91,165,225,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6535,9 +7237,9 @@
                     break;
                 case '82':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(212,76,198,1.0)',
+                color: 'rgba(108,203,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6548,9 +7250,9 @@
                     break;
                 case '85':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(101,227,59,1.0)',
+                color: 'rgba(203,133,111,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6561,9 +7263,9 @@
                     break;
                 case '86':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(139,26,225,1.0)',
+                color: 'rgba(211,143,26,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6574,9 +7276,9 @@
                     break;
                 case '87':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(64,213,58,1.0)',
+                color: 'rgba(179,232,65,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6587,9 +7289,9 @@
                     break;
                 case '88':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(179,98,214,1.0)',
+                color: 'rgba(126,211,166,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6600,9 +7302,9 @@
                     break;
                 case '89':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(215,139,101,1.0)',
+                color: 'rgba(172,91,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6613,9 +7315,9 @@
                     break;
                 case '90':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(124,201,16,1.0)',
+                color: 'rgba(235,145,93,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6626,9 +7328,9 @@
                     break;
                 case '91':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(165,232,42,1.0)',
+                color: 'rgba(228,27,158,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6639,9 +7341,9 @@
                     break;
                 case '92':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(189,204,22,1.0)',
+                color: 'rgba(237,84,132,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6652,9 +7354,9 @@
                     break;
                 case '93':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(29,217,73,1.0)',
+                color: 'rgba(91,200,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6665,9 +7367,9 @@
                     break;
                 case '94':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(78,63,238,1.0)',
+                color: 'rgba(106,24,200,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6678,9 +7380,9 @@
                     break;
                 case '95':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(236,104,150,1.0)',
+                color: 'rgba(38,210,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6691,9 +7393,9 @@
                     break;
                 case '96':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(115,168,233,1.0)',
+                color: 'rgba(108,182,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6704,9 +7406,9 @@
                     break;
                 case '97':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(34,85,239,1.0)',
+                color: 'rgba(128,29,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6715,11 +7417,11 @@
                 interactive: true,
             }
                     break;
-                default:
+                case 'NULL':
                     return {
-                pane: 'pane_DOMJOINVILLE_12',
+                pane: 'pane_DOMJOINVILLE_13',
                 opacity: 1,
-                color: 'rgba(61,221,87,1.0)',
+                color: 'rgba(102,225,41,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6730,20 +7432,20 @@
                     break;
             }
         }
-        map.createPane('pane_DOMJOINVILLE_12');
-        map.getPane('pane_DOMJOINVILLE_12').style.zIndex = 412;
-        map.getPane('pane_DOMJOINVILLE_12').style['mix-blend-mode'] = 'normal';
-        var layer_DOMJOINVILLE_12 = new L.geoJson(json_DOMJOINVILLE_12, {
+        map.createPane('pane_DOMJOINVILLE_13');
+        map.getPane('pane_DOMJOINVILLE_13').style.zIndex = 413;
+        map.getPane('pane_DOMJOINVILLE_13').style['mix-blend-mode'] = 'normal';
+        var layer_DOMJOINVILLE_13 = new L.geoJson(json_DOMJOINVILLE_13, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_DOMJOINVILLE_12',
-            layerName: 'layer_DOMJOINVILLE_12',
-            pane: 'pane_DOMJOINVILLE_12',
-            onEachFeature: pop_DOMJOINVILLE_12,
-            style: style_DOMJOINVILLE_12_0,
+            dataVar: 'json_DOMJOINVILLE_13',
+            layerName: 'layer_DOMJOINVILLE_13',
+            pane: 'pane_DOMJOINVILLE_13',
+            onEachFeature: pop_DOMJOINVILLE_13,
+            style: style_DOMJOINVILLE_13_0,
         });
-        bounds_group.addLayer(layer_DOMJOINVILLE_12);
-        map.addLayer(layer_DOMJOINVILLE_12);
+        bounds_group.addLayer(layer_DOMJOINVILLE_13);
+        map.addLayer(layer_DOMJOINVILLE_13);
         var googleGeocoder = new L.Control.Geocoder({
             geocoder: L.Control.Geocoder.google('AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38', {}),
             collapsed: false,

@@ -3,7 +3,7 @@
 	background: white;
 	min-width: 26px;
 	min-height: 26px;
-	top: 100px;
+	top: 10px;
 	/* position: absolute; */
 	z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
     /* left: 100%; */
