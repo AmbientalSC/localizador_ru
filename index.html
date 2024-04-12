@@ -147,7 +147,7 @@
                         <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">FREQUENCIA:</th>\
+                        <th scope="row">FREQUÊNCIA:</th>\
                         <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -155,11 +155,11 @@
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">HORARIO:</th>\
+                        <th scope="row">HORÁRIO:</th>\
                         <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">OPERACAO:</th>\
+                        <th scope="row">OPERACÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -2909,7 +2909,7 @@
                         <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">FREQUENCIA:</th>\
+                        <th scope="row">FREQUÊNCIA:</th>\
                         <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -2917,11 +2917,11 @@
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">HORARIO:</th>\
+                        <th scope="row">HORÁRIO:</th>\
                         <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">OPERACAO:</th>\
+                        <th scope="row">OPERACÃO:</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
@@ -6036,7 +6036,7 @@
             div_OPERACAO.className= "filterselect";
             document.getElementById("menu").appendChild(div_OPERACAO);
             sel_OPERACAO = document.createElement('select');
-            sel_OPERACAO.multiple = true;
+            sel_OPERACAO.multiple = false;
             sel_OPERACAO.size = 2;
             sel_OPERACAO.id = "sel_OPERACAO";
             var OPERACAO_options_str = "<option value='Domiciliar' unselected>Domiciliar</option>";
