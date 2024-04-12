@@ -1,18 +1,13 @@
 .leaflet-control-geocoder {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: white;
 	min-width: 26px;
 	min-height: 26px;
-	top: 10px;
-	/* position: absolute; */
-	z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
-    /* left: 100%; */
 }
 
 .leaflet-touch .leaflet-control-geocoder {
 	min-width: 30px;
 	min-height: 30px;
-	
 }
 
 .leaflet-control-geocoder a, .leaflet-control-geocoder .leaflet-control-geocoder-icon {
@@ -122,5 +117,5 @@
 }
 
 .leaflet-control-geocoder-address-context {
-	color: #f60000;
+	color: #666;
 }
