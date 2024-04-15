@@ -359,6 +359,7 @@ module.exports = {
 
 		suggest: function(query, cb, context) {
 			return this.geocode(query, cb, context);
+
 		},
 
 		reverse: function(location, scale, cb, context) {
@@ -381,7 +382,9 @@ module.exports = {
 					});
 				}
 
-				cb.call(context, result);
+
+				cb.call(context, result)
+
 			});
 		}
 	}),
@@ -417,6 +420,7 @@ module.exports = {
 							name: resource.name,
 							bbox: L.latLngBounds([bbox[0], bbox[1]], [bbox[2], bbox[3]]),
 							center: L.latLng(resource.point.coordinates)
+
 						};
 					}
 				}
