@@ -10,8 +10,8 @@ module.exports = {
 			collapsed: true,
 			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Search...',
-			errorMessage: 'Nothing found.',
+			placeholder: 'Pesquise RUA/CEP + N° + Cidade',
+			errorMessage: 'Endereço não encontrado.',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
 			defaultMarkGeocode: true
