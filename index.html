@@ -123,12 +123,12 @@
                         <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">TURNO</th>\
-                        <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
                         <th scope="row">FREQUENCIA</th>\
                         <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">TURNO</th>\
+                        <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">HORARIO</th>\
@@ -3045,16 +3045,16 @@
                         <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                        <th scope="row">FREQUENCIA</th>\
+                        <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
                         <th scope="row">TURNO</th>\
                         <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">HORARIO</th>\
                         <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">FREQUENCIA</th>\
-                        <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">OPERACAO</th>\
@@ -6346,16 +6346,16 @@
             sel_OPERACAO.multiple = true;
             sel_OPERACAO.size = 2;
             sel_OPERACAO.id = "sel_OPERACAO";
-            var OPERACAO_options_str = "<option value='DOMICILIAR' unselected>DOMICILIAR</option>";
+            var OPERACAO_options_str = "<option value='DOMICILIAR' unselected>Domiciliar</option>";
             sel_OPERACAO.onchange = function(){filterFunc()};
-            OPERACAO_options_str  += '<option value="SELETIVA">SELETIVA</option>';
+            OPERACAO_options_str  += '<option value="SELETIVA">Seletiva</option>';
             sel_OPERACAO.innerHTML = OPERACAO_options_str;
             div_OPERACAO.appendChild(sel_OPERACAO);
             var lab_OPERACAO = document.createElement('div');
             lab_OPERACAO.className = 'filterlabel';
             div_OPERACAO.appendChild(lab_OPERACAO);
             var reset_OPERACAO = document.createElement('div');
-            reset_OPERACAO.innerHTML = 'LIMPAR FILTRO';
+            reset_OPERACAO.innerHTML = 'Limpar Filtro';
             reset_OPERACAO.className = 'filterlabel';
             reset_OPERACAO.onclick = function() {
                 var options = document.getElementById("sel_OPERACAO").options;
