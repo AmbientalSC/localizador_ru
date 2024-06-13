@@ -6498,10 +6498,10 @@
             sel_OPERACAO.multiple = true;
             sel_OPERACAO.size = 3;
             sel_OPERACAO.id = "sel_OPERACAO";
-            var OPERACAO_options_str = "<option value='DOMICILIAR' unselected>DOMICILIAR</option>";
+            var OPERACAO_options_str = "<option value='DOMICILIAR' unselected>Domiciliar</option>";
             sel_OPERACAO.onchange = function(){filterFunc()};
-            OPERACAO_options_str  += '<option value="SELETIVA">SELETIVA</option>';
-            OPERACAO_options_str  += '<option value="VOLUMOSOS">VOLUMOSOS BC</option>';
+            OPERACAO_options_str  += '<option value="SELETIVA">Seletiva</option>';
+            OPERACAO_options_str  += '<option value="VOLUMOSOS">Volumosos BC</option>';
             sel_OPERACAO.innerHTML = OPERACAO_options_str;
             div_OPERACAO.appendChild(sel_OPERACAO);
             var lab_OPERACAO = document.createElement('div');
