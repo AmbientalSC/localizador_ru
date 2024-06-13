@@ -6356,24 +6356,7 @@
             position: 'topleft',
             text: 'Search',
             title: 'Testing'
-        }).addTo(map);
-        googleGeocoder.on('markgeocode', function(e) {
-            var latlng = e.geocode.center;
-            console.log('Latitude: ' + latlng.lat + ', Longitude: ' + latlng.lng);
-        
-            // Create the URL for the Google Maps Street View
-            var streetViewUrl = 'https://www.google.com/maps?q&layer=c&cbll=' + latlng.lat + ',' + latlng.lng + '&cbp=11,0,0,0,0';
-            
-            // Create or update the iframe
-            var streetViewDiv = document.getElementById('streetview');
-            streetViewDiv.innerHTML = '<iframe width="100%" height="100%" frameborder="0" style="border:0" src="' + streetViewUrl + '" allowfullscreen></iframe>';
-        });
-
-        
-
-
-
-
+        }).addTo(map);    
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .className += ' fa fa-search';
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
