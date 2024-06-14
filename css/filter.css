@@ -27,30 +27,10 @@
     z-index: 1000; 
     padding-left: 10px;
 }
-    #infoDiv {
-        position: relative;
-        top: 10%;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.752);
-        padding: 10px;
-        padding-left: 10px; /* Espaço inicial da borda esquerda */
-        width:265px;
-        display: none;
 
-    }
-    #infoDiv2 {
-        position: relative;
-        top: 10%;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.752);
-        padding: 10px;
-        padding-left: 10px; /* Espaço inicial da borda esquerda */
-        width: 265px;
-        display: none;
-    }
   @media only screen and (max-width: 600px) {
     #aviso {
-        width: 90%; /* Define a largura como 90% da largura da tela em dispositivos com largura de tela de até 600 pixels */
+        width: 90%; 
         left: 50%;
         top: 24%;
         transform: translate(-50%, -50%);
