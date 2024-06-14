@@ -158,7 +158,8 @@ module.exports = {
 			}
 
 			this.fire('start' + mode, eventData);
-			this.options.geocoder[mode](this._input.value, function(results) {
+			this.options.geocoder[mode](this._input.value, 
+				function(results) {
 				if (requestCount === this._requestCount) {
 					eventData.results = results;
 					this.fire('finish' + mode, eventData);

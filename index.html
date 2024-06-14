@@ -64,7 +64,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:20, minZoom:1
-        }).fitBounds([[-26.67070381894798,-52.50903399459868],[-26.425434246525423,-52.17288068512643]]);
+        }).fitBounds([[-28.412784934674075,-54.52568929701133],[-24.547453041643987,-47.57687673476861]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix(' <a href="https://github.com/AmbientalSC" title="Ambiental Limpeza Urbana e Saneamento Ltda">Alysson Krombauer - rev13/06/24</a> &middot;<a href="https://ambiental.sc/" target="_blank">Ambiental.sc</a> &middot;');        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -6357,6 +6357,20 @@
             text: 'Search',
             title: 'Testing'
         }).addTo(map);    
+
+        googleGeocoder.on('markgeocode', function(e) {
+            var address = e.geocode.name
+            console.log(address)
+            var latlng = e.geocode.center;
+            console.log('Latitude: ' + latlng.lat + ', Longitude: ' + latlng.lng);
+ 
+            var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0`;
+ 
+            L.marker(latlng).addTo(map)
+                .bindPopup(`${address} <a href="${streetViewUrl}" target="_blank"><br>CLIQUE PARA VER NO GOOGLE STREET VIEW</a>`)
+                .openPopup();
+        });
+
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .className += ' fa fa-search';
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
