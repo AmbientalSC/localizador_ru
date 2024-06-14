@@ -6371,19 +6371,17 @@
         var address = e.geocode.name;
         var latlng = e.geocode.center;
 
-        var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0`;
+        var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=12,0,0,0,0`;
 
-        // Criar um iframe para mostrar o Street View
         var streetViewFrame = document.createElement('iframe');
         streetViewFrame.setAttribute('width', '100%');
-        streetViewFrame.setAttribute('height', '200px'); // Altura ajustável conforme necessário
+        streetViewFrame.setAttribute('height', '200px');
         streetViewFrame.setAttribute('frameborder', '0');
         streetViewFrame.setAttribute('style', 'border:0;');
         streetViewFrame.setAttribute('src', `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38&location=${latlng.lat},${latlng.lng}&heading=210&pitch=10&fov=35`);
 
-        // Limpar conteúdo existente na div e adicionar o iframe
         var streetViewDiv = document.getElementById('streetViewContainer');
-        streetViewDiv.innerHTML = ''; // Limpa qualquer conteúdo anterior
+        streetViewDiv.innerHTML = '';
         streetViewDiv.appendChild(streetViewFrame);
 
         L.marker(latlng).addTo(map)
