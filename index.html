@@ -6365,7 +6365,27 @@
             position: 'topleft',
             text: 'Search',
             title: 'Testing'
-        }).addTo(map);    
+        }).addTo(map);
+                // Adicionando o evento de escuta para a tecla "Enter"
+        var searchInput = document.querySelector('.leaflet-control-geocoder-form input[type=text]');
+        searchInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                var query = searchInput.value;
+                googleGeocoder.options.geocoder.geocode(query, function(results) {
+                    if (results && results.length > 0) {
+                        var result = results[0];
+                        map.setView(result.center, 13);
+                        if (googleGeocoder._marker) {
+                            map.removeLayer(googleGeocoder._marker);
+                        }
+                        googleGeocoder._marker = L.marker(result.center).addTo(map).bindPopup(result.name).openPopup();
+                    } else {
+                        alert('Nenhum resultado encontrado');
+                    }
+                });
+            }
+        });
 
         googleGeocoder.on('markgeocode', function(e) {
         var address = e.geocode.name;
