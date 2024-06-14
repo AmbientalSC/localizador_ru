@@ -37,10 +37,7 @@
     </head>
     <body>        
         <div id="streetViewContainer"></div>
-
-        <div id="map">
-
-        </div>
+        <div id="map"></div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/L.Control.Layers.Tree.min.js"></script>
@@ -6379,7 +6376,7 @@
         // Criar um iframe para mostrar o Street View
         var streetViewFrame = document.createElement('iframe');
         streetViewFrame.setAttribute('width', '100%');
-        streetViewFrame.setAttribute('height', '300px'); // Altura ajustável conforme necessário
+        streetViewFrame.setAttribute('height', '200px'); // Altura ajustável conforme necessário
         streetViewFrame.setAttribute('frameborder', '0');
         streetViewFrame.setAttribute('style', 'border:0;');
         streetViewFrame.setAttribute('src', `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38&location=${latlng.lat},${latlng.lng}&heading=210&pitch=10&fov=35`);
