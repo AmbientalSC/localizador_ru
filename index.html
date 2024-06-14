@@ -20,13 +20,25 @@
             padding: 0;
             margin: 0;
         }
+        #streetViewContainer {
+            position: absolute;
+            bottom: 10px; /* Ajuste conforme necessário */
+            left: 10px; /* Ajuste conforme necessário */
+            z-index: 1000; /* Garante que fique acima de outros elementos se necessário */
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhorar visibilidade */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 5px; /* Borda arredondada */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+
     </style>
     <title>Consulta de setores</title>
     <link rel="shortcut icon" type="image/jpg" href="icon.ico"/>    </head>    </head>
     </head>
-    <body>
+    <body>        
+        <div id="streetViewContainer"></div>
+
         <div id="map">
-        <div id="streetview" style="height: 400px; width: 100%; margin-top: 20px;"></div>
 
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -6359,17 +6371,29 @@
         }).addTo(map);    
 
         googleGeocoder.on('markgeocode', function(e) {
-            var address = e.geocode.name
-            console.log(address)
-            var latlng = e.geocode.center;
-            console.log('Latitude: ' + latlng.lat + ', Longitude: ' + latlng.lng);
- 
-            var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0`;
- 
-            L.marker(latlng).addTo(map)
-                .bindPopup(`${address} <a href="${streetViewUrl}" target="_blank"><br>CLIQUE PARA VER NO GOOGLE STREET VIEW</a>`)
-                .openPopup();
-        });
+        var address = e.geocode.name;
+        var latlng = e.geocode.center;
+
+        var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0`;
+
+        // Criar um iframe para mostrar o Street View
+        var streetViewFrame = document.createElement('iframe');
+        streetViewFrame.setAttribute('width', '100%');
+        streetViewFrame.setAttribute('height', '300px'); // Altura ajustável conforme necessário
+        streetViewFrame.setAttribute('frameborder', '0');
+        streetViewFrame.setAttribute('style', 'border:0;');
+        streetViewFrame.setAttribute('src', `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38&location=${latlng.lat},${latlng.lng}&heading=210&pitch=10&fov=35`);
+
+        // Limpar conteúdo existente na div e adicionar o iframe
+        var streetViewDiv = document.getElementById('streetViewContainer');
+        streetViewDiv.innerHTML = ''; // Limpa qualquer conteúdo anterior
+        streetViewDiv.appendChild(streetViewFrame);
+
+        L.marker(latlng).addTo(map)
+            .bindPopup(`<a href="${streetViewUrl}" target="_blank">${address} </a>`)
+            .openPopup();
+    });
+
 
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .className += ' fa fa-search';
