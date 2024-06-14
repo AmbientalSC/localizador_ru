@@ -6371,7 +6371,7 @@
         var address = e.geocode.name;
         var latlng = e.geocode.center;
 
-        var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=12,0,0,0,0`;
+        var streetViewUrl = `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0`;
 
         var streetViewFrame = document.createElement('iframe');
         streetViewFrame.setAttribute('width', '100%');
@@ -6388,7 +6388,6 @@
             .bindPopup(`<a href="${streetViewUrl}" target="_blank">${address} </a>`)
             .openPopup();
     });
-
 
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .className += ' fa fa-search';
