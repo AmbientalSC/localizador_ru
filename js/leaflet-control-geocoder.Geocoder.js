@@ -10,7 +10,7 @@ module.exports = {
 			collapsed: true,
 			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Pesquise RUA/CEP + N° + Cidade',
+			placeholder: 'Pesquise RUA/CEP + N° + Cidade...',
 			errorMessage: 'Nothing found.',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
@@ -76,7 +76,7 @@ module.exports = {
 				else if (L.Browser.touch && this.options.expand === 'touch') {
 					L.DomEvent.addListener(container, 'touchstart mousedown', function(e) {
 						this._toggle();
-						// e.preventDefault(); // mobile: clicking focuses the icon, so UI expands and immediately collapses
+						e.preventDefault(); // mobile: clicking focuses the icon, so UI expands and immediately collapses
 						e.stopPropagation();
 					}, this);
 				}
@@ -158,8 +158,7 @@ module.exports = {
 			}
 
 			this.fire('start' + mode, eventData);
-			this.options.geocoder[mode](this._input.value, 
-				function(results) {
+			this.options.geocoder[mode](this._input.value, function(results) {
 				if (requestCount === this._requestCount) {
 					eventData.results = results;
 					this.fire('finish' + mode, eventData);
