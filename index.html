@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/filter.css">
-        <link rel="stylesheet" href="css/nouislider.min.css">
+<link rel="stylesheet" href="css/nouislider.min.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <style>
         html, body, #map {
@@ -19,8 +19,7 @@
             height: 100%;
             padding: 0;
             margin: 0;
-        }       
-        #streetViewContainer {
+        }        #streetViewContainer {
             position: absolute;
             bottom: 10px; /* Ajuste conforme necessário */
             left: 10px; /* Ajuste conforme necessário */
@@ -32,12 +31,10 @@
         }
         </style>
     <title>Consulta de setores</title>
-    <link rel="shortcut icon" type="image/jpg" href="icon.ico"/>    </head>    </head>
-
+    <link rel="shortcut icon" type="image/jpg" href="icon.ico"/>
     </head>
     <body>
         <div id="streetViewContainer"></div>
-
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -52,8 +49,8 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/tailDT.js"></script>
-        <script src="js/nouislider.min.js"></script>
-        <script src="js/wNumb.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wNumb.js"></script>
         <script src="data/Volumosos_1.js"></script>
         <script src="data/Domiciliar_2.js"></script>
         <script src="data/Seletiva_3.js"></script>
@@ -75,9 +72,9 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:20, minZoom:1
-        }).fitBounds([[-27.855153530579834,-50.073913889503295],[-25.892996951215743,-46.46874668043072]]);
+        }).fitBounds([[-26.425360932554476,-49.05357274036278],[-26.1494326635814,-48.547011656208895]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix(' <a href="https://github.com/AmbientalSC" title="Ambiental Limpeza Urbana e Saneamento Ltda">Alysson Krombauer - rev27/06/24</a> &middot;<a href="https://ambiental.sc/" target="_blank">Ambiental.sc</a> &middot;');        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        map.attributionControl.setPrefix(' <a href="https://github.com/AmbientalSC" title="Ambiental Limpeza Urbana e Saneamento Ltda">Alysson Krombauer - rev15/07/24</a> &middot;<a href="https://ambiental.sc/" target="_blank">Ambiental.sc</a> &middot;');        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         function removeEmptyRowsFromPopupContent(content, feature) {
          var tempDiv = document.createElement('div');
@@ -286,7 +283,7 @@
                         <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">OPERAÇÃO</th>\
+                        <th scope="row">OPERACAO</th>\
                         <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -3284,27 +3281,27 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">SETOR</th>\
-                        <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">FREQUÊNCIA</th>\
-                        <td colspan="2">' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['FREQUENCIA'] !== null ? autolinker.link(feature.properties['FREQUENCIA'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">TURNO</th>\
-                        <td colspan="2">' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['TURNO'] !== null ? autolinker.link(feature.properties['TURNO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">HORÁRIO</th>\
-                        <td colspan="2">' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['HORARIO'] !== null ? autolinker.link(feature.properties['HORARIO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">OPERAÇÃO</th>\
-                        <td colspan="2">' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['OPERACAO'] !== null ? autolinker.link(feature.properties['OPERACAO'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">FILIAL</th>\
-                        <td colspan="2">' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['FILIAL'] !== null ? autolinker.link(feature.properties['FILIAL'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -3316,11 +3313,11 @@
 
         function style_Seletiva_3_0(feature) {
             switch(String(feature.properties['Name'])) {
-                case '001 - BUCAREIN':
+                case '001':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(204,155,114,1.0)',
+                color: 'rgba(25,223,147,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3329,11 +3326,11 @@
                 interactive: true,
             }
                     break;
-                case '002 - ATIRADORES':
+                case '002':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(63,24,215,1.0)',
+                color: 'rgba(90,186,234,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3342,11 +3339,11 @@
                 interactive: true,
             }
                     break;
-                case '003 - ANITA GARIBALDI':
+                case '003':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(46,106,228,1.0)',
+                color: 'rgba(50,218,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3355,11 +3352,11 @@
                 interactive: true,
             }
                     break;
-                case '004 - SÃO MARCOS':
+                case '004':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(141,205,124,1.0)',
+                color: 'rgba(212,91,190,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3368,11 +3365,11 @@
                 interactive: true,
             }
                     break;
-                case '005 - MORRO DO MEIO':
+                case '005':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(191,240,94,1.0)',
+                color: 'rgba(29,82,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3381,11 +3378,11 @@
                 interactive: true,
             }
                     break;
-                case '006 - MORRO DO MEIO':
+                case '006':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(108,149,220,1.0)',
+                color: 'rgba(163,206,122,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3394,11 +3391,11 @@
                 interactive: true,
             }
                     break;
-                case '007 - VILA NOVA':
+                case '007':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(227,87,62,1.0)',
+                color: 'rgba(127,207,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3407,11 +3404,11 @@
                 interactive: true,
             }
                     break;
-                case '008 - VILA NOVA / SUÍÇOS':
+                case '008':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(49,55,221,1.0)',
+                color: 'rgba(216,43,49,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3420,11 +3417,11 @@
                 interactive: true,
             }
                     break;
-                case '009.1 - RURAL':
+                case '009.1':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(203,56,110,1.0)',
+                color: 'rgba(81,116,213,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3433,11 +3430,11 @@
                 interactive: true,
             }
                     break;
-                case '009.2 - RURAL':
+                case '009.2':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(207,162,90,1.0)',
+                color: 'rgba(217,101,55,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3446,11 +3443,11 @@
                 interactive: true,
             }
                     break;
-                case '009.3 - RURAL':
+                case '009.3':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(202,51,40,1.0)',
+                color: 'rgba(81,217,39,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3459,11 +3456,11 @@
                 interactive: true,
             }
                     break;
-                case '009.4 - RURAL':
+                case '009.4':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(131,145,234,1.0)',
+                color: 'rgba(206,76,226,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3472,11 +3469,11 @@
                 interactive: true,
             }
                     break;
-                case '009.5 - RURAL':
+                case '009.5':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(168,97,240,1.0)',
+                color: 'rgba(35,141,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3485,11 +3482,11 @@
                 interactive: true,
             }
                     break;
-                case '010 - VILA NOVA / ANANBURGO':
+                case '010':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(187,209,101,1.0)',
+                color: 'rgba(60,213,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3498,11 +3495,11 @@
                 interactive: true,
             }
                     break;
-                case '011 - BUCAREIN / ANITA GARIBALDI':
+                case '011':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(240,121,210,1.0)',
+                color: 'rgba(93,104,234,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3511,11 +3508,11 @@
                 interactive: true,
             }
                     break;
-                case '012 - SANTO ANTÔNIO':
+                case '012':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(162,119,218,1.0)',
+                color: 'rgba(207,82,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3524,11 +3521,11 @@
                 interactive: true,
             }
                     break;
-                case '013 - SAGUAÇU':
+                case '013':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(211,63,75,1.0)',
+                color: 'rgba(107,98,230,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3537,11 +3534,11 @@
                 interactive: true,
             }
                     break;
-                case '014 - SAGUAÇU / BELA VISTA':
+                case '014':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(147,109,218,1.0)',
+                color: 'rgba(163,59,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3550,11 +3547,11 @@
                 interactive: true,
             }
                     break;
-                case '015 - IRIRIÚ / TORIBIO':
+                case '015':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(210,97,225,1.0)',
+                color: 'rgba(99,145,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3563,11 +3560,11 @@
                 interactive: true,
             }
                     break;
-                case '016 - SAGUAÇU / BOM RETIRO':
+                case '016':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(205,214,86,1.0)',
+                color: 'rgba(121,208,177,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3576,11 +3573,11 @@
                 interactive: true,
             }
                     break;
-                case '017 - AMÉRICA':
+                case '017':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(156,93,211,1.0)',
+                color: 'rgba(85,60,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3589,11 +3586,11 @@
                 interactive: true,
             }
                     break;
-                case '018 - SANTO ANTÔNIO / PRUDENTE':
+                case '018':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(69,38,206,1.0)',
+                color: 'rgba(208,218,102,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3602,11 +3599,11 @@
                 interactive: true,
             }
                     break;
-                case '019 - COSTA E SILVA / GUILHERME':
+                case '019':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(209,129,120,1.0)',
+                color: 'rgba(98,202,197,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3615,11 +3612,11 @@
                 interactive: true,
             }
                     break;
-                case '020 - COSTA E SILVA / OTTO':
+                case '020':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(91,224,175,1.0)',
+                color: 'rgba(68,84,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3628,11 +3625,11 @@
                 interactive: true,
             }
                     break;
-                case '021 - SANTO ANTÔNIO':
+                case '021':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(226,104,124,1.0)',
+                color: 'rgba(202,223,132,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3641,11 +3638,11 @@
                 interactive: true,
             }
                     break;
-                case '022 - SAGUAÇU / IRIRIÚ':
+                case '022':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(66,225,196,1.0)',
+                color: 'rgba(125,232,153,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3654,11 +3651,11 @@
                 interactive: true,
             }
                     break;
-                case '023 - ULISSES GUIMARÃES':
+                case '023':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(121,215,202,1.0)',
+                color: 'rgba(216,142,234,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3667,11 +3664,11 @@
                 interactive: true,
             }
                     break;
-                case '024 - ADEMARA GARCIA':
+                case '024':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(139,111,209,1.0)',
+                color: 'rgba(167,240,72,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3680,11 +3677,11 @@
                 interactive: true,
             }
                     break;
-                case '025 - ADEMAR GARCIA / FÁTIMA':
+                case '025':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(221,157,117,1.0)',
+                color: 'rgba(226,122,166,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3693,11 +3690,11 @@
                 interactive: true,
             }
                     break;
-                case '026 - FÁTIMA':
+                case '026':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(111,179,216,1.0)',
+                color: 'rgba(144,240,134,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3706,11 +3703,11 @@
                 interactive: true,
             }
                     break;
-                case '027 - GUANABARA':
+                case '027':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(237,145,106,1.0)',
+                color: 'rgba(127,201,23,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3719,11 +3716,11 @@
                 interactive: true,
             }
                     break;
-                case '028 - ITAUM / GUANABARA':
+                case '028':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(231,119,88,1.0)',
+                color: 'rgba(59,234,108,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3732,11 +3729,11 @@
                 interactive: true,
             }
                     break;
-                case '029 - ITAUM':
+                case '029':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(78,201,215,1.0)',
+                color: 'rgba(202,104,95,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3745,11 +3742,11 @@
                 interactive: true,
             }
                     break;
-                case '030 - PETRÓPOLIS / ALFREDO WAGNER':
+                case '030':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(128,217,148,1.0)',
+                color: 'rgba(213,23,42,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3758,11 +3755,11 @@
                 interactive: true,
             }
                     break;
-                case '031 - PETRÓPOLIS / FLORESTA':
+                case '031':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(213,59,131,1.0)',
+                color: 'rgba(126,221,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3771,11 +3768,11 @@
                 interactive: true,
             }
                     break;
-                case '032 - PETRÓPOLIS / ITAUM':
+                case '032':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(118,230,93,1.0)',
+                color: 'rgba(54,223,24,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3784,11 +3781,11 @@
                 interactive: true,
             }
                     break;
-                case '033 - FÁTIMA / GUANABARA':
+                case '033':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(82,202,45,1.0)',
+                color: 'rgba(188,232,100,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3797,11 +3794,11 @@
                 interactive: true,
             }
                     break;
-                case '034 - JARDIM IRIRIÚ':
+                case '034':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(87,36,207,1.0)',
+                color: 'rgba(237,142,40,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3810,11 +3807,11 @@
                 interactive: true,
             }
                     break;
-                case '035 - IRIRIÚ':
+                case '035':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(213,28,40,1.0)',
+                color: 'rgba(133,76,203,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3823,11 +3820,11 @@
                 interactive: true,
             }
                     break;
-                case '036 - JARDIM IRIRIÚ':
+                case '036':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(43,43,215,1.0)',
+                color: 'rgba(238,63,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3836,11 +3833,11 @@
                 interactive: true,
             }
                     break;
-                case '037 - JARDIM IRIRIÚ / VILA SANTA':
+                case '037':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(218,180,85,1.0)',
+                color: 'rgba(183,238,43,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3849,11 +3846,11 @@
                 interactive: true,
             }
                     break;
-                case '038 - AVENTUREIRO / JARDIM IRIRIÚ':
+                case '038':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(51,203,69,1.0)',
+                color: 'rgba(144,235,123,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3862,11 +3859,11 @@
                 interactive: true,
             }
                     break;
-                case '039 - AVENTUREIRO / HCG':
+                case '039':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(136,127,218,1.0)',
+                color: 'rgba(223,84,158,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3875,11 +3872,11 @@
                 interactive: true,
             }
                     break;
-                case '040 - AVENTUREIRO / AZULÃO':
+                case '040':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(111,230,226,1.0)',
+                color: 'rgba(202,55,68,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3888,11 +3885,11 @@
                 interactive: true,
             }
                     break;
-                case '041 - AVENTUREIRO / PERDIZ':
+                case '041':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(213,175,129,1.0)',
+                color: 'rgba(145,87,200,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3901,11 +3898,11 @@
                 interactive: true,
             }
                     break;
-                case '042 - AVENTUREIRO / LORIVAL TABBERT':
+                case '042':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(212,12,169,1.0)',
+                color: 'rgba(211,80,100,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3914,11 +3911,11 @@
                 interactive: true,
             }
                     break;
-                case '043 - AVENTUREIRO / ALOIS FINDER':
+                case '043':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(220,84,161,1.0)',
+                color: 'rgba(228,46,173,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3927,11 +3924,11 @@
                 interactive: true,
             }
                     break;
-                case '044 - JARDIM IRIRIÚ / JANAUBA':
+                case '044':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(159,236,120,1.0)',
+                color: 'rgba(223,80,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3940,11 +3937,11 @@
                 interactive: true,
             }
                     break;
-                case '045 - BOEHMERWALD':
+                case '045':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(206,19,69,1.0)',
+                color: 'rgba(216,82,151,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3953,11 +3950,11 @@
                 interactive: true,
             }
                     break;
-                case '046 - PROFIPO':
+                case '046':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(224,153,83,1.0)',
+                color: 'rgba(114,231,138,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3966,11 +3963,11 @@
                 interactive: true,
             }
                     break;
-                case '047 - FLORESTA / HERMES KRUGUER':
+                case '047':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(214,29,140,1.0)',
+                color: 'rgba(190,71,237,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3979,11 +3976,11 @@
                 interactive: true,
             }
                     break;
-                case '048 - NOVA BRASÍLIA / 101':
+                case '048':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(143,192,236,1.0)',
+                color: 'rgba(205,58,77,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -3992,11 +3989,11 @@
                 interactive: true,
             }
                     break;
-                case '049 - NOVA BRASÍLIA / MINAS GERAIS':
+                case '049':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(154,212,110,1.0)',
+                color: 'rgba(185,234,101,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4005,11 +4002,11 @@
                 interactive: true,
             }
                     break;
-                case '050 - FLORESTA / PORTO RICO':
+                case '050':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(61,208,166,1.0)',
+                color: 'rgba(213,98,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4018,11 +4015,11 @@
                 interactive: true,
             }
                     break;
-                case '051 - FLORESTA / BOTAFOGO':
+                case '051':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(145,233,132,1.0)',
+                color: 'rgba(62,92,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4031,11 +4028,11 @@
                 interactive: true,
             }
                     break;
-                case '052 - FLORESTA / SÃO ROQUE':
+                case '052':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(48,23,206,1.0)',
+                color: 'rgba(226,13,155,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4044,11 +4041,11 @@
                 interactive: true,
             }
                     break;
-                case '053 - FLORESTA / IBIRAPUERA':
+                case '053':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(191,129,226,1.0)',
+                color: 'rgba(205,179,64,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4057,11 +4054,11 @@
                 interactive: true,
             }
                     break;
-                case '054 - FLORESTA / NILO PEÇANHA':
+                case '054':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(74,213,127,1.0)',
+                color: 'rgba(114,112,225,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4070,11 +4067,11 @@
                 interactive: true,
             }
                     break;
-                case '055 - FLORESTA / BOEHMERWALD':
+                case '055':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(44,214,141,1.0)',
+                color: 'rgba(233,134,129,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4083,11 +4080,11 @@
                 interactive: true,
             }
                     break;
-                case '056 - VILA NOVA':
+                case '056':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(231,19,227,1.0)',
+                color: 'rgba(178,203,76,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4096,11 +4093,11 @@
                 interactive: true,
             }
                     break;
-                case '057 - GLÓRIA':
+                case '057':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(161,211,96,1.0)',
+                color: 'rgba(133,205,109,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4109,11 +4106,11 @@
                 interactive: true,
             }
                     break;
-                case '058 - COSTA E SILVA':
+                case '058':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(52,202,90,1.0)',
+                color: 'rgba(214,164,126,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4122,11 +4119,11 @@
                 interactive: true,
             }
                     break;
-                case '059 - COSTA E SILVA / LUIZ BACTOLD':
+                case '059':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(227,209,118,1.0)',
+                color: 'rgba(177,101,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4135,11 +4132,11 @@
                 interactive: true,
             }
                     break;
-                case '060 - COSTA E SILVA / JACOB':
+                case '060':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(42,213,76,1.0)',
+                color: 'rgba(233,189,127,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4148,11 +4145,11 @@
                 interactive: true,
             }
                     break;
-                case '061 - COSTA E SILVA / GLÓRIA':
+                case '061':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(131,229,133,1.0)',
+                color: 'rgba(89,228,203,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4161,11 +4158,11 @@
                 interactive: true,
             }
                     break;
-                case '062 - PIRABEIRABA / RURAL':
+                case '062':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(207,85,201,1.0)',
+                color: 'rgba(215,162,116,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4174,11 +4171,11 @@
                 interactive: true,
             }
                     break;
-                case '063 - JARDIM SOFIA':
+                case '063':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(86,92,213,1.0)',
+                color: 'rgba(204,209,52,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4187,11 +4184,11 @@
                 interactive: true,
             }
                     break;
-                case '064 - JARDIM SOFIA / VILA CUBATÃO':
+                case '064':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(102,220,102,1.0)',
+                color: 'rgba(235,142,113,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4200,11 +4197,11 @@
                 interactive: true,
             }
                     break;
-                case '065 - COSTA E SILVA / ELZA MEINERT':
+                case '065':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(212,201,78,1.0)',
+                color: 'rgba(218,97,150,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4213,11 +4210,11 @@
                 interactive: true,
             }
                     break;
-                case '066 - AVENTUREIRO / RIO DO FERRO':
+                case '066':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(217,94,180,1.0)',
+                color: 'rgba(117,220,152,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4226,11 +4223,11 @@
                 interactive: true,
             }
                     break;
-                case '067 - GLÓRIA':
+                case '067':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(19,216,114,1.0)',
+                color: 'rgba(129,214,122,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4239,11 +4236,11 @@
                 interactive: true,
             }
                     break;
-                case '068 - GLÓRIA / LINDÓIA':
+                case '068':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(239,141,182,1.0)',
+                color: 'rgba(236,99,197,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4252,11 +4249,11 @@
                 interactive: true,
             }
                     break;
-                case '069 - AMÉRICA / GLÓRIA':
+                case '069':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(176,237,86,1.0)',
+                color: 'rgba(195,235,74,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4265,11 +4262,11 @@
                 interactive: true,
             }
                     break;
-                case '070 - AMÉRICA':
+                case '070':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(141,202,27,1.0)',
+                color: 'rgba(215,110,189,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4278,11 +4275,11 @@
                 interactive: true,
             }
                     break;
-                case '071 - AMÉRICA / ATIRADORES':
+                case '071':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(209,175,81,1.0)',
+                color: 'rgba(75,142,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4291,11 +4288,11 @@
                 interactive: true,
             }
                     break;
-                case '072 - ITAUM / PETRÓPOLIS':
+                case '072':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(228,212,92,1.0)',
+                color: 'rgba(206,74,18,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4304,11 +4301,11 @@
                 interactive: true,
             }
                     break;
-                case '073 - PETRÓPOLIS':
+                case '073':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(212,103,97,1.0)',
+                color: 'rgba(131,160,222,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4317,11 +4314,11 @@
                 interactive: true,
             }
                     break;
-                case '074 - PETRÓPOLIS / BOEMERWALD':
+                case '074':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(37,33,219,1.0)',
+                color: 'rgba(159,16,225,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4330,11 +4327,11 @@
                 interactive: true,
             }
                     break;
-                case '075 - BOEHMERWALD':
+                case '075':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(206,42,116,1.0)',
+                color: 'rgba(166,223,116,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4343,11 +4340,11 @@
                 interactive: true,
             }
                     break;
-                case '076 - ITINGA':
+                case '076':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(147,205,121,1.0)',
+                color: 'rgba(220,113,101,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4356,11 +4353,11 @@
                 interactive: true,
             }
                     break;
-                case '077 - ITINGA FINAL':
+                case '077':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(137,211,94,1.0)',
+                color: 'rgba(220,107,42,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4369,11 +4366,11 @@
                 interactive: true,
             }
                     break;
-                case '078 - BOM RETIRO':
+                case '078':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(73,206,227,1.0)',
+                color: 'rgba(117,104,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4382,11 +4379,11 @@
                 interactive: true,
             }
                     break;
-                case '079 - BOM RETIRO / OTTO NASS':
+                case '079':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(159,121,201,1.0)',
+                color: 'rgba(155,44,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4395,11 +4392,11 @@
                 interactive: true,
             }
                     break;
-                case '080 - BOM RETIRO / OTTO NASS':
+                case '080':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(55,214,118,1.0)',
+                color: 'rgba(99,42,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4408,11 +4405,11 @@
                 interactive: true,
             }
                     break;
-                case '081 - JARDIM PARAÍSO / TIMBÉ':
+                case '081':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(154,98,232,1.0)',
+                color: 'rgba(102,231,192,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4421,11 +4418,11 @@
                 interactive: true,
             }
                     break;
-                case '082 - JARDIM PARAÍSO / CRUX':
+                case '082':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(21,176,238,1.0)',
+                color: 'rgba(160,45,202,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4434,11 +4431,11 @@
                 interactive: true,
             }
                     break;
-                case '083 - JARDIM PARAÍSO / AV PLUTÃO':
+                case '083':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(95,176,216,1.0)',
+                color: 'rgba(24,100,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4447,11 +4444,11 @@
                 interactive: true,
             }
                     break;
-                case '084 - QUIRIRI':
+                case '084':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(216,118,190,1.0)',
+                color: 'rgba(68,193,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4460,11 +4457,11 @@
                 interactive: true,
             }
                     break;
-                case '085 - QUIRIRI':
+                case '085':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(97,208,57,1.0)',
+                color: 'rgba(201,158,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4473,11 +4470,11 @@
                 interactive: true,
             }
                     break;
-                case '086 - RIO BONITO / CANELA':
+                case '086':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(218,135,90,1.0)',
+                color: 'rgba(137,230,71,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4486,11 +4483,11 @@
                 interactive: true,
             }
                     break;
-                case '087 - RIO BONITO':
+                case '087':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(130,73,220,1.0)',
+                color: 'rgba(167,202,13,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4499,11 +4496,11 @@
                 interactive: true,
             }
                     break;
-                case '088 - PIRABEIRABA CENTRO':
+                case '088':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(238,112,135,1.0)',
+                color: 'rgba(53,75,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4512,11 +4509,11 @@
                 interactive: true,
             }
                     break;
-                case '089 - ULISSES GUIMARÃES':
+                case '089':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(33,18,204,1.0)',
+                color: 'rgba(156,222,50,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4525,11 +4522,11 @@
                 interactive: true,
             }
                     break;
-                case '090 - JARIVATUBA / ULISSES GUIMARÃES':
+                case '090':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(206,199,58,1.0)',
+                color: 'rgba(45,214,45,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4538,11 +4535,11 @@
                 interactive: true,
             }
                     break;
-                case '091 - FÁTIMA':
+                case '091':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(200,128,234,1.0)',
+                color: 'rgba(224,81,174,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4551,11 +4548,11 @@
                 interactive: true,
             }
                     break;
-                case '092 - JARIVATUBA':
+                case '092':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(109,236,95,1.0)',
+                color: 'rgba(60,212,65,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4564,11 +4561,11 @@
                 interactive: true,
             }
                     break;
-                case '093 - FÁTIMA / ITAUM':
+                case '093':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(117,168,234,1.0)',
+                color: 'rgba(227,211,37,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4577,11 +4574,11 @@
                 interactive: true,
             }
                     break;
-                case '094 - PARQUE GUARANI':
+                case '094':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(38,142,206,1.0)',
+                color: 'rgba(113,219,184,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4590,11 +4587,11 @@
                 interactive: true,
             }
                     break;
-                case '095 - PARQUE GUARANI':
+                case '095':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(20,108,208,1.0)',
+                color: 'rgba(90,56,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4603,11 +4600,11 @@
                 interactive: true,
             }
                     break;
-                case '096 - JOÃO COSTA / PARQUE GUARANI':
+                case '096':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(15,218,72,1.0)',
+                color: 'rgba(24,222,199,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4616,11 +4613,11 @@
                 interactive: true,
             }
                     break;
-                case '097 - BOEHMERWALD / PARQUE GUARANI':
+                case '097':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(234,123,85,1.0)',
+                color: 'rgba(230,215,78,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4629,11 +4626,11 @@
                 interactive: true,
             }
                     break;
-                case '098 - BOEHMERWALD':
+                case '098':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(27,130,239,1.0)',
+                color: 'rgba(42,229,132,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4642,11 +4639,11 @@
                 interactive: true,
             }
                     break;
-                case '099 - PARQUE GUARANI':
+                case '099':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(223,134,50,1.0)',
+                color: 'rgba(107,237,42,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4655,11 +4652,11 @@
                 interactive: true,
             }
                     break;
-                case '100 - ESPINHEIRO 2':
+                case '100':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(220,234,95,1.0)',
+                color: 'rgba(29,233,18,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4668,11 +4665,11 @@
                 interactive: true,
             }
                     break;
-                case '101 - ESPINHEIRO 1':
+                case '101':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(212,26,100,1.0)',
+                color: 'rgba(107,34,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4681,11 +4678,11 @@
                 interactive: true,
             }
                     break;
-                case '102 - COMASA / ESPINHEIRO':
+                case '102':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(85,223,223,1.0)',
+                color: 'rgba(124,219,181,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4694,11 +4691,11 @@
                 interactive: true,
             }
                     break;
-                case '103 - COMASA / RIO DO CAMPO':
+                case '103':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(61,207,168,1.0)',
+                color: 'rgba(38,207,92,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4707,11 +4704,11 @@
                 interactive: true,
             }
                     break;
-                case '104 - COMASA / BOA VISTA':
+                case '104':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(157,204,110,1.0)',
+                color: 'rgba(200,58,207,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4720,11 +4717,11 @@
                 interactive: true,
             }
                     break;
-                case '105 - IRIRIÚ / POMERODE':
+                case '105':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(216,74,195,1.0)',
+                color: 'rgba(224,162,54,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4733,11 +4730,11 @@
                 interactive: true,
             }
                     break;
-                case '106 - IRIRIÚ / PASTEUR':
+                case '106':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(43,203,142,1.0)',
+                color: 'rgba(71,154,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4746,11 +4743,11 @@
                 interactive: true,
             }
                     break;
-                case '107 - IRIRIÚ / CORONEL CAMACHO':
+                case '107':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(113,200,219,1.0)',
+                color: 'rgba(40,236,59,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4759,11 +4756,11 @@
                 interactive: true,
             }
                     break;
-                case '108 - IRIRIÚ / PRES. KENNEDY':
+                case '108':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(213,120,238,1.0)',
+                color: 'rgba(227,52,21,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4772,11 +4769,11 @@
                 interactive: true,
             }
                     break;
-                case '109 - IRIRIÚ / JOÃO DIPPE':
+                case '109':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(233,215,101,1.0)',
+                color: 'rgba(215,232,61,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4785,11 +4782,11 @@
                 interactive: true,
             }
                     break;
-                case '110 - AVENTUREIRO':
+                case '110':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(224,13,199,1.0)',
+                color: 'rgba(18,194,214,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4798,11 +4795,11 @@
                 interactive: true,
             }
                     break;
-                case '111 - AVENTUREIRO':
+                case '111':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(33,221,23,1.0)',
+                color: 'rgba(156,36,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4811,11 +4808,11 @@
                 interactive: true,
             }
                     break;
-                case '112 - JOÃO COSTA / SANTA ISABEL':
+                case '112':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(162,234,117,1.0)',
+                color: 'rgba(123,119,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4824,11 +4821,11 @@
                 interactive: true,
             }
                     break;
-                case '113 - JOÃO COSTA / PARANAGUAMIRIM':
+                case '113':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(68,206,89,1.0)',
+                color: 'rgba(145,230,99,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4837,11 +4834,11 @@
                 interactive: true,
             }
                     break;
-                case '114 - PARANAGUAMIRIM / DOS MECANICOS':
+                case '114':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(196,202,76,1.0)',
+                color: 'rgba(202,196,13,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4850,11 +4847,11 @@
                 interactive: true,
             }
                     break;
-                case '115 - ESTEVÃO DE MATOS':
+                case '115':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(63,237,165,1.0)',
+                color: 'rgba(94,240,199,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4863,11 +4860,11 @@
                 interactive: true,
             }
                     break;
-                case '116 - PARANAGUAMIRIM / ESTEVÃO DE MATOS':
+                case '116':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(206,223,80,1.0)',
+                color: 'rgba(58,67,226,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4876,11 +4873,11 @@
                 interactive: true,
             }
                     break;
-                case '117 - PARANAGUAMIRIM':
+                case '117':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(74,205,47,1.0)',
+                color: 'rgba(117,152,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4889,11 +4886,11 @@
                 interactive: true,
             }
                     break;
-                case '118 - MORRO DO AMARAL':
+                case '118':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(225,225,137,1.0)',
+                color: 'rgba(115,221,73,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4902,11 +4899,11 @@
                 interactive: true,
             }
                     break;
-                case '119 - NOVA BRASÍLIA / AMÉRICO VESPÚCIO':
+                case '119':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(78,163,200,1.0)',
+                color: 'rgba(196,81,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4915,11 +4912,11 @@
                 interactive: true,
             }
                     break;
-                case '120 - NOVA BRASÍLIA / JATIVOCA':
+                case '120':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(209,173,43,1.0)',
+                color: 'rgba(126,207,64,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4928,11 +4925,11 @@
                 interactive: true,
             }
                     break;
-                case '121 - NOVA BRASÍLIA / JATIVOCA':
+                case '121':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(51,233,133,1.0)',
+                color: 'rgba(147,101,240,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4941,11 +4938,11 @@
                 interactive: true,
             }
                     break;
-                case '122 - BOA VISTA / SAGUAÇU':
+                case '122':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(101,93,238,1.0)',
+                color: 'rgba(105,148,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4954,11 +4951,11 @@
                 interactive: true,
             }
                     break;
-                case '123 - BOA VISTA / DAS VIOLETAS':
+                case '123':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(161,47,237,1.0)',
+                color: 'rgba(34,227,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4967,11 +4964,11 @@
                 interactive: true,
             }
                     break;
-                case '124 - BOA VISTA / SÃO MIGUEL':
+                case '124':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(227,24,126,1.0)',
+                color: 'rgba(70,70,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4980,11 +4977,11 @@
                 interactive: true,
             }
                     break;
-                case '125 - BOA VISTA / PAQUETÁ':
+                case '125':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(82,233,198,1.0)',
+                color: 'rgba(202,99,35,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -4993,11 +4990,11 @@
                 interactive: true,
             }
                     break;
-                case '126 - AMÉRICA':
+                case '126':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(236,120,213,1.0)',
+                color: 'rgba(105,216,111,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5006,11 +5003,11 @@
                 interactive: true,
             }
                     break;
-                case '127 - VILA NOVA / FINAL':
+                case '127':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(201,99,155,1.0)',
+                color: 'rgba(238,101,238,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5019,11 +5016,11 @@
                 interactive: true,
             }
                     break;
-                case '128 - VILA NOVA / INÍCIO':
+                case '128':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(207,174,25,1.0)',
+                color: 'rgba(128,237,179,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5032,11 +5029,11 @@
                 interactive: true,
             }
                     break;
-                case '129 - VILA NOVA':
+                case '129':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(212,149,101,1.0)',
+                color: 'rgba(111,225,160,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5045,11 +5042,11 @@
                 interactive: true,
             }
                     break;
-                case '130 - VILA NOVA':
+                case '130':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(222,111,183,1.0)',
+                color: 'rgba(200,174,27,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5058,11 +5055,11 @@
                 interactive: true,
             }
                     break;
-                case '131 - VILA NOVA':
+                case '131':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(182,238,121,1.0)',
+                color: 'rgba(152,127,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5071,11 +5068,11 @@
                 interactive: true,
             }
                     break;
-                case '132 - VILA NOVA':
+                case '132':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(61,31,230,1.0)',
+                color: 'rgba(50,71,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5084,11 +5081,11 @@
                 interactive: true,
             }
                     break;
-                case '133 - CENTRO':
+                case '133':
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(144,223,16,1.0)',
+                color: 'rgba(215,25,171,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5101,7 +5098,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(170,214,117,1.0)',
+                color: 'rgba(159,203,64,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5114,7 +5111,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(211,114,113,1.0)',
+                color: 'rgba(202,97,181,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5127,7 +5124,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(206,104,138,1.0)',
+                color: 'rgba(123,218,136,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5140,7 +5137,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(188,95,216,1.0)',
+                color: 'rgba(231,173,119,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5153,7 +5150,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(63,201,134,1.0)',
+                color: 'rgba(55,235,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5166,7 +5163,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(100,112,218,1.0)',
+                color: 'rgba(207,130,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5179,7 +5176,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(210,101,234,1.0)',
+                color: 'rgba(53,200,31,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5192,7 +5189,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(212,26,240,1.0)',
+                color: 'rgba(214,105,167,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5205,7 +5202,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(63,111,214,1.0)',
+                color: 'rgba(207,169,126,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5218,7 +5215,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(203,134,14,1.0)',
+                color: 'rgba(208,109,157,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5231,7 +5228,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(18,168,213,1.0)',
+                color: 'rgba(205,174,72,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5244,7 +5241,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(60,193,203,1.0)',
+                color: 'rgba(73,153,203,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5257,7 +5254,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(187,121,213,1.0)',
+                color: 'rgba(35,202,74,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5270,7 +5267,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(118,200,122,1.0)',
+                color: 'rgba(191,200,14,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5283,7 +5280,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(194,234,95,1.0)',
+                color: 'rgba(56,230,146,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5296,7 +5293,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(183,209,97,1.0)',
+                color: 'rgba(104,170,206,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5309,7 +5306,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(68,232,123,1.0)',
+                color: 'rgba(124,86,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5322,7 +5319,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(64,107,216,1.0)',
+                color: 'rgba(229,113,185,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5335,7 +5332,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(227,53,94,1.0)',
+                color: 'rgba(68,212,80,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5348,7 +5345,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(206,85,89,1.0)',
+                color: 'rgba(225,42,201,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5361,7 +5358,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(60,200,55,1.0)',
+                color: 'rgba(237,165,70,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5374,7 +5371,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(85,207,37,1.0)',
+                color: 'rgba(183,123,218,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5387,7 +5384,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(60,150,219,1.0)',
+                color: 'rgba(227,96,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5400,7 +5397,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(125,78,217,1.0)',
+                color: 'rgba(28,226,177,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5413,7 +5410,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(68,198,221,1.0)',
+                color: 'rgba(220,103,148,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5426,7 +5423,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(231,161,133,1.0)',
+                color: 'rgba(92,219,141,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5439,7 +5436,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(108,228,230,1.0)',
+                color: 'rgba(85,215,133,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5452,7 +5449,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(235,120,239,1.0)',
+                color: 'rgba(222,184,96,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5465,7 +5462,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(208,148,118,1.0)',
+                color: 'rgba(22,165,209,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5478,7 +5475,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(208,40,93,1.0)',
+                color: 'rgba(228,102,102,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5491,7 +5488,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(127,149,221,1.0)',
+                color: 'rgba(226,199,24,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5504,7 +5501,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(204,207,48,1.0)',
+                color: 'rgba(212,64,111,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5517,7 +5514,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(94,201,105,1.0)',
+                color: 'rgba(214,18,211,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5530,7 +5527,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(40,200,187,1.0)',
+                color: 'rgba(128,202,231,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5543,7 +5540,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(124,235,218,1.0)',
+                color: 'rgba(152,113,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5556,7 +5553,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(236,196,139,1.0)',
+                color: 'rgba(218,101,122,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5569,7 +5566,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(134,229,50,1.0)',
+                color: 'rgba(50,122,204,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5582,7 +5579,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(43,212,116,1.0)',
+                color: 'rgba(203,58,87,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5595,7 +5592,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(213,240,132,1.0)',
+                color: 'rgba(141,61,212,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5608,7 +5605,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(204,43,236,1.0)',
+                color: 'rgba(226,29,26,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5621,7 +5618,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(122,201,65,1.0)',
+                color: 'rgba(228,21,235,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5634,7 +5631,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(219,103,182,1.0)',
+                color: 'rgba(61,207,139,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5647,7 +5644,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(41,212,26,1.0)',
+                color: 'rgba(230,52,24,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5660,7 +5657,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(215,84,57,1.0)',
+                color: 'rgba(214,205,29,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5673,7 +5670,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(160,39,225,1.0)',
+                color: 'rgba(240,145,150,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5686,7 +5683,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(219,97,66,1.0)',
+                color: 'rgba(101,151,217,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5699,7 +5696,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(204,68,107,1.0)',
+                color: 'rgba(122,111,201,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5712,7 +5709,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(52,216,101,1.0)',
+                color: 'rgba(103,128,237,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5725,7 +5722,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(90,49,213,1.0)',
+                color: 'rgba(221,110,55,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5738,7 +5735,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(87,172,201,1.0)',
+                color: 'rgba(124,209,102,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5751,7 +5748,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(50,115,218,1.0)',
+                color: 'rgba(137,237,178,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5764,7 +5761,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(165,226,23,1.0)',
+                color: 'rgba(231,17,67,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5777,7 +5774,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(17,230,163,1.0)',
+                color: 'rgba(223,158,112,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5790,7 +5787,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(202,55,146,1.0)',
+                color: 'rgba(230,32,151,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5803,7 +5800,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(239,179,140,1.0)',
+                color: 'rgba(18,124,205,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5816,7 +5813,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(218,107,211,1.0)',
+                color: 'rgba(137,99,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5829,7 +5826,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(41,182,217,1.0)',
+                color: 'rgba(142,125,216,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5842,7 +5839,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(235,126,139,1.0)',
+                color: 'rgba(90,195,213,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5855,7 +5852,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(111,122,233,1.0)',
+                color: 'rgba(37,227,195,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5868,7 +5865,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(34,140,240,1.0)',
+                color: 'rgba(82,212,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5881,7 +5878,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(185,95,217,1.0)',
+                color: 'rgba(197,122,210,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5894,7 +5891,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(203,51,206,1.0)',
+                color: 'rgba(72,231,239,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5907,7 +5904,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(216,38,232,1.0)',
+                color: 'rgba(143,202,118,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5920,7 +5917,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(238,133,221,1.0)',
+                color: 'rgba(234,180,94,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5933,7 +5930,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(134,109,213,1.0)',
+                color: 'rgba(150,210,82,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5946,7 +5943,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(85,170,226,1.0)',
+                color: 'rgba(217,17,197,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5959,7 +5956,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(200,172,80,1.0)',
+                color: 'rgba(210,57,224,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5972,7 +5969,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(207,63,94,1.0)',
+                color: 'rgba(104,133,228,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5985,7 +5982,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(166,94,225,1.0)',
+                color: 'rgba(129,193,221,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -5998,7 +5995,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(67,210,217,1.0)',
+                color: 'rgba(217,53,108,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6011,7 +6008,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(233,194,116,1.0)',
+                color: 'rgba(217,117,164,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6024,7 +6021,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(218,186,116,1.0)',
+                color: 'rgba(17,185,227,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6037,7 +6034,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(81,109,220,1.0)',
+                color: 'rgba(72,216,154,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6050,7 +6047,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(129,239,137,1.0)',
+                color: 'rgba(193,124,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6063,7 +6060,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(230,60,213,1.0)',
+                color: 'rgba(220,111,74,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6076,7 +6073,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(224,101,85,1.0)',
+                color: 'rgba(105,167,230,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6089,7 +6086,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(131,18,212,1.0)',
+                color: 'rgba(200,219,79,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6102,7 +6099,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(221,176,124,1.0)',
+                color: 'rgba(61,224,91,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6115,7 +6112,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(16,227,55,1.0)',
+                color: 'rgba(140,48,237,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6128,7 +6125,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(239,116,116,1.0)',
+                color: 'rgba(207,170,22,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6141,7 +6138,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(78,98,208,1.0)',
+                color: 'rgba(211,211,75,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6154,7 +6151,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(133,228,196,1.0)',
+                color: 'rgba(113,76,238,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6167,7 +6164,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(20,99,209,1.0)',
+                color: 'rgba(208,38,197,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6180,7 +6177,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(104,233,227,1.0)',
+                color: 'rgba(163,218,104,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6193,7 +6190,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(224,111,232,1.0)',
+                color: 'rgba(201,81,54,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6206,7 +6203,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(210,239,49,1.0)',
+                color: 'rgba(224,164,44,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6219,7 +6216,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(203,218,131,1.0)',
+                color: 'rgba(108,215,192,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6232,7 +6229,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(217,39,63,1.0)',
+                color: 'rgba(26,32,215,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6245,7 +6242,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(72,228,212,1.0)',
+                color: 'rgba(212,122,199,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6258,7 +6255,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(81,207,125,1.0)',
+                color: 'rgba(105,217,208,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6271,7 +6268,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(219,215,104,1.0)',
+                color: 'rgba(104,218,121,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6284,7 +6281,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(233,141,188,1.0)',
+                color: 'rgba(215,185,97,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6297,7 +6294,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(55,207,174,1.0)',
+                color: 'rgba(54,213,51,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6310,7 +6307,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(96,120,230,1.0)',
+                color: 'rgba(217,238,100,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6323,7 +6320,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(27,218,129,1.0)',
+                color: 'rgba(101,16,237,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6336,7 +6333,7 @@
                     return {
                 pane: 'pane_Seletiva_3',
                 opacity: 1,
-                color: 'rgba(134,157,226,1.0)',
+                color: 'rgba(172,236,131,1.0)',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -6411,7 +6408,6 @@
             .bindPopup(`<a href="${streetViewUrl}" target="_blank">${address} </a>`)
             .openPopup();
     });
-
 
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .className += ' fa fa-search';
@@ -6539,8 +6535,8 @@
             sel_OPERACAO.id = "sel_OPERACAO";
             var OPERACAO_options_str = "<option value='Domiciliar' unselected>Domiciliar</option>";
             sel_OPERACAO.onchange = function(){filterFunc()};
-            OPERACAO_options_str  += '<option value="SELETIVA" unselected>Seletiva</option>';
-            OPERACAO_options_str  += '<option value="VOLUMOSOS" unselected>Volumosos BC</option>';
+            OPERACAO_options_str  += '<option value="Seletiva">Seletiva</option>';
+            OPERACAO_options_str  += '<option value="VOLUMOSOS">Volumosos BC</option>';
             sel_OPERACAO.innerHTML = OPERACAO_options_str;
             div_OPERACAO.appendChild(sel_OPERACAO);
             var lab_OPERACAO = document.createElement('div');
