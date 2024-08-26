@@ -10,7 +10,7 @@ module.exports = {
 			collapsed: true,
 			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Pesquise RUA/CEP + N° + Cidade...',
+			placeholder: 'Search...',
 			errorMessage: 'Nothing found.',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
