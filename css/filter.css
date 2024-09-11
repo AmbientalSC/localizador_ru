@@ -1,13 +1,14 @@
 @charset "UTF-8";
 #menu {
     position: absolute;
-    top:8%;
-    left: 145px;
+    top:13%;
+    left: 150px;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
     background-color: rgba(255, 255, 255, 0.752);
     padding: 5px;
     border-radius: 10px;
+    width: 266px;
     /* height:60px; */
   }
   #aviso {
