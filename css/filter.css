@@ -4,7 +4,7 @@
     top:13%;
     left: 150px;
     transform: translate(-50%, -50%);
-    z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
+    z-index: 1000; 
     background-color: rgba(255, 255, 255, 0.752);
     padding: 5px;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     top: 6%;
     left: 33%;
     transform: translate(-50%, -50%);
-    z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
+    z-index: 1000; 
     background-color: rgba(255, 255, 255, 0.752);
     padding: 5px;
     border-radius: 10px;
@@ -39,8 +39,7 @@
 }
 
 
-.filterselect{
-  
+.filterselect{  
   /* font: 10px, Arial, Helvetica, sans-serif;  */
   margin-top: 5%;
   margin-left: 5px;
