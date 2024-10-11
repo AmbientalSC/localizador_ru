@@ -42,7 +42,7 @@ module.exports = {
 			icon.type = 'button';
 
 			input = this._input = L.DomUtil.create('input', '', form);
-			input.type = 'text';
+			input.type = 'search';
 			input.placeholder = this.options.placeholder;
 
 			this._errorElement = L.DomUtil.create('div', className + '-form-no-error', container);
