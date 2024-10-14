@@ -139,10 +139,10 @@ module.exports = {
 				this._map.removeLayer(this._geocodeMarker);
 			}
 
-			this._geocodeMarker = new L.Marker(result.center)
-				.bindPopup(result.html || result.name)
-				.addTo(this._map)
-				.openPopup();
+			// this._geocodeMarker = new L.Marker(result.center)
+			// 	.bindPopup(result.html || result.name)
+			// 	.addTo(this._map)
+			// 	.openPopup();
 
 			return this;
 		},
