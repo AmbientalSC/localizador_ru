@@ -224,9 +224,8 @@
             zoomControl:false, maxZoom:20, minZoom:1
         }).fitBounds([[-29.385666846354212,-53.97343868194244],[-24.750071928660105,-47.854453390586215]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix('<a href="https://github.com/AmbientalSC" target="_blank">Alysson Krombauer</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Rev16/10/2024</a> &middot;');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
-        // remove popup's row if "visible-with-data"
         function removeEmptyRowsFromPopupContent(content, feature) {
          var tempDiv = document.createElement('div');
          tempDiv.innerHTML = content;
