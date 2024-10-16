@@ -90,16 +90,15 @@
             background-color: #f2f2f2;
         }
         .dataTables_wrapper {
-        font-family: 'Calibri', sans-serif;  /* Definindo a fonte do DataTables */
-        font-size: 11px;  /* Ajuste do tamanho da fonte do DataTables */
+        font-family: 'Calibri', sans-serif; 
+        font-size: 11px;
         }
 
-        /* Ajustando a fonte para os elementos de paginação, busca e informações */
         .dataTables_filter label,
         .dataTables_length label,
         .dataTables_info,
         .dataTables_paginate {
-            font-size: 11px; /* Tamanho da fonte também ajustado para 10px */
+            font-size: 11px; 
         }
         </style>
         <title>Consulta de setores</title>
@@ -111,11 +110,10 @@
 
         <button id="toggle-button">Minimizar setores</button>
         <div id="table-container">
-
             <table id="sectors-table" class="display">
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>Setor</th>
                         <th>Turno</th>
                         <th>Frequência</th>
                         <th>Horário</th>
@@ -149,10 +147,12 @@
     
             gtag('config', 'G-JB94PX2JPN');
         </script>    
+
+
         <script type="text/javascript">
             $(document).ready(function() {
                 var data = json_Mesclado_1.features;
-                
+
                 data.forEach(function(feature) {
                     var name = feature.properties['SETOR'];
                     var turno = feature.properties['TURNO'];
@@ -160,7 +160,7 @@
                     var horario = feature.properties['HORARIO'];
                     var operacao = feature.properties['OPERACAO'];
                     var filial = feature.properties['FILIAL'];
-                    
+
                     $('#sectors-table tbody').append(
                         '<tr>' +
                         '<td>' + name + '</td>' +
@@ -172,47 +172,56 @@
                         '</tr>'
                     );
                 });
-                
-                $('#sectors-table').DataTable({
-                    "language": {
+
+                $('#sectors-table thead th').each(function () {
+                    var title = $(this).text();
+                    $(this).html('<input type="text" style="width: 70px;" placeholder="' + title + '" />');
+                });
+
+                var table = $('#sectors-table').DataTable({
+                    scrollY: '300px',
+                    scrollX: true,
+                    scrollCollapse: true,
+                    paging: false,
+                    fixedColumns: true,
+                    dom: 't', 
+                    language: {
                         "sEmptyTable": "Nenhum dado disponível na tabela",
                         "sInfo": "Mostrando _START_ até _END_ de _TOTAL_ registros",
                         "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
                         "sInfoFiltered": "(filtrado de _MAX_ registros no total)",
-                        "sInfoPostFix": "",
-                        "sInfoThousands": ".",
-                        "sLengthMenu": "Mostrar _MENU_ registros",
-                        "sLoadingRecords": "Carregando...",
-                        "sProcessing": "Processando...",
-                        "sSearch": "Buscar:",
                         "sZeroRecords": "Nenhum registro encontrado",
                         "oPaginate": {
                             "sFirst": "Primeiro",
                             "sLast": "Último",
                             "sNext": "Próximo",
                             "sPrevious": "Anterior"
-                        },
-                        "oAria": {
-                            "sSortAscending": ": ativar para ordenar a coluna de forma ascendente",
-                            "sSortDescending": ": ativar para ordenar a coluna de forma descendente"
                         }
                     }
-                });                
-                
+                });
 
+                table.columns().every(function() {
+                    var that = this;
+
+                    $('input', this.header()).on('keyup change', function() {
+                        if (that.search() !== this.value) {
+                            that.search(this.value).draw();
+                        }
+                    });
+                });
 
                 $('#toggle-button').click(function() {
                     if ($('#table-container').is(':visible')) {
-                        $('#table-container').hide(); // Esconder a tabela
-                        $('#toggle-button').text('Expandir setores'); // Alterar o texto do botão
+                        $('#table-container').hide(); 
+                        $('#toggle-button').text('Expandir setores'); 
                     } else {
-                        $('#table-container').show(); // Mostrar a tabela
-                        $('#toggle-button').text('Minimizar setores'); // Alterar o texto do botão de volta
+                        $('#table-container').show(); 
+                        $('#toggle-button').text('Minimizar setores'); 
                     }
                 });
             });
         </script>
-        
+
 
 
         <script>
