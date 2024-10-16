@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #menu {
-    position: absolute;
-    top:13%;
+    position: fixed;
+    top:80px;
     left: 150px;
     transform: translate(-50%, -50%);
     z-index: 1000; 
