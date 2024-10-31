@@ -145,6 +145,7 @@
             $(document).ready(function() {
                 var data = json_Mesclado_1.features;
 
+                // Popula a tabela com os dados dos setores
                 data.forEach(function(feature) {
                     var name = feature.properties['SETOR'];
                     var turno = feature.properties['TURNO'];
@@ -154,7 +155,7 @@
                     var filial = feature.properties['FILIAL'];
 
                     $('#sectors-table tbody').append(
-                        '<tr>' +
+                        '<tr data-setor="' + name + '" data-filial="' + filial + '">' + // Armazena o setor e filial na linha
                         '<td>' + name + '</td>' +
                         '<td>' + turno + '</td>' +
                         '<td>' + frequencia + '</td>' +
@@ -165,11 +166,13 @@
                     );
                 });
 
+                // Adiciona filtros nas colunas da tabela
                 $('#sectors-table thead th').each(function () {
                     var title = $(this).text();
                     $(this).html('<input type="text" style="width: 101px;" placeholder="'+ title +'" />');
                 });
 
+                // Inicializa a tabela com DataTables
                 var table = $('#sectors-table').DataTable({
                     scrollY: '300px',
                     scrollX: true,
@@ -180,6 +183,7 @@
                     responsive: true
                 });
 
+                // Adiciona eventos para filtragem
                 table.columns().every(function() {
                     var that = this;
 
@@ -190,6 +194,7 @@
                     });
                 });
 
+                // Função para minimizar/expandir tabela
                 $('#toggle-button').click(function() {
                     if ($('#table-container').is(':visible')) {
                         $('#table-container').hide(); 
@@ -199,11 +204,34 @@
                         $('#toggle-button').text('Minimizar setores'); 
                     }
                 });
+
+                // Adiciona evento de clique nas linhas da tabela
+                $('#sectors-table tbody').on('click', 'tr', function() {
+                    var setor = $(this).attr('data-setor');  // Obtém o setor da linha
+                    var filial = $(this).attr('data-filial'); // Obtém a filial da linha
+
+                    // Procura o setor correspondente no GeoJSON e aplica zoom e abre o popup
+                    map.eachLayer(function(layer) {
+                        if (layer.feature && layer.feature.properties['SETOR'] === setor && layer.feature.properties['FILIAL'] === filial) {
+                            var bounds = layer.getBounds(); // Obtém os limites do setor
+                            map.fitBounds(bounds); // Dá zoom no setor
+
+                            // Monta o conteúdo do popup baseado nas propriedades do setor
+                            var popupContent = '<table>' +
+                                '<tr><th>Setor</th><td>' + layer.feature.properties['SETOR'] + '</td></tr>' +
+                                '<tr><th>Turno</th><td>' + layer.feature.properties['TURNO'] + '</td></tr>' +
+                                '<tr><th>Frequência</th><td>' + layer.feature.properties['FREQUENCIA'] + '</td></tr>' +
+                                '<tr><th>Horário</th><td>' + layer.feature.properties['HORARIO'] + '</td></tr>' +
+                                '<tr><th>Operação</th><td>' + layer.feature.properties['OPERACAO'] + '</td></tr>' +
+                                '<tr><th>Filial</th><td>' + layer.feature.properties['FILIAL'] + '</td></tr>' +
+                                '</table>';
+
+                            layer.bindPopup(popupContent).openPopup(); // Abre o popup no setor
+                        }
+                    });
+                });
             });
         </script>
-
-
-
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -2852,6 +2880,20 @@
                 fillOpacity: 0,
                 interactive: true,
             }
+            
+                break;
+                    case '134b':
+                        return {
+                    pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(103,223,195,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+                }
                     break;
                 case '64':
                     return {
@@ -2880,6 +2922,19 @@
             }
                     break;
                 case '69':
+                    return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(52,19,201,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+                case '134c':
                     return {
                 pane: 'pane_Mesclado_1',
                 opacity: 1,
@@ -2944,6 +2999,32 @@
                 interactive: true,
             }
                     break;
+                case '134a':
+                    return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(233,169,112,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+                case '18b':
+                    return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(233,169,112,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
                 case '74':
                     return {
                 pane: 'pane_Mesclado_1',
@@ -2971,6 +3052,19 @@
             }
                     break;
                 case '76':
+                    return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(229,83,212,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+                case '18c':
                     return {
                 pane: 'pane_Mesclado_1',
                 opacity: 1,
@@ -3010,6 +3104,19 @@
             }
                     break;
                 case '79':
+                    return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(40,207,193,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+                case '18d':
                     return {
                 pane: 'pane_Mesclado_1',
                 opacity: 1,
@@ -3621,6 +3728,19 @@
             }
                     break;
                 case 'M01':
+                    return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(92,132,227,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+                    break;
+                case 'SM01':
                     return {
                 pane: 'pane_Mesclado_1',
                 opacity: 1,
@@ -5539,7 +5659,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 3.0,
+                weight: 7.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -6837,9 +6957,9 @@
             sel_OPERACAO.multiple = true;
             sel_OPERACAO.size = 3;
             sel_OPERACAO.id = "sel_OPERACAO";
-            var OPERACAO_options_str = "<option value='DOMICILIAR' unselected>Domiciliar</option>";
+            var OPERACAO_options_str = "<option value='Domiciliar' unselected>Domiciliar</option>";
             sel_OPERACAO.onchange = function(){filterFunc()};
-            OPERACAO_options_str  += '<option value="SELETIVA">Seletiva</option>';
+            OPERACAO_options_str  += '<option value="Seletiva">Seletiva</option>';
             OPERACAO_options_str  += '<option value="VOLUMOSOS">Volumosos BC</option>';
             sel_OPERACAO.innerHTML = OPERACAO_options_str;
             div_OPERACAO.appendChild(sel_OPERACAO);
