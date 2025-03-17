@@ -162,6 +162,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var data = json_Mesclado_1.features;
+            var activeSector = null;
 
             // Popula a tabela com os dados dos setores
             data.forEach(function (feature) {
@@ -174,7 +175,6 @@
 
                 $('#sectors-table tbody').append(
                     '<tr data-setor="' + name + '" data-filial="' + filial + '">' +
-                    // Armazena o setor e filial na linha
                     '<td>' + name + '</td>' +
                     '<td>' + turno + '</td>' +
                     '<td>' + frequencia + '</td>' +
@@ -185,13 +185,11 @@
                 );
             });
 
-            // Adiciona filtros nas colunas da tabela
             $('#sectors-table thead th').each(function () {
                 var title = $(this).text();
                 $(this).html('<input type="text" style="width: 101px;" placeholder="' + title + '" />');
             });
 
-            // Inicializa a tabela com DataTables
             var table = $('#sectors-table').DataTable({
                 scrollY: '300px',
                 scrollX: true,
@@ -224,12 +222,23 @@
                 }
             });
 
-            // Adiciona evento de clique nas linhas da tabela
-            $('#sectors-table tbody').on('click', 'tr', function () {
-                var setor = $(this).attr('data-setor'); // Obtém o setor da linha
-                var filial = $(this).attr('data-filial'); // Obtém a filial da linha
 
-                // Procura o setor correspondente no GeoJSON e aplica zoom e abre o popup
+            $('#sectors-table tbody').on('click', 'tr', function () {
+                var setor = $(this).attr('data-setor'); 
+                var filial = $(this).attr('data-filial'); 
+                if (activeSector && activeSector.setor === setor && activeSector.filial === filial) {
+                    activeSector = null;
+                    map.eachLayer(function (layer) {
+                        if (layer.feature) {
+                            // Restaura o estilo original usando sua função de estilo
+                            layer.setStyle(style_Mesclado_1_0(layer.feature));
+                        }
+                    });
+                    return; // finaliza a execução
+                }
+            
+                // Caso contrário, atualiza o setor ativo
+                activeSector = { setor: setor, filial: filial };
                 map.eachLayer(function (layer) {
                     if (layer.feature && layer.feature.properties['SETOR'] === setor && layer
                         .feature.properties['FILIAL'] === filial) {
@@ -286,7 +295,7 @@
         ]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix(
-            '<a href="https://github.com/AmbientalSC" target="_blank">Alysson Krombauer</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Rev20/02/2025</a> &middot;'
+            '<a href="https://github.com/AmbientalSC" target="_blank">Alysson Krombauer</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Rev 14/03/2025</a> &middot;'
             );
         var autolinker = new Autolinker({
             truncate: {
