@@ -1,0 +1,7033 @@
+function style_Mesclado_1_0(feature) {
+    switch (String(feature.properties['SETOR'])) {
+        case '001':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(182,206,95,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '002':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(132,203,40,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '003':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(208,173,108,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '004':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(114,126,223,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '005':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(71,154,226,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '006':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(80,228,83,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '007':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(103,212,176,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '008':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(118,190,221,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '009.1':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,145,72,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '009.2':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,57,49,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '009.3':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(224,40,150,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '009.4':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(226,211,73,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '009.5':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(194,87,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(100,212,128,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '010':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(203,170,99,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '011':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(235,182,96,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '012':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(89,142,200,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '013':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(126,218,184,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '014':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(220,92,118,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '015':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,56,210,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '016':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(202,158,101,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '017':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(70,206,154,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '018':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(226,116,108,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '019':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(160,213,27,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(205,71,196,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '020':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(48,212,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '021':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(155,28,201,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '022':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(52,201,224,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '023':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(240,78,151,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '024':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,34,20,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Mikro B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(210, 22, 168, 1.0)', // cor aleatória
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'Mikro A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(30, 11, 199, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M02B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(239, 69, 47, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T06B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(74, 208, 57, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M02A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(142, 221, 241, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T05B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(15, 89, 142, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T05AB':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(255, 120, 0, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T05A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(130, 176, 249, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T06M':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(217, 38, 162, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'N09B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(68, 240, 186, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'N09A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(177, 19, 221, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M01B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(51, 251, 86, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M01A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(40, 103, 213, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T04B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(199, 137, 0, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'T04A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(28, 200, 200, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'N08B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(185, 227, 42, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'N08A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(219, 65, 65, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M03C':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(82, 24, 120, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'N07B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(210, 40, 147, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M03B':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(48, 211, 210, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'N07A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(66, 233, 111, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+        case 'M03A':
+            return {
+                pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(145, 40, 254, 1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+            break;
+
+
+        case '025':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(78,209,154,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '026':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(215,24,232,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '027':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(78,166,221,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '028':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(39,210,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '029':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(92,206,40,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(51,225,129,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '030':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(187,225,116,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '031':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(124,202,55,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '032':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(230,108,181,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '033':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(191,102,216,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '034':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(70,204,84,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '035':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(57,212,163,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '036':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(77,156,240,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '037':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(109,13,225,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '038':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(90,226,69,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '039':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(81,200,178,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(198,221,82,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '040':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(19,72,206,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '041':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(46,87,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '042':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(184,206,14,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '043':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(96,114,213,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '044':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,36,133,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '045':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(37,96,235,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '046':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(93,235,50,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '047':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(97,190,227,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '048':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,151,16,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '049':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(100,200,64,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(239,81,57,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '050':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(72,203,164,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '051':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(184,100,203,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '052':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(64,204,104,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '053':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(24,213,87,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '054':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,113,127,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '055':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(113,230,113,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '056':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(203,213,22,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '057':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(41,114,203,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '058':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(32,100,218,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '059':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(213,215,98,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(110,213,151,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '060':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(86,195,207,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '061':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(225,103,75,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '062':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(207,180,104,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '063':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(92,204,12,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '064':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,105,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '065':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(202,125,80,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '066':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(46,202,93,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '067':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(27,148,218,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '068':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(187,124,226,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '069':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(120,159,222,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(240,224,104,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '070':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(215,125,183,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '071':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(27,221,147,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '072':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(212,92,102,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '073':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(49,174,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '074':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(240,206,37,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '075':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(70,219,199,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '076':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,115,119,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '077':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,107,155,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '078':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(25,129,203,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '079':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(46,43,210,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(203,128,71,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '080':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(240,110,162,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '081':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(183,17,224,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '082':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(113,19,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '083':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(138,43,201,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '084':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,111,197,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '085':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,185,84,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '086':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(49,15,219,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '087':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(64,210,218,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '088':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(79,213,175,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '089':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(77,222,149,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(184,129,216,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '090':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(77,133,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '091':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(18,200,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '092':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(228,184,102,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '093':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(170,108,240,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '094':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(213,97,151,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '095':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(20,188,200,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '096':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(141,208,42,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '097':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(221,101,225,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '098':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(105,101,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '099':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(33,226,94,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(138,94,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '100':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(210,147,105,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '101':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(193,62,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '102':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(203,53,40,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '103':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(82,206,75,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '104':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,170,50,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '105':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(37,229,88,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '106':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(161,204,112,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '107':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(76,227,88,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '108':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(220,169,114,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '109':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,238,141,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(226,23,229,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '110':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(211,167,113,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '111':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(140,226,49,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '112':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(59,219,113,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '113':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(226,79,42,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '114':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(91,14,225,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '115':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(121,230,126,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '116':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(212,96,61,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '117':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(108,45,235,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '118':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(74,58,223,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '119':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(66,200,117,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(74,184,215,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '120':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(210,151,110,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '121':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(25,159,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '122':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(226,76,96,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '123':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(224,209,40,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '124':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(119,240,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '125':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(203,130,47,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '126':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(111,231,229,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '127':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(210,99,140,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '128':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(155,48,205,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '129':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(225,124,81,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '13':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(201,75,239,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '130':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(70,201,90,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '131':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(84,207,71,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '132':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(70,234,179,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '133':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(61,234,165,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(121,205,185,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '18':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(113,209,87,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '19':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(96,173,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '20':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(212,116,106,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '21':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(79,18,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '22':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(230,171,23,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '23':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(76,200,74,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '24':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(232,55,32,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '25':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(99,206,103,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '26':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,218,127,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '27':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(158,40,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '28':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,80,164,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '29':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(209,130,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '30':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(115,144,207,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '31':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(227,169,33,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '32':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(203,92,190,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '35':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(232,164,122,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '36':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(238,18,117,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '37':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(183,134,240,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '38':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(163,222,115,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '39':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(106,220,195,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '40':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(213,101,194,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '41':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(221,92,146,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '42':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,105,36,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '43':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(198,98,216,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '44':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(177,216,19,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '45':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(216,102,123,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '46':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(224,82,181,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '47':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(142,180,234,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '48':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(214,98,227,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '49':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(20,93,239,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '50':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(215,24,21,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '51':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(187,123,233,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '52':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(36,231,221,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '53':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(214,108,110,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '54':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(136,98,231,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '55':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(85,105,215,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '56':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(89,211,70,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '57':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(76,64,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '58':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(205,80,101,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '59':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(135,119,225,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '60':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,116,186,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '61':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,46,92,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '62':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(205,69,20,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '63':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(103,223,195,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+
+            break;
+        case '134b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(103,223,195,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '64':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(216,121,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '68':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(100,234,88,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '69':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(52,19,201,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '134c':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(52,19,201,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '70':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(230,60,176,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '71':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(207,159,87,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '72':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(79,198,225,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '73':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,169,112,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '134a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,169,112,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '18b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,169,112,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '74':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(40,135,230,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '75':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(111,42,229,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '76':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,83,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '18c':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,83,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '77':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(124,209,50,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '78':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(27,213,160,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '79':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(40,207,193,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '18d':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(40,207,193,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '80':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(76,207,131,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '81':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(18,205,49,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '82':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,95,56,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '85':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(52,230,239,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '86':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,204,96,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '87':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(142,49,217,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '88':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(159,227,120,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '89':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(210,100,153,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '90':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(201,113,180,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '91':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,53,97,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '92':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,38,188,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '93':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(180,30,210,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '94':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,65,166,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '95':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(118,224,167,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '96':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(19,225,108,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '97':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(128,208,101,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'AM01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(182,213,124,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'AM02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(129,107,224,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'AUTOMATIZADA':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(238,219,111,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CENTRO':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(54,62,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS01-M':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(110,110,229,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS01-T':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(226,185,124,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS02-M':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(93,121,213,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS02-T':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(105,183,200,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS03-M':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(108,201,153,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS03-T':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(238,15,82,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS04-M':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(81,224,52,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS04-T':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(55,205,175,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS05-M':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(227,37,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS05-T':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(191,230,62,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS06-M':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(212,121,179,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'CS06-T':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(175,228,51,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'E-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(102,120,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(90,231,72,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(22,237,33,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(90,213,41,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(224,31,53,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(219,79,214,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(134,225,235,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(141,229,17,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(100,193,216,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,34,141,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(36,162,200,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(95,205,31,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-12 - Aririba':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,110,185,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M-12 - Pioneiros':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(125,153,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(92,132,227,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(92,132,227,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M01a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,35,129,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M01b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,94,139,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(105,195,203,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M02a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(94,207,66,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M02b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(38,218,74,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(122,126,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M03a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(136,86,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M03b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(222,98,220,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(207,7,217,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M04_Rural':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(221,29,55,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M04a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(99,44,201,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M04a_Rural':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(222,216,104,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M04b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(224,61,167,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M04b_Rural':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(231,46,108,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(395,213,63,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M05a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(222,109,64,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M05b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,23,20,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(186,135,226,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M06a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,46,122,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M06b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(208,94,91,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(202,123,186,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M07A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(124,217,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(26,153,217,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M08_Mikro':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,81,185,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(96,216,118,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M09_Mikro':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(232,76,222,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M1':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(17,205,117,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(144,237,86,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(209,61,189,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(205,51,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M13':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(134,219,73,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(39,229,137,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M15':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(235,24,228,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M16':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(113,19,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            case 'TQS':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(113,19,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M17':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(175,228,18,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M18':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,232,37,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            case 'SQS':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(129,232,17,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M19':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(94,203,91,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M2':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,42,16,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            case 'SS':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,42,16,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M20':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(143,30,204,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M21':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(38,207,72,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M22':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(36,233,39,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M23':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(80,235,24,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M24':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(102,66,233,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M3':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,117,177,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M4':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,195,53,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M5':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(202,98,183,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M6':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(128,208,222,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'M7':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(140,215,105,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(103,201,110,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK-02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(25,231,101,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(234,63,69,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(34,205,51,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(114,190,220,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(204,50,166,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(85,173,228,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MK06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(64,236,25,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(225,167,96,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(120,157,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(205,97,139,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(202,112,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(139,214,89,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,225,109,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(227,146,106,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-08_A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(40,80,223,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-08_B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,16,168,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-09_A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(157,236,83,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-09_B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,57,86,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'MS-10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(235,80,194,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(213,62,72,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-02_A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(227,180,71,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-02_B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(208,66,97,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(206,176,54,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-04_A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(237,35,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-04_B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(116,120,220,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-05_A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(31,211,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-05_B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(105,217,49,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N-06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(92,163,217,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(179,59,227,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N01a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,177,56,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N01b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(177,84,239,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(78,222,17,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N02a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(29,219,58,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+
+
+            case 'SN 01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(179,59,227,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,177,56,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(177,84,239,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(78,222,17,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(29,219,58,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+
+            case 'SN 06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(39,204,193,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(48,41,233,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(186,104,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(124,215,210,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(106,201,190,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(15,105,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SN 12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(66,221,105,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+            
+        case 'N02b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(215,215,35,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(141,118,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N03a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(83,36,236,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N03b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(204,109,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(116,32,205,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N04a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(77,238,168,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N04b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(147,210,113,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(15,255,177,0.8)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'P01a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(0,255,61,0.8)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N05a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(155,111,217,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N05b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(39,204,193,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(48,41,233,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N06a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(186,104,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N06b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(124,215,210,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(106,201,190,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(15,105,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(66,221,105,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N1':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(98,207,178,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(80,132,216,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(142,103,232,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(57,35,226,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N13':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,215,81,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(35,205,75,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '15':
+        return {
+            pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(35,205,75,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+        }
+        break;
+        case 'N15':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(116,140,237,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N16':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(215,63,13,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+        case '15b':
+        return {
+            pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(215,63,13,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+        }
+        break;
+            
+        case 'N2':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(229,193,95,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N3':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(119,203,206,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            case '65b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(119,203,206,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N4':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(85,229,231,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N5':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(146,58,222,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'N6':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(54,136,207,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'REPASSE':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(165,204,118,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'RSU01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(209,39,78,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '65c':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(209,39,78,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'RSU02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(52,205,134,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'RSU03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(194,84,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'RSU04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(22,129,200,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(67,141,237,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(51,227,38,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,98,108,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(135,200,30,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor C':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(129,190,223,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR C':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(238,109,180,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor D':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(138,162,228,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR D':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(113,98,211,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor E':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,16,92,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR E':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(67,212,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor F':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(117,239,24,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR F':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(89,202,104,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor G':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(220,232,92,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SETOR G':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(125,227,160,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'Setor H':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(55,215,50,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(192,221,46,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,165,125,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(138,95,201,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(235,228,22,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(182,225,83,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(51,122,216,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(143,145,239,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(114,124,214,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(63,223,98,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(221,240,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(153,34,204,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(42,29,220,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 13':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,174,124,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(174,228,25,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 15':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(69,86,230,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            case 'SM 01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(169,86,130,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 17':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(98,209,100,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'SM 18':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(171,134,222,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(145,56,234,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(237,151,105,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(219,125,125,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(173,223,72,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(99,177,232,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(168,209,117,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,222,112,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(77,20,234,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(138,146,237,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(101,238,89,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(210,95,67,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(192,121,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 13':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(144,234,54,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(196,212,106,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(201,46,221,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+            
+        case 'SM 14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(201,46,221,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(98,206,139,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'ST 18':
+        return {
+            pane: 'pane_Mesclado_1',
+                opacity: 1,
+                color: 'rgba(98,206,139,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 3.0,
+                fillOpacity: 0,
+                interactive: true,
+        }
+        break;
+        case 'T-03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(19,182,204,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+            case 'SM 16':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(19,182,204,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,19,237,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(150,66,229,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-05_X':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(222,229,129,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(51,81,203,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T-07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(90,233,197,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,230,11,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T01a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(211,178,16,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T01b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(47,171,213,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,131,163,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T02a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(130,228,32,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T02b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(44,234,215,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(55,201,72,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T03a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(31,205,83,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T03A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(16,64,206,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T03b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(71,30,233,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(255,0,125,0.8)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T04a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(213,140,115,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T04b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(26,200,183,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(233,183,136,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T05a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(221,38,87,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T05b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(209,125,134,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(239,141,125,0.8)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T06a':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,27,68,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T06b':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(85,77,238,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(149,36,210,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T08':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(177,220,48,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,118,63,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T09_Mikro':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(70,73,204,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T1':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,153,118,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(225,148,97,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T10_Mikro':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(92,26,234,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,97,175,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T12':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(56,209,240,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T13':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(106,231,212,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T14':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(43,206,184,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T15':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(205,152,77,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T16':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(202,133,120,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T17':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(58,201,175,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T18':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(145,36,234,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T19':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(154,219,57,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T2':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(112,226,86,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T20':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(31,230,140,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T3':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(81,37,228,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T4':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(22,49,223,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T5':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(74,49,235,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T6':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(188,82,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(131,104,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-02':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,123,155,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(121,136,202,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(19,31,207,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-05':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(118,200,225,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(80,204,140,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-07':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(209,33,222,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-08_A':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(220,187,40,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-08_B':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(120,181,238,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-09':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(101,91,209,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-10':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(201,60,67,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'TS-11':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(77,217,52,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'V1':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(218,107,194,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'V2':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(232,126,107,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'V3':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(223,90,66,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'V4':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(182,216,108,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'V5':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(217,221,87,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'V6':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(82,205,48,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        default:
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(200,219,31,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+    }
+}
