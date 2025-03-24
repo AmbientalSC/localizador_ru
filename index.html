@@ -27,7 +27,7 @@
 <body>
     <div id="streetViewContainer"></div>
     <div id="map"></div>
-
+    
     <button id="toggle-button">Minimizar setores</button>
     <div id="table-container">
         <table id="sectors-table" class="display">
@@ -44,6 +44,7 @@
             <tbody></tbody>
         </table>
     </div>
+
     <script src="js/qgis2web_expressions.js"></script>
     <script src="js/leaflet.js"></script>
     <script src="js/L.Control.Layers.Tree.min.js"></script>
@@ -70,14 +71,16 @@
 
         gtag('config', 'G-JB94PX2JPN');
     </script>
+<script>
 
+
+</script>
 
     <script type="text/javascript">
         $(document).ready(function () {
             var data = json_Mesclado_1.features;
             var activeSector = null;
 
-            // Popula a tabela com os dados dos setores
             data.forEach(function (feature) {
                 var name = feature.properties['SETOR'];
                 var turno = feature.properties['TURNO'];
@@ -113,7 +116,6 @@
                 responsive: true
             });
 
-            // Adiciona eventos para filtragem
             table.columns().every(function () {
                 var that = this;
 
