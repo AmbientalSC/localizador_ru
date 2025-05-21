@@ -1817,7 +1817,33 @@ function style_Mesclado_1_0(feature) {
                     interactive: true,
             }
             break;
+        case '98':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(105,101,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
         case '099':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(33,226,94,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case '99':
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
