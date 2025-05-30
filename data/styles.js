@@ -1817,6 +1817,21 @@ function style_Mesclado_1_0(feature) {
                     interactive: true,
             }
             break;
+
+        case 'SM 01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(105,101,208,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
         case '98':
             return {
                 pane: 'pane_Mesclado_1',
@@ -1831,6 +1846,20 @@ function style_Mesclado_1_0(feature) {
             }
             break;
         case '099':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(33,226,94,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+        case 'R02':
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
@@ -1870,6 +1899,20 @@ function style_Mesclado_1_0(feature) {
             }
             break;
         case '100':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(210,147,105,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+
+        case 'R03':
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
@@ -1947,6 +1990,20 @@ function style_Mesclado_1_0(feature) {
                     interactive: true,
             }
             break;
+        case 'R01':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(37,229,88,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        
         case '106':
             return {
                 pane: 'pane_Mesclado_1',
@@ -1974,6 +2031,19 @@ function style_Mesclado_1_0(feature) {
             }
             break;
         case '108':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(220,169,114,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T06 (GG)':
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
@@ -2103,6 +2173,19 @@ function style_Mesclado_1_0(feature) {
                     interactive: true,
             }
             break;
+        case 'SRTMK06':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(212,96,61,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
         case '117':
             return {
                 pane: 'pane_Mesclado_1',
@@ -2129,6 +2212,20 @@ function style_Mesclado_1_0(feature) {
                     interactive: true,
             }
             break;
+        case 'SRTMK03':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(74,58,223,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+    
         case '119':
             return {
                 pane: 'pane_Mesclado_1',
