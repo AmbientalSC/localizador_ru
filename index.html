@@ -342,20 +342,24 @@
         }).on('markgeocode', function(e) {
             var latlng = e.geocode.center;
             var address = e.geocode.name;
+            // Exibir Street View
             var streetViewDiv = document.getElementById('streetViewContainer');
             streetViewDiv.innerHTML = '';
+            var streetViewFrame = document.createElement('iframe');
+            streetViewFrame.setAttribute('width', '100%');
+            streetViewFrame.setAttribute('height', '200px');
+            streetViewFrame.setAttribute('frameborder', '0');
+            streetViewFrame.setAttribute('style', 'border:0;');
+            streetViewFrame.setAttribute('src',
+                `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38&location=${latlng.lat},${latlng.lng}&heading=210&pitch=10&fov=35`
+            );
+            streetViewDiv.appendChild(streetViewFrame);
+            // Adicionar marcador e popup
             L.marker(latlng).addTo(map)
-                .bindPopup(`<b>${address}</b>`)
+                .bindPopup(`<b>${address}</b> <br><a href='https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0' target='_blank'>Abrir Street View</a>`)
                 .openPopup();
             map.setView(latlng, 18);
         }).addTo(map);
-
-        // Ajustar ícone do geocoder padrão
-        var geocoderIcon = document.getElementsByClassName('leaflet-control-geocoder-icon')[0];
-        if (geocoderIcon) {
-            geocoderIcon.className += ' fa fa-search';
-            geocoderIcon.title += ' Buscar endereço';
-        }
 
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
             .className += ' fa fa-search';
