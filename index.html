@@ -332,69 +332,30 @@
         bounds_group.addLayer(layer_Mesclado_1);
         map.addLayer(layer_Mesclado_1);
 
-        var googleGeocoder = new L.Control.Geocoder({
-            geocoder: L.Control.Geocoder.google('AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38', {}),
+        // Substituir o geocoder Google pelo padrão do Leaflet
+        var leafletGeocoder = L.Control.geocoder({
+            defaultMarkGeocode: false,
             collapsed: false,
             position: 'topleft',
-            text: 'Search',
-            title: 'Testing'
-        }).addTo(map);
-
-        var marker;
-        var panorama;
-
-        function initializeStreetView(latlng) {
-            var streetViewContainer = document.getElementById('streetViewContainer');
-            if (!streetViewContainer) {
-                console.error('Contêiner do Street View não encontrado.');
-                return;
-            }
-            streetViewContainer.style.display = 'block';
-            if (!panorama) {
-                panorama = new google.maps.StreetViewPanorama(streetViewContainer, {
-                    position: latlng,
-                    pov: {
-                        heading: 210,
-                        pitch: 10
-                    },
-                    zoom: 1,
-                    zoomControl: false,
-                    fullscreenControl: false,
-                    mapTypeControl: false,
-                    rotateControl: false,
-                });
-            } else {
-                panorama.setPosition(latlng);
-            }
-        }
-
-
-
-
-        googleGeocoder.on('markgeocode', function (e) {
-            var address = e.geocode.name;
+            placeholder: 'Buscar endereço',
+            errorMessage: 'Endereço não encontrado.'
+        }).on('markgeocode', function(e) {
             var latlng = e.geocode.center;
-
-            var streetViewUrl =
-                `https://www.google.com/maps?q=&layer=c&cbll=${latlng.lat},${latlng.lng}&cbp=11,0,0,0,0`;
-
-            var streetViewFrame = document.createElement('iframe');
-            streetViewFrame.setAttribute('width', '100%');
-            streetViewFrame.setAttribute('height', '200px');
-            streetViewFrame.setAttribute('frameborder', '0');
-            streetViewFrame.setAttribute('style', 'border:0;');
-            streetViewFrame.setAttribute('src',
-                `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38&location=${latlng.lat},${latlng.lng}&heading=210&pitch=10&fov=35`
-            );
-
+            var address = e.geocode.name;
             var streetViewDiv = document.getElementById('streetViewContainer');
             streetViewDiv.innerHTML = '';
-            streetViewDiv.appendChild(streetViewFrame);
-
             L.marker(latlng).addTo(map)
-                .bindPopup(`<a href="${streetViewUrl}" target="_blank">${address} </a>`)
+                .bindPopup(`<b>${address}</b>`)
                 .openPopup();
-        });
+            map.setView(latlng, 18);
+        }).addTo(map);
+
+        // Ajustar ícone do geocoder padrão
+        var geocoderIcon = document.getElementsByClassName('leaflet-control-geocoder-icon')[0];
+        if (geocoderIcon) {
+            geocoderIcon.className += ' fa fa-search';
+            geocoderIcon.title += ' Buscar endereço';
+        }
 
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
             .className += ' fa fa-search';
