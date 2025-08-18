@@ -1,94 +1,294 @@
 @charset "UTF-8";
+
+/* Menu principal de filtros */
 #menu {
     position: fixed;
-    top:80px;
-    left: 150px;
-    transform: translate(-50%, -50%);
-    z-index: 1000; 
-    background-color: rgba(255, 255, 255, 0.752);
-    padding: 5px;
-    border-radius: 10px;
-    width: 266px;
-    /* height:60px; */
-  }
-  #aviso {
-    position: absolute;
-    top: 6%;
-    left: 33%;
-    transform: translate(-50%, -50%);
-    z-index: 1000; 
-    background-color: rgba(255, 255, 255, 0.752);
-    padding: 5px;
-    border-radius: 10px;
-    /* height:60px; */
-  }
-  #container {
-    top: 22%;
-    position: absolute;
-    z-index: 1000; 
-    padding-left: 10px;
-}
-
-  @media only screen and (max-width: 600px) {
-    #aviso {
-        width: 90%; 
-        left: 50%;
-        top: 24%;
-        transform: translate(-50%, -50%);
-    }
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
-.filterselect{  
-  /* font: 10px, Arial, Helvetica, sans-serif;  */
-  margin-top: 5%;
-  margin-left: 5px;
-  margin-right: 4px;
-  margin-bottom: 10px;
-  height: 45px;
-  
-  /* background-color: transparent; */
 
+.filterselect:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #007bff;
 }
-.filterselect input, .filterselect select {
-    /* display: block; */
+
+/* Título do filtro */
+.filter-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Select box melhorado */
+.filterselect select {
     width: 100%;
-    font-size: 19px;
-    
+    max-width: 100%;
+    /* padding: 8px 12px; */
+    box-sizing: border-box;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #495057;
+    transition: all 0.3s ease;
+    outline: none;
+    resize: none;
+    overflow: hidden;
 }
-.filterselect p{
-  
-  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  margin-top: 0px !important;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 0px;
-  
+
+.filterselect select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
 }
+
+.filterselect select:hover {
+    border-color: #80bdff;
+}
+
+/* Opções do select */
+.filterselect select option {
+    padding: 8px;
+    font-size: 13px;
+    background: white;
+    color: #495057;
+}
+
+.filterselect select option:checked {
+    background: #007bff;
+    color: white;
+}
+
+/* Labels dos filtros */
 .filterlabel {
-    font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-    width: 100%;
-    float: left;
-    margin-right: 10px;
-    padding: 0px;
-    border: 0px;
-    clear: left;    
-    z-index: 1000; /* Certifique-se de que o menu esteja na frente do mapa */
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #6c757d;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 6px;
+    margin-top: 8px;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
 }
-.filterlabel + .filterlabel {
-    clear: none;
-    text-align: right;
-    color: #050000a1;
-    font-weight: bold;
 
+.filterlabel:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    border-color: #adb5bd;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filterlabel:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Geocoder customizado */
+#geocoder-container {
+    position: fixed;
+    top: 255px;
+    left: 20px;
+    width: 282px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+#geocoder-container * {
+    box-sizing: border-box !important;
+}
+
+#geocoder-container .leaflet-control-geocoder,
+#geocoder-container .leaflet-control-geocoder-form,
+#geocoder-container .leaflet-control-geocoder-form input {
+    max-width: 100% !important;
+}
+
+.geocoder-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f0f0f0;
+    display: block !important;
+    visibility: visible !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+#geocoder-container .leaflet-control-geocoder {
+    position: relative;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+#geocoder-container .leaflet-control-geocoder-form {
+    background: transparent;
+    border: none;
+    margin: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+#geocoder-container .leaflet-control-geocoder-form input {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 8px 12px;
+    box-sizing: border-box !important;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #495057;
+    transition: all 0.3s ease;
+    outline: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: -62px;
+}
+
+#geocoder-container .leaflet-control-geocoder-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+#geocoder-container .leaflet-control-geocoder-form input:hover {
+    border-color: #80bdff;
+}
+
+#geocoder-container .leaflet-control-geocoder-form input::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
+
+#geocoder-container .leaflet-control-geocoder-icon {
+    display: none;
+}
+
+#geocoder-container .leaflet-control-geocoder-alternatives {
+    background: #ffffff;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#geocoder-container .leaflet-control-geocoder-alternatives a {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #495057;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+#geocoder-container .leaflet-control-geocoder-alternatives a:hover {
+    background-color: #f8f9fa;
+}
+
+#geocoder-container .leaflet-control-geocoder-alternatives a:last-child {
+    border-bottom: none;
+}
+
+/* Responsividade para mobile */
+@media only screen and (max-width: 768px) {
+    #menu {
+        top: 80px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        max-height: 300px;
+        padding: 12px;
     }
-.slider {
-  font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+    
+    .filterselect {
+        margin-bottom: 12px;
+        padding: 10px;
+    }
+    
+    .filter-title {
+        font-size: 13px;
+    }
+    
+    .filterselect select {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    
+    .filterlabel {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+    
+    #geocoder-container {
+        top: 380px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        padding: 12px;
+    }
+    
+    .geocoder-title {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #menu {
+        top: 80px;
+        left: 5px;
+        right: 5px;
+        padding: 10px;
+    }
+    
+    .filterselect {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    
+    #geocoder-container {
+        top: 400px;
+        left: 5px;
+        right: 5px;
+        padding: 10px;
+    }
 }
 
 /* @start MAIN CALENDAR */

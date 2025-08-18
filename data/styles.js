@@ -6441,7 +6441,7 @@ function style_Mesclado_1_0(feature) {
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
-                    color: 'rgba(223,230,11,1.0)',
+                    color: 'rgba(224,230,111,1.0)',
                     dashArray: '',
                     lineCap: 'square',
                     lineJoin: 'bevel',
@@ -6749,7 +6749,20 @@ function style_Mesclado_1_0(feature) {
                     interactive: true,
             }
             break;
-        case 'T09_Mikro':
+        case 'SRTMK04':
+            return {
+                pane: 'pane_Mesclado_1',
+                    opacity: 1,
+                    color: 'rgba(236,118,63,1.0)',
+                    dashArray: '',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    weight: 3.0,
+                    fillOpacity: 0,
+                    interactive: true,
+            }
+            break;
+        case 'T09_M':
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
