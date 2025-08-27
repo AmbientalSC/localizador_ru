@@ -1,6 +1,0 @@
-# Ignore local config with secrets
-/data/config.js
-
-# Node modules or other OS files (optional)
-node_modules/
-.DS_Store
