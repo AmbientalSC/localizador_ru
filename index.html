@@ -887,6 +887,17 @@
             max-width: 800px;
             width: auto;
         }
+
+        /* Ajuste: reduzir prioridade dos controles padrão do Leaflet no topo-esquerdo
+           para não ficarem acima dos painéis customizados */
+        .leaflet-top.leaflet-left {
+            z-index: 50 !important; /* reduzido (padrão do leaflet é 1000+) */
+        }
+
+        /* Garantir que nossos painéis fiquem acima */
+        #geocoder-container, #table-container, #toggle-button, #streetViewContainer {
+            z-index: 1100 !important;
+        }
         
         #toggle-button {
             position: fixed;
