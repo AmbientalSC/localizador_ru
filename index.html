@@ -397,43 +397,6 @@
             setTimeout(function() {
                 initializeGeocoder();
             }, 500);
-
-            // --- Remoção forçada de controles do plugin (leaflet-control-geocoder) ---
-            // Alguns plugins adicionam um controle com as classes
-            // 'leaflet-control-geocoder leaflet-bar leaflet-control'. Como usamos um
-            // geocoder customizado, removemos esses nodes do DOM para evitar sobreposição.
-            function removePluginGeocoderControls() {
-                try {
-                    var els = document.querySelectorAll('.leaflet-control-geocoder.leaflet-bar.leaflet-control');
-                    els.forEach(function(el) {
-                        if (el && el.parentNode) el.parentNode.removeChild(el);
-                    });
-                    // Se o container do Leaflet ficar sem controles úteis, esconder
-                    var ctl = document.querySelector('.leaflet-control-container');
-                    if (ctl) {
-                        var hasMeaningful = Array.prototype.slice.call(ctl.children).some(function(n) {
-                            return n && n.querySelector && (
-                                n.querySelector('.leaflet-control-geocoder, .leaflet-control-zoom, input, button, select')
-                            );
-                        });
-                        if (!hasMeaningful) ctl.style.display = 'none';
-                    }
-                } catch (e) {
-                    console.warn('Falha ao remover controles do geocoder plugin:', e);
-                }
-            }
-
-            // Agendar limpeza após inicialização e observar DOM para remoções futuras
-            setTimeout(removePluginGeocoderControls, 1200);
-            try {
-                var geocoderCleanupObserver = new MutationObserver(function() {
-                    removePluginGeocoderControls();
-                });
-                geocoderCleanupObserver.observe(document.body, { childList: true, subtree: true });
-            } catch (e) {
-                // Falar no console, mas não quebrar a aplicação
-                console.warn('MutationObserver para limpeza de geocoder não disponível', e);
-            }
         }
 
         // Função para inicializar o geocoder
