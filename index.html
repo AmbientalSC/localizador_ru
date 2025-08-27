@@ -416,44 +416,41 @@
                 geocoderContainer.appendChild(searchInput);
                 
                 var geocodeMarker = null;
-                
-                // Função de busca customizada
-                function performSearch(query) {
+
+                // Helper para mostrar resultado no mapa (Street View + marker)
+                function handleGeocodeResult(lat, lng, address) {
+                    var latlng = [lat, lng];
+                    var streetViewDiv = document.getElementById('streetViewContainer');
+                    streetViewDiv.innerHTML = '';
+                    var streetViewFrame = document.createElement('iframe');
+                    streetViewFrame.setAttribute('width', '100%');
+                    streetViewFrame.setAttribute('height', '200px');
+                    streetViewFrame.setAttribute('frameborder', '0');
+                    streetViewFrame.setAttribute('style', 'border:0;');
+                    streetViewFrame.setAttribute('src',
+                        `https://www.google.com/maps/embed/v1/streetview?key=${window.GOOGLE_API_KEY || ''}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
+                    );
+                    streetViewDiv.appendChild(streetViewFrame);
+
+                    if (geocodeMarker) {
+                        map.removeLayer(geocodeMarker);
+                    }
+                    geocodeMarker = L.marker(latlng).addTo(map)
+                        .bindPopup(`<b>${address || ''}</b> <br><a href='https://www.google.com/maps?q=&layer=c&cbll=${lat},${lng}&cbp=11,0,0,0,0' target='_blank'>Abrir Street View</a>`)
+                        .openPopup();
+                    map.setView(latlng, 18);
+                }
+
+                // Função de busca customizada usando Nominatim (fallback)
+                function performSearchWithOSM(query) {
                     if (!query.trim()) return;
-                    
                     var nominatimUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`;
-                    
                     fetch(nominatimUrl)
                         .then(response => response.json())
                         .then(data => {
                             if (data && data.length > 0) {
                                 var result = data[0];
-                                var latlng = [parseFloat(result.lat), parseFloat(result.lon)];
-                                var address = result.display_name;
-                                
-                                // Atualizar Street View
-                                var streetViewDiv = document.getElementById('streetViewContainer');
-                                streetViewDiv.innerHTML = '';
-                                var streetViewFrame = document.createElement('iframe');
-                                streetViewFrame.setAttribute('width', '100%');
-                                streetViewFrame.setAttribute('height', '200px');
-                                streetViewFrame.setAttribute('frameborder', '0');
-                                streetViewFrame.setAttribute('style', 'border:0;');
-                                streetViewFrame.setAttribute('src',
-                                    `https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38&location=${latlng[0]},${latlng[1]}&heading=210&pitch=10&fov=35`
-                                );
-                                streetViewDiv.appendChild(streetViewFrame);
-                                
-                                // Remover marcador anterior
-                                if (geocodeMarker) {
-                                    map.removeLayer(geocodeMarker);
-                                }
-                                
-                                // Adicionar marcador e popup
-                                geocodeMarker = L.marker(latlng).addTo(map)
-                                    .bindPopup(`<b>${address}</b> <br><a href='https://www.google.com/maps?q=&layer=c&cbll=${latlng[0]},${latlng[1]}&cbp=11,0,0,0,0' target='_blank'>Abrir Street View</a>`)
-                                    .openPopup();
-                                map.setView(latlng, 18);
+                                handleGeocodeResult(parseFloat(result.lat), parseFloat(result.lon), result.display_name);
                             } else {
                                 alert('Endereço não encontrado');
                             }
@@ -461,6 +458,136 @@
                         .catch(error => {
                             alert('Erro na busca do endereço');
                         });
+                }
+
+                // Se o provider Google do plugin estiver disponível, cria controle Google
+                if (typeof L !== 'undefined' && L.Control && L.Control.Geocoder && typeof L.Control.Geocoder.google === 'function') {
+                    try {
+                        var googleProvider = L.Control.Geocoder.google(window.GOOGLE_API_KEY || '', {});
+                        var googleGeocoderControl = new L.Control.Geocoder({
+                            geocoder: googleProvider,
+                            collapsed: true,
+                            position: 'topleft',
+                            text: 'Buscar',
+                            title: 'Buscar com Google'
+                        }).addTo(map);
+
+                        // Quando o controle resolver um resultado, usar o handler para mostrar no mapa
+                        googleGeocoderControl.on('markgeocode', function(e) {
+                            var center = e.geocode.center;
+                            handleGeocodeResult(center.lat, center.lng, e.geocode.name || '');
+                        });
+
+                        // Além disso, conectar o input custom ao controle, se possível
+                        var customInput = document.querySelector('.custom-geocoder-input');
+                        if (customInput) {
+                            // Função robusta para chamar o provider Google e tratar formatos
+                            function googleGeocodeAndHandle(query) {
+                                if (!query || !query.trim()) return;
+                                try {
+                                    googleProvider.geocode(query, function(results) {
+                                        console.log('googleProvider.geocode results:', results);
+                                        var lat, lng, address;
+                                        // Caso: plugin já retorna array de resultados com center
+                                        if (Array.isArray(results) && results.length > 0) {
+                                            var r = results[0];
+                                            if (r.center) {
+                                                // center pode ser L.LatLng ou objeto
+                                                lat = (typeof r.center.lat === 'function') ? r.center.lat() : r.center.lat;
+                                                lng = (typeof r.center.lng === 'function') ? r.center.lng() : r.center.lng;
+                                            } else if (r.geometry && r.geometry.location) {
+                                                lat = r.geometry.location.lat;
+                                                lng = r.geometry.location.lng;
+                                            }
+                                            address = r.name || r.formatted_address || '';
+                                        } else if (results && results.results && results.results.length > 0) {
+                                            // Caso: resposta bruta da API Google (objeto com results[])
+                                            var g = results.results[0];
+                                            if (g.geometry && g.geometry.location) {
+                                                lat = g.geometry.location.lat;
+                                                lng = g.geometry.location.lng;
+                                            }
+                                            address = g.formatted_address || g.address_components || '';
+                                        } else if (Array.isArray(results) && results.length === 0) {
+                                            // Provider retornou array vazio — tentar fallback direto ao endpoint REST
+                                            try {
+                                                var restUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(query) + '&key=' + (window.GOOGLE_API_KEY || '') + '&components=country:BR';
+                                                console.log('Tentando fallback Google REST:', restUrl);
+                                                fetch(restUrl)
+                                                    .then(function(resp) { return resp.json(); })
+                                                    .then(function(gres) {
+                                                        console.log('Google REST response:', gres);
+                                                        if (gres && gres.status === 'OK' && gres.results && gres.results.length > 0) {
+                                                            var gg = gres.results[0];
+                                                            if (gg.geometry && gg.geometry.location) {
+                                                                handleGeocodeResult(gg.geometry.location.lat, gg.geometry.location.lng, gg.formatted_address || '');
+                                                            } else {
+                                                                console.warn('Google REST sem geometry:', gg);
+                                                                alert('Endereço não encontrado (Google)');
+                                                            }
+                                                        } else {
+                                                            console.warn('Google REST não retornou resultados:', gres && gres.status);
+                                                            alert('Endereço não encontrado (Google)');
+                                                        }
+                                                    })
+                                                    .catch(function(err) {
+                                                        console.error('Erro no fallback Google REST:', err);
+                                                        alert('Erro no Geocoding Google');
+                                                    });
+                                            } catch (err) {
+                                                console.error('Erro ao tentar fallback REST:', err);
+                                                alert('Erro no Geocoding Google');
+                                            }
+                                            return; // já lidamos com a resposta no fallback
+                                        }
+
+                                        if (typeof lat !== 'undefined' && typeof lng !== 'undefined') {
+                                            handleGeocodeResult(lat, lng, address);
+                                        } else {
+                                            console.warn('Google geocode retornou sem coordenadas:', results);
+                                            alert('Endereço não encontrado (Google)');
+                                        }
+                                    });
+                                } catch (err) {
+                                    console.error('Erro ao chamar googleProvider.geocode', err);
+                                    alert('Erro no geocoder Google');
+                                }
+                            }
+
+                            customInput.addEventListener('keydown', function(e) {
+                                if (e.key === 'Enter') {
+                                    e.preventDefault();
+                                    googleGeocodeAndHandle(this.value);
+                                }
+                            });
+                        }
+
+                        // Também add o botão existente para delegar ao provider
+                        var searchButton = geocoderContainer.querySelector('button');
+                        if (searchButton && customInput) {
+                            searchButton.onclick = function() { googleGeocodeAndHandle(customInput.value); };
+                        }
+
+                        return; // termina initializeGeocoder com Google provider ativo
+                    } catch (err) {
+                        console.warn('Erro ao inicializar Google Geocoder provider, fallback para OSM', err);
+                    }
+                }
+
+                // Se não entrou no bloco Google provider, mantém o comportamento custom (OSM)
+                // conectar input do UI ao performSearchWithOSM
+                var customInput = document.querySelector('.custom-geocoder-input');
+                if (customInput) {
+                    customInput.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            performSearchWithOSM(this.value);
+                        }
+                    });
+                }
+                var searchButton = geocoderContainer.querySelector('button');
+                if (searchButton && customInput) {
+                    searchButton.onclick = function() { performSearchWithOSM(customInput.value); };
                 }
                 
                 // Eventos do input
