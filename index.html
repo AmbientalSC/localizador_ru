@@ -334,6 +334,52 @@
 
                 // Inicializar controles adicionais
                 initializeMapControls();
+                // Observador que esconde/removê o container padrão do Leaflet se vazio ou sem controles úteis
+                (function observeLeafletControlContainer() {
+                    try {
+                        function isMeaningful(node) {
+                            if (!node) return false;
+                            if (node.nodeType === Node.ELEMENT_NODE) {
+                                if (node.classList.contains('leaflet-control') && node.querySelector('.leaflet-control-geocoder, .leaflet-control-zoom, input, button, select')) return true;
+                                if (node.childElementCount > 0) return Array.prototype.slice.call(node.children).some(isMeaningful);
+                                if (node.textContent && node.textContent.trim().length > 0) return true;
+                            }
+                            return false;
+                        }
+
+                        function cleanup() {
+                            var ctl = document.querySelector('.leaflet-control-container');
+                            if (!ctl) return;
+                            var has = Array.prototype.slice.call(ctl.children).some(isMeaningful);
+                            if (!has) {
+                                // hide first to avoid layout jump then remove
+                                ctl.style.display = 'none';
+                            } else {
+                                ctl.style.display = '';
+                            }
+                        }
+
+                        // Initial cleanup
+                        cleanup();
+
+                        // Observe additions/removals
+                        var root = document.body;
+                        var mo = new MutationObserver(function(mutations) {
+                            var relevant = mutations.some(function(m) {
+                                return Array.prototype.slice.call(m.addedNodes).concat(Array.prototype.slice.call(m.removedNodes)).some(function(n) {
+                                    return n && (n.classList && n.classList.contains && n.classList.contains('leaflet-control-container')) || (n && n.querySelector && n.querySelector('.leaflet-control-container'));
+                                });
+                            });
+                            if (relevant) cleanup();
+                        });
+                        mo.observe(root, { childList: true, subtree: true });
+                        // também observe mudanças internas no container
+                        var ctl = document.querySelector('.leaflet-control-container');
+                        if (ctl) mo.observe(ctl, { childList: true, subtree: true });
+                    } catch (e) {
+                        console.warn('Observer leaflet-control-container falhou:', e);
+                    }
+                })();
             }
         }
 
@@ -351,6 +397,43 @@
             setTimeout(function() {
                 initializeGeocoder();
             }, 500);
+
+            // --- Remoção forçada de controles do plugin (leaflet-control-geocoder) ---
+            // Alguns plugins adicionam um controle com as classes
+            // 'leaflet-control-geocoder leaflet-bar leaflet-control'. Como usamos um
+            // geocoder customizado, removemos esses nodes do DOM para evitar sobreposição.
+            function removePluginGeocoderControls() {
+                try {
+                    var els = document.querySelectorAll('.leaflet-control-geocoder.leaflet-bar.leaflet-control');
+                    els.forEach(function(el) {
+                        if (el && el.parentNode) el.parentNode.removeChild(el);
+                    });
+                    // Se o container do Leaflet ficar sem controles úteis, esconder
+                    var ctl = document.querySelector('.leaflet-control-container');
+                    if (ctl) {
+                        var hasMeaningful = Array.prototype.slice.call(ctl.children).some(function(n) {
+                            return n && n.querySelector && (
+                                n.querySelector('.leaflet-control-geocoder, .leaflet-control-zoom, input, button, select')
+                            );
+                        });
+                        if (!hasMeaningful) ctl.style.display = 'none';
+                    }
+                } catch (e) {
+                    console.warn('Falha ao remover controles do geocoder plugin:', e);
+                }
+            }
+
+            // Agendar limpeza após inicialização e observar DOM para remoções futuras
+            setTimeout(removePluginGeocoderControls, 1200);
+            try {
+                var geocoderCleanupObserver = new MutationObserver(function() {
+                    removePluginGeocoderControls();
+                });
+                geocoderCleanupObserver.observe(document.body, { childList: true, subtree: true });
+            } catch (e) {
+                // Falar no console, mas não quebrar a aplicação
+                console.warn('MutationObserver para limpeza de geocoder não disponível', e);
+            }
         }
 
         // Função para inicializar o geocoder
