@@ -16,7 +16,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST14"
+        "SETOR": "T14"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -2084,7 +2084,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST15"
+        "SETOR": "T15"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -3830,7 +3830,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST13"
+        "SETOR": "T13"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -5751,7 +5751,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM09"
+        "SETOR": "M09"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -7546,7 +7546,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM05"
+        "SETOR": "M05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9107,7 +9107,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM02"
+        "SETOR": "M02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -23324,7 +23324,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM03"
+        "SETOR": "M03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -30994,7 +30994,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM01"
+        "SETOR": "M01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -42219,7 +42219,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM18"
+        "SETOR": "M18"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -44483,7 +44483,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN09"
+        "SETOR": "N09"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -47068,7 +47068,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM15"
+        "SETOR": "M15"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -49333,7 +49333,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN07"
+        "SETOR": "N07"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -53367,7 +53367,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN08"
+        "SETOR": "N08"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -59605,7 +59605,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM16"
+        "SETOR": "M16"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -61047,7 +61047,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM13"
+        "SETOR": "M13"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -62600,7 +62600,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM12"
+        "SETOR": "M12"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -63869,7 +63869,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM10"
+        "SETOR": "M10"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -65489,7 +65489,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN05"
+        "SETOR": "N05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -67885,7 +67885,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN03"
+        "SETOR": "N03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -70580,7 +70580,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN04"
+        "SETOR": "N04"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -72424,7 +72424,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST09"
+        "SETOR": "T09"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -76596,7 +76596,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN01"
+        "SETOR": "N01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -80589,7 +80589,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN10"
+        "SETOR": "N10"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -82804,7 +82804,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST16"
+        "SETOR": "T16"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -86783,7 +86783,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN11"
+        "SETOR": "N11"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -90713,7 +90713,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST05"
+        "SETOR": "T05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -92732,7 +92732,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST06"
+        "SETOR": "T06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -93881,7 +93881,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST03"
+        "SETOR": "T03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -97753,7 +97753,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM17"
+        "SETOR": "M17"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -99046,7 +99046,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN06"
+        "SETOR": "N06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -102148,7 +102148,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN02"
+        "SETOR": "N02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -105666,7 +105666,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST07"
+        "SETOR": "T07"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -109431,7 +109431,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST08"
+        "SETOR": "T08"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -114982,7 +114982,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST04"
+        "SETOR": "T04"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -118274,7 +118274,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST01"
+        "SETOR": "T01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -120991,7 +120991,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST02"
+        "SETOR": "T02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -124282,7 +124282,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM14"
+        "SETOR": "M14"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -127721,7 +127721,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM11"
+        "SETOR": "M11"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -130530,7 +130530,7 @@
         "HORARIO": "23:35 ÀS 07:00",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SN12"
+        "SETOR": "N12"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -133147,7 +133147,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST18"
+        "SETOR": "T18"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -136741,7 +136741,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST17"
+        "SETOR": "T17"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -139244,7 +139244,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST12"
+        "SETOR": "T12"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -141573,7 +141573,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST10"
+        "SETOR": "T10"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -143910,7 +143910,7 @@
         "HORARIO": "15:20 ÀS 23:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "ST11"
+        "SETOR": "T11"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -148184,7 +148184,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM08"
+        "SETOR": "M08"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -151670,7 +151670,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM06"
+        "SETOR": "M06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -154096,7 +154096,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM07"
+        "SETOR": "M07"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -156831,7 +156831,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAJAÍ",
-        "SETOR": "SM04"
+        "SETOR": "M04"
       },
       "geometry": {
         "type": "MultiLineString",

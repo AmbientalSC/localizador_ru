@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – SAB",
+        "FREQUENCIA": "TER - SAB",
         "HORARIO": "05:00 ÀS 13:20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",
@@ -67687,7 +67687,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – SAB",
+        "FREQUENCIA": "TER - SAB",
         "HORARIO": "05:00 ÀS 13:20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",
@@ -83589,7 +83589,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – SAB",
+        "FREQUENCIA": "TER - SAB",
         "HORARIO": "13:20 ÀS 21:35",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",
@@ -85394,7 +85394,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG – SEX",
+        "FREQUENCIA": "SEG - SEX",
         "HORARIO": "13:20 ÀS 21:35",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",
@@ -86188,7 +86188,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – SEX",
+        "FREQUENCIA": "SEG - SEX",
         "HORARIO": "05:00 ÀS 13:20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",
@@ -86586,7 +86586,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – SAB",
+        "FREQUENCIA": "TER - SAB",
         "HORARIO": "05:00 ÀS 13:20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",
@@ -87321,7 +87321,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – SAB",
+        "FREQUENCIA": "TER - SAB",
         "HORARIO": "13:20 ÀS 21:35",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "RIO DO SUL",

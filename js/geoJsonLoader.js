@@ -74,6 +74,8 @@
         features: combinedFeatures
     };
 
+    console.log(`GeoJSON combinado criado com ${combinedFeatures.length} features totais`);
+
     // Disparar evento personalizado para indicar que os dados estão prontos
     window.dispatchEvent(new CustomEvent('geoJsonLoaded'));
 })();
@@ -83,6 +85,7 @@ async function autoDiscoverGeoJSONFiles() {
     try {
         // Esta função pode ser expandida para descobrir automaticamente os arquivos
         // Por enquanto, usamos a lista manual acima
+        console.log('Descoberta automática de arquivos não implementada. Usando lista manual.');
     } catch (error) {
         console.error('Erro na descoberta automática:', error);
     }

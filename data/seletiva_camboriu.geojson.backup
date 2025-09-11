@@ -16,7 +16,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "ST05"
+        "SETOR": "T05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -4668,7 +4668,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "ST04"
+        "SETOR": "T04"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -9863,7 +9863,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "ST03"
+        "SETOR": "T03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -16106,7 +16106,7 @@
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "SM04"
+        "SETOR": "M04"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -18418,7 +18418,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "ST02"
+        "SETOR": "T02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -21466,7 +21466,7 @@
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "SM03"
+        "SETOR": "M03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -25647,7 +25647,7 @@
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "SM02"
+        "SETOR": "M02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -29086,7 +29086,7 @@
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "SM01"
+        "SETOR": "M01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -32842,7 +32842,7 @@
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "SM06"
+        "SETOR": "M06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -39069,7 +39069,7 @@
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "SM05"
+        "SETOR": "M05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -46178,7 +46178,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "ST06"
+        "SETOR": "T06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -51528,7 +51528,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "STMK02"
+        "SETOR": "TMK02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -54115,7 +54115,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "STMK01"
+        "SETOR": "TMK01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -66901,7 +66901,7 @@
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CAMBORIÚ",
-        "SETOR": "ST01"
+        "SETOR": "T01"
       },
       "geometry": {
         "type": "MultiLineString",

@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG - QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "14:20 ÀS 22:35",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "ERVAL VELHO",

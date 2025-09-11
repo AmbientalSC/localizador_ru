@@ -18076,7 +18076,7 @@
         "HORARIO": "17:00 ÀS 01:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "ST01"
+        "SETOR": "T01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -22838,7 +22838,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM10"
+        "SETOR": "M10"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -27601,7 +27601,7 @@
         "HORARIO": "17:00 ÀS 01:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "ST05"
+        "SETOR": "T05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -32542,7 +32542,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM11"
+        "SETOR": "M11"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -41486,7 +41486,7 @@
         "HORARIO": "17:00 ÀS 01:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "ST02"
+        "SETOR": "T02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -47322,7 +47322,7 @@
         "HORARIO": "17:00 ÀS 01:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "ST03"
+        "SETOR": "T03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -52133,7 +52133,7 @@
         "HORARIO": "17:00 ÀS 01:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "ST06"
+        "SETOR": "T06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -56832,7 +56832,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM12"
+        "SETOR": "M12"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -62922,7 +62922,7 @@
         "HORARIO": "17:00 ÀS 01:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "ST07"
+        "SETOR": "T07"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -69760,7 +69760,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM13"
+        "SETOR": "M13"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -85337,7 +85337,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM03"
+        "SETOR": "M03"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -91113,7 +91113,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM04"
+        "SETOR": "M04"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -96886,7 +96886,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM01"
+        "SETOR": "M01"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -102805,7 +102805,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM02"
+        "SETOR": "M02"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -107083,7 +107083,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM08"
+        "SETOR": "M08"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -112155,7 +112155,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM05"
+        "SETOR": "M05"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -117098,7 +117098,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM06"
+        "SETOR": "M06"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -125460,7 +125460,7 @@
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
         "FILIAL": "CHAPECÓ",
-        "SETOR": "SM09"
+        "SETOR": "M09"
       },
       "geometry": {
         "type": "MultiLineString",

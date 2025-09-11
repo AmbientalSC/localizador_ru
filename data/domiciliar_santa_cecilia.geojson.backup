@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "SANTA CECÍLIA",
@@ -5634,7 +5634,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "06:00 ÀS 14:20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "SANTA CECÍLIA",

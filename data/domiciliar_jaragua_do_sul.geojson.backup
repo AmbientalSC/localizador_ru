@@ -12,7 +12,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -3756,7 +3756,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -9644,7 +9644,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -13782,7 +13782,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -19002,7 +19002,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -24569,7 +24569,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -29698,7 +29698,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -37623,7 +37623,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – SEX",
+        "FREQUENCIA": "SEG - SEX",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -41545,7 +41545,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "NOITE",
-        "FREQUENCIA": "TER – QUI – DOM",
+        "FREQUENCIA": "TER - QUI - DOM",
         "HORARIO": "21H40 ÀS 05H08",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -43100,7 +43100,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "NOITE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "21H40 ÀS 05H08",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -44467,7 +44467,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "NOITE",
-        "FREQUENCIA": "TER – QUI – DOM",
+        "FREQUENCIA": "TER - QUI - DOM",
         "HORARIO": "21H40 ÀS 05H08",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -46946,7 +46946,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "NOITE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "21H40 ÀS 05H08",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -58641,7 +58641,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "NOITE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "21H40 ÀS 05H08",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -65336,7 +65336,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -72020,7 +72020,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -85344,7 +85344,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -91884,7 +91884,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -98250,7 +98250,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "NOITE",
-        "FREQUENCIA": "TER – QUI – DOM",
+        "FREQUENCIA": "TER - QUI - DOM",
         "HORARIO": "21H40 ÀS 05H08",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -101578,7 +101578,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -104659,7 +104659,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -110381,7 +110381,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -114622,7 +114622,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -118200,7 +118200,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "TARDE",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "13H20 ÀS 21H40",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -122565,7 +122565,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -138473,7 +138473,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEG – QUA – SEX",
+        "FREQUENCIA": "SEG - QUA - SEX",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
@@ -142504,7 +142504,7 @@
       "type": "Feature",
       "properties": {
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "TER – QUI – SAB",
+        "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "05H00 ÀS 13H20",
         "OPERACAO": "DOMICILIAR",
         "FILIAL": "JARAGUÁ DO SUL",
