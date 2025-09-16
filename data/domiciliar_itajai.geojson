@@ -33569,7 +33569,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "N12",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "Noite",
                 "HORARIO": "22h35 – 06h",
                 "OPERACAO": "DOMICILIAR",
@@ -34168,7 +34168,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "N13",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "Noite",
                 "HORARIO": "22h35 – 06h",
                 "OPERACAO": "DOMICILIAR",
@@ -35542,7 +35542,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "N14",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "Noite",
                 "HORARIO": "22h35 – 06h",
                 "OPERACAO": "DOMICILIAR",
@@ -38387,7 +38387,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "N10",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "Noite",
                 "HORARIO": "22h35 – 06h",
                 "OPERACAO": "DOMICILIAR",
@@ -39268,7 +39268,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "N11",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "Noite",
                 "HORARIO": "22h35 – 06h",
                 "OPERACAO": "DOMICILIAR",
