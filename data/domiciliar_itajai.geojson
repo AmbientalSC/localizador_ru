@@ -29932,7 +29932,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "MK05",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "Noite",
                 "HORARIO": "22h35 – 06h",
                 "OPERACAO": "DOMICILIAR",
