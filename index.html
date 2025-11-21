@@ -428,7 +428,7 @@
                     streetViewFrame.setAttribute('frameborder', '0');
                     streetViewFrame.setAttribute('style', 'border:0;');
                     streetViewFrame.setAttribute('src',
-                        `https://www.google.com/maps/embed/v1/streetview?key=${window.GOOGLE_API_KEY || 'AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38'}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
+                        `https://www.google.com/maps/embed/v1/streetview?key=${window.GOOGLE_API_KEY || 'AIzaSyDc6VZCs9Dl4OiDXLLeXB0-kzUbfxsTFxU'}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
                     );
                     streetViewDiv.appendChild(streetViewFrame);
 
@@ -463,7 +463,7 @@
                 // Se o provider Google do plugin estiver disponível, cria controle Google
                 if (typeof L !== 'undefined' && L.Control && L.Control.Geocoder && typeof L.Control.Geocoder.google === 'function') {
                     try {
-                        var googleProvider = L.Control.Geocoder.google(window.GOOGLE_API_KEY || 'AIzaSyCiKpZmnL9TQXOJd9Qbzw2agE9kxnTGZ38', {});
+                        var googleProvider = L.Control.Geocoder.google(window.GOOGLE_API_KEY || 'AIzaSyDc6VZCs9Dl4OiDXLLeXB0-kzUbfxsTFxU', {});
                         var googleGeocoderControl = new L.Control.Geocoder({
                             geocoder: googleProvider,
                             collapsed: true,
