@@ -5189,7 +5189,7 @@ function style_Mesclado_1_0(feature) {
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
-                    color: 'rgba(141,118,211,1.0)',
+                    color: 'rgba(241,118,211,1.0)',
                     dashArray: '',
                     lineCap: 'square',
                     lineJoin: 'bevel',
@@ -6870,7 +6870,7 @@ function style_Mesclado_1_0(feature) {
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
-                    color: 'rgba(205,152,77,1.0)',
+                    color: 'rgba(305,252,97,1.0)',
                     dashArray: '',
                     lineCap: 'square',
                     lineJoin: 'bevel',
@@ -6909,7 +6909,7 @@ function style_Mesclado_1_0(feature) {
             return {
                 pane: 'pane_Mesclado_1',
                     opacity: 1,
-                    color: 'rgba(145,36,234,1.0)',
+                    color: 'rgba(145,136,134,1.0)',
                     dashArray: '',
                     lineCap: 'square',
                     lineJoin: 'bevel',
