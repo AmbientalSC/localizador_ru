@@ -6441,7 +6441,7 @@
             "type": "Feature",
             "properties": {
                 "SETOR": "MK05",
-                "FREQUENCIA": "DOM – TER – QUI",
+                "FREQUENCIA": "TER – QUI – SAB",
                 "TURNO": "NOITE",
                 "HORARIO": "22:35 ÀS 06:09",
                 "OPERACAO": "DOMICILIAR",
