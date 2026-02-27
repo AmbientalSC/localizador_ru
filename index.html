@@ -416,21 +416,27 @@
                 geocoderContainer.appendChild(searchInput);
 
                 var geocodeMarker = null;
+                var googleApiKey = (typeof window.GOOGLE_API_KEY === 'string') ? window.GOOGLE_API_KEY.trim() : '';
+                var hasGoogleApiKey = googleApiKey.length > 0;
 
                 // Helper para mostrar resultado no mapa (Street View + marker)
                 function handleGeocodeResult(lat, lng, address) {
                     var latlng = [lat, lng];
                     var streetViewDiv = document.getElementById('streetViewContainer');
                     streetViewDiv.innerHTML = '';
-                    var streetViewFrame = document.createElement('iframe');
-                    streetViewFrame.setAttribute('width', '100%');
-                    streetViewFrame.setAttribute('height', '200px');
-                    streetViewFrame.setAttribute('frameborder', '0');
-                    streetViewFrame.setAttribute('style', 'border:0;');
-                    streetViewFrame.setAttribute('src',
-                        `https://www.google.com/maps/embed/v1/streetview?key=${window.GOOGLE_API_KEY || 'AIzaSyCBZ59DeRip5uwpRX3hvAqawHXg98jloKk'}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
-                    );
-                    streetViewDiv.appendChild(streetViewFrame);
+                    if (hasGoogleApiKey) {
+                        var streetViewFrame = document.createElement('iframe');
+                        streetViewFrame.setAttribute('width', '100%');
+                        streetViewFrame.setAttribute('height', '200px');
+                        streetViewFrame.setAttribute('frameborder', '0');
+                        streetViewFrame.setAttribute('style', 'border:0;');
+                        streetViewFrame.setAttribute('src',
+                            `https://www.google.com/maps/embed/v1/streetview?key=${googleApiKey}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
+                        );
+                        streetViewDiv.appendChild(streetViewFrame);
+                    } else {
+                        streetViewDiv.innerHTML = '<span style="color:#666;font-size:12px;">Street View disponivel no link do marcador.</span>';
+                    }
 
                     if (geocodeMarker) {
                         map.removeLayer(geocodeMarker);
@@ -461,9 +467,9 @@
                 }
 
                 // Se o provider Google do plugin estiver disponível, cria controle Google
-                if (typeof L !== 'undefined' && L.Control && L.Control.Geocoder && typeof L.Control.Geocoder.google === 'function') {
+                if (hasGoogleApiKey && typeof L !== 'undefined' && L.Control && L.Control.Geocoder && typeof L.Control.Geocoder.google === 'function') {
                     try {
-                        var googleProvider = L.Control.Geocoder.google(window.GOOGLE_API_KEY || 'AIzaSyCBZ59DeRip5uwpRX3hvAqawHXg98jloKk', {});
+                        var googleProvider = L.Control.Geocoder.google(googleApiKey, {});
                         var googleGeocoderControl = new L.Control.Geocoder({
                             geocoder: googleProvider,
                             collapsed: true,
@@ -511,7 +517,7 @@
                                         } else if (Array.isArray(results) && results.length === 0) {
                                             // Provider retornou array vazio — tentar fallback direto ao endpoint REST
                                             try {
-                                                var restUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(query) + '&key=' + (window.GOOGLE_API_KEY || '') + '&components=country:BR';
+                                                var restUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(query) + '&key=' + googleApiKey + '&components=country:BR';
                                                 console.log('Tentando fallback Google REST:', restUrl);
                                                 fetch(restUrl)
                                                     .then(function (resp) { return resp.json(); })
@@ -575,26 +581,11 @@
                 }
 
                 // Se não entrou no bloco Google provider, mantém o comportamento custom (OSM)
-                // conectar input do UI ao performSearchWithOSM
-                var customInput = document.querySelector('.custom-geocoder-input');
-                if (customInput) {
-                    customInput.addEventListener('keypress', function (e) {
-                        if (e.key === 'Enter') {
-                            e.preventDefault();
-                            performSearchWithOSM(this.value);
-                        }
-                    });
-                }
-                var searchButton = geocoderContainer.querySelector('button');
-                if (searchButton && customInput) {
-                    searchButton.onclick = function () { performSearchWithOSM(customInput.value); };
-                }
-
                 // Eventos do input
                 searchInput.addEventListener('keypress', function (e) {
                     if (e.key === 'Enter') {
                         e.preventDefault();
-                        performSearch(this.value);
+                        performSearchWithOSM(this.value);
                     }
                 });
 
@@ -636,7 +627,7 @@
                 };
 
                 searchButton.onclick = function () {
-                    performSearch(searchInput.value);
+                    performSearchWithOSM(searchInput.value);
                 };
 
                 // Tornar o container relativo para o botão
