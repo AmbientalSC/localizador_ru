@@ -27,7 +27,7 @@
 <body>
     <div id="streetViewContainer"></div>
     <div id="map"></div>
-    
+
     <button id="toggle-button">Minimizar setores</button>
     <div id="table-container">
         <table id="sectors-table" class="display">
@@ -63,7 +63,7 @@
     <script>
 
 
-</script>
+    </script>
 
     <script type="text/javascript">
         // Variáveis globais para o mapa e camadas
@@ -77,35 +77,35 @@
             if (!window.json_Mesclado_1) {
                 return;
             }
-            
+
             if (!window.json_Mesclado_1.features) {
                 return;
             }
-            
+
             var data = json_Mesclado_1.features;
             var activeSector = null;
 
-                // Inicializar DataTable apenas uma vez
-                if (!$.fn.DataTable.isDataTable('#sectors-table')) {
-                    data.forEach(function (feature) {
-                        var name = feature.properties['SETOR'] || '';
-                        var turno = feature.properties['TURNO'] || '';
-                        var frequencia = feature.properties['FREQUENCIA'] || '';
-                        var horario = feature.properties['HORARIO'] || '';
-                        var operacao = feature.properties['OPERACAO'] || '';
-                        var filial = feature.properties['FILIAL'] || '';
+            // Inicializar DataTable apenas uma vez
+            if (!$.fn.DataTable.isDataTable('#sectors-table')) {
+                data.forEach(function (feature) {
+                    var name = feature.properties['SETOR'] || '';
+                    var turno = feature.properties['TURNO'] || '';
+                    var frequencia = feature.properties['FREQUENCIA'] || '';
+                    var horario = feature.properties['HORARIO'] || '';
+                    var operacao = feature.properties['OPERACAO'] || '';
+                    var filial = feature.properties['FILIAL'] || '';
 
-                        $('#sectors-table tbody').append(
-                            '<tr data-setor="' + name + '" data-filial="' + filial + '">' +
-                            '<td>' + name + '</td>' +
-                            '<td>' + turno + '</td>' +
-                            '<td>' + frequencia + '</td>' +
-                            '<td>' + horario + '</td>' +
-                            '<td>' + operacao + '</td>' +
-                            '<td>' + filial + '</td>' +
-                            '</tr>'
-                        );
-                    });                $('#sectors-table thead th').each(function () {
+                    $('#sectors-table tbody').append(
+                        '<tr data-setor="' + name + '" data-filial="' + filial + '">' +
+                        '<td>' + name + '</td>' +
+                        '<td>' + turno + '</td>' +
+                        '<td>' + frequencia + '</td>' +
+                        '<td>' + horario + '</td>' +
+                        '<td>' + operacao + '</td>' +
+                        '<td>' + filial + '</td>' +
+                        '</tr>'
+                    );
+                }); $('#sectors-table thead th').each(function () {
                     var title = $(this).text();
                     $(this).html('<input type="text" style="width: 101px;" placeholder="' + title + '" />');
                 });
@@ -117,83 +117,83 @@
                     paging: false,
                     fixedColumns: true,
                     dom: 't',
-                responsive: true
-            });
-
-            table.columns().every(function () {
-                var that = this;
-
-                $('input', this.header()).on('keyup change', function () {
-                    if (that.search() !== this.value) {
-                        that.search(this.value).draw();
-                    }
+                    responsive: true
                 });
-            });
 
-            // Função para minimizar/expandir tabela
-            $('#toggle-button').click(function () {
-                if ($('#table-container').is(':visible')) {
-                    $('#table-container').hide();
-                    $('#toggle-button').text('Expandir setores');
-                } else {
-                    $('#table-container').show();
-                    $('#toggle-button').text('Minimizar setores');
-                }
-            });
+                table.columns().every(function () {
+                    var that = this;
 
-
-            $('#sectors-table tbody').on('click', 'tr', function () {
-                var setor = $(this).attr('data-setor'); 
-                var filial = $(this).attr('data-filial'); 
-                if (activeSector && activeSector.setor === setor && activeSector.filial === filial) {
-                    activeSector = null;
-                    map.eachLayer(function (layer) {
-                        if (layer.feature) {
-                            // Restaura o estilo original usando sua função de estilo
-                            layer.setStyle(style_Mesclado_1_0(layer.feature));
+                    $('input', this.header()).on('keyup change', function () {
+                        if (that.search() !== this.value) {
+                            that.search(this.value).draw();
                         }
                     });
-                    return; // finaliza a execução
-                }
-            
-                // Caso contrário, atualiza o setor ativo
-                activeSector = { setor: setor, filial: filial };
-                map.eachLayer(function (layer) {
-                    if (layer.feature && layer.feature.properties['SETOR'] === setor && layer
-                        .feature.properties['FILIAL'] === filial) {
-                        var bounds = layer.getBounds(); // Obtém os limites do setor
-                        map.fitBounds(bounds); // Dá zoom no setor
+                });
 
-                        // Monta o conteúdo do popup baseado nas propriedades do setor
-                        var popupContent = '<table>' +
-                            '<tr><th>Setor</th><td>' + (layer.feature.properties['SETOR'] || '') +
-                            '</td></tr>' +
-                            '<tr><th>Turno</th><td>' + (layer.feature.properties['TURNO'] || '') +
-                            '</td></tr>' +
-                            '<tr><th>Frequência</th><td>' + (layer.feature.properties[
-                                'FREQUENCIA'] || '') + '</td></tr>' +
-                            '<tr><th>Horário</th><td>' + (layer.feature.properties['HORARIO'] || '') +
-                            '</td></tr>' +
-                            '<tr><th>Operação</th><td>' + (layer.feature.properties['OPERACAO'] || '') +
-                            '</td></tr>' +
-                            '<tr><th>Filial</th><td>' + (layer.feature.properties['FILIAL'] || '') +
-                            '</td></tr>' +
-                            '</table>';
-
-                        layer.bindPopup(popupContent).openPopup(); // Abre o popup no setor
+                // Função para minimizar/expandir tabela
+                $('#toggle-button').click(function () {
+                    if ($('#table-container').is(':visible')) {
+                        $('#table-container').hide();
+                        $('#toggle-button').text('Expandir setores');
+                    } else {
+                        $('#table-container').show();
+                        $('#toggle-button').text('Minimizar setores');
                     }
                 });
-            });
+
+
+                $('#sectors-table tbody').on('click', 'tr', function () {
+                    var setor = $(this).attr('data-setor');
+                    var filial = $(this).attr('data-filial');
+                    if (activeSector && activeSector.setor === setor && activeSector.filial === filial) {
+                        activeSector = null;
+                        map.eachLayer(function (layer) {
+                            if (layer.feature) {
+                                // Restaura o estilo original usando sua função de estilo
+                                layer.setStyle(style_Mesclado_1_0(layer.feature));
+                            }
+                        });
+                        return; // finaliza a execução
+                    }
+
+                    // Caso contrário, atualiza o setor ativo
+                    activeSector = { setor: setor, filial: filial };
+                    map.eachLayer(function (layer) {
+                        if (layer.feature && layer.feature.properties['SETOR'] === setor && layer
+                            .feature.properties['FILIAL'] === filial) {
+                            var bounds = layer.getBounds(); // Obtém os limites do setor
+                            map.fitBounds(bounds); // Dá zoom no setor
+
+                            // Monta o conteúdo do popup baseado nas propriedades do setor
+                            var popupContent = '<table>' +
+                                '<tr><th>Setor</th><td>' + (layer.feature.properties['SETOR'] || '') +
+                                '</td></tr>' +
+                                '<tr><th>Turno</th><td>' + (layer.feature.properties['TURNO'] || '') +
+                                '</td></tr>' +
+                                '<tr><th>Frequência</th><td>' + (layer.feature.properties[
+                                    'FREQUENCIA'] || '') + '</td></tr>' +
+                                '<tr><th>Horário</th><td>' + (layer.feature.properties['HORARIO'] || '') +
+                                '</td></tr>' +
+                                '<tr><th>Operação</th><td>' + (layer.feature.properties['OPERACAO'] || '') +
+                                '</td></tr>' +
+                                '<tr><th>Filial</th><td>' + (layer.feature.properties['FILIAL'] || '') +
+                                '</td></tr>' +
+                                '</table>';
+
+                            layer.bindPopup(popupContent).openPopup(); // Abre o popup no setor
+                        }
+                    });
+                });
             } // Fechamento do if (!$.fn.DataTable.isDataTable)
 
             // Criar ou atualizar a camada do mapa
             createMapLayer();
-            
+
             // Inicializar filtros após criar a camada
             initializeFilters();
-            
+
             // Redimensionar mapa após tudo estar configurado
-            setTimeout(function() {
+            setTimeout(function () {
                 if (map) {
                     map.invalidateSize();
                 }
@@ -238,30 +238,30 @@
                 menuDiv.id = "menu";
                 document.body.appendChild(menuDiv);
             }
-            
+
             // Verificar se o filtro já existe para evitar duplicação
             if (document.getElementById("div_OPERACAO")) {
                 return;
             }
-            
+
             // Criar filtro de OPERACAO
             var div_OPERACAO = document.createElement('div');
             div_OPERACAO.id = "div_OPERACAO";
             div_OPERACAO.className = "filterselect";
-            
+
             // Adicionar título do filtro
             var titulo_OPERACAO = document.createElement('div');
             titulo_OPERACAO.className = 'filter-title';
             titulo_OPERACAO.innerHTML = 'Filtrar por Operação';
             div_OPERACAO.appendChild(titulo_OPERACAO);
-            
+
             menuDiv.appendChild(div_OPERACAO);
-            
+
             var sel_OPERACAO = document.createElement('select');
             sel_OPERACAO.multiple = true;
             sel_OPERACAO.size = 3;
             sel_OPERACAO.id = "sel_OPERACAO";
-            
+
             var OPERACAO_options_str = "<option value='DOMICILIAR' unselected>Domiciliar</option>";
             sel_OPERACAO.onchange = function () {
                 filterFunc()
@@ -270,10 +270,10 @@
             OPERACAO_options_str += '<option value="VOLUMOSOS">Volumosos BC</option>';
             sel_OPERACAO.innerHTML = OPERACAO_options_str;
             div_OPERACAO.appendChild(sel_OPERACAO);
-            
+
             var lab_OPERACAO = document.createElement('div');
             div_OPERACAO.appendChild(lab_OPERACAO);
-            
+
             var reset_OPERACAO = document.createElement('div');
             reset_OPERACAO.innerHTML = 'Limpar Filtro';
             reset_OPERACAO.className = 'filterlabel';
@@ -310,12 +310,12 @@
                 bounds_group = new L.featureGroup([]);
 
                 // Função setBounds (mantida para compatibilidade)
-                function setBounds() {}
+                function setBounds() { }
 
                 // Criar pane para OpenStreetMap
                 map.createPane('pane_OpenStreetMap_0');
                 map.getPane('pane_OpenStreetMap_0').style.zIndex = 400;
-                
+
                 // Adicionar tile layer
                 var layer_OpenStreetMap_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     pane: 'pane_OpenStreetMap_0',
@@ -348,7 +348,7 @@
             });
 
             // Inicializar geocoder após mapa estar pronto
-            setTimeout(function() {
+            setTimeout(function () {
                 initializeGeocoder();
             }, 500);
         }
@@ -361,11 +361,11 @@
                 if (existingContainer) {
                     existingContainer.remove();
                 }
-                
+
                 // Criar container customizado para o geocoder
                 var geocoderContainer = document.createElement('div');
                 geocoderContainer.id = 'geocoder-container';
-                
+
                 // Garantir que o estilo inline funcione
                 geocoderContainer.style.cssText = `
                     position: fixed !important;
@@ -383,13 +383,13 @@
                     display: block !important;
                     visibility: visible !important;
                 `;
-                
+
                 // Adicionar título
                 var geocoderTitle = document.createElement('div');
                 geocoderTitle.className = 'geocoder-title';
                 geocoderTitle.innerHTML = 'Buscar Endereço';
                 geocoderContainer.appendChild(geocoderTitle);
-                
+
                 // Criar input customizado
                 var searchInput = document.createElement('input');
                 searchInput.type = 'text';
@@ -408,13 +408,13 @@
                     outline: none;
                     transition: all 0.3s ease;
                 `;
-                
+
                 // Adicionar ao body primeiro
                 document.body.appendChild(geocoderContainer);
-                
+
                 // Depois adicionar os elementos
                 geocoderContainer.appendChild(searchInput);
-                
+
                 var geocodeMarker = null;
 
                 // Helper para mostrar resultado no mapa (Street View + marker)
@@ -428,7 +428,7 @@
                     streetViewFrame.setAttribute('frameborder', '0');
                     streetViewFrame.setAttribute('style', 'border:0;');
                     streetViewFrame.setAttribute('src',
-                        `https://www.google.com/maps/embed/v1/streetview?key=${window.GOOGLE_API_KEY || 'AIzaSyDc6VZCs9Dl4OiDXLLeXB0-kzUbfxsTFxU'}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
+                        `https://www.google.com/maps/embed/v1/streetview?key=${window.GOOGLE_API_KEY || 'AIzaSyCBZ59DeRip5uwpRX3hvAqawHXg98jloKk'}&location=${lat},${lng}&heading=210&pitch=10&fov=35`
                     );
                     streetViewDiv.appendChild(streetViewFrame);
 
@@ -463,7 +463,7 @@
                 // Se o provider Google do plugin estiver disponível, cria controle Google
                 if (typeof L !== 'undefined' && L.Control && L.Control.Geocoder && typeof L.Control.Geocoder.google === 'function') {
                     try {
-                        var googleProvider = L.Control.Geocoder.google(window.GOOGLE_API_KEY || 'AIzaSyDc6VZCs9Dl4OiDXLLeXB0-kzUbfxsTFxU', {});
+                        var googleProvider = L.Control.Geocoder.google(window.GOOGLE_API_KEY || 'AIzaSyCBZ59DeRip5uwpRX3hvAqawHXg98jloKk', {});
                         var googleGeocoderControl = new L.Control.Geocoder({
                             geocoder: googleProvider,
                             collapsed: true,
@@ -473,7 +473,7 @@
                         }).addTo(map);
 
                         // Quando o controle resolver um resultado, usar o handler para mostrar no mapa
-                        googleGeocoderControl.on('markgeocode', function(e) {
+                        googleGeocoderControl.on('markgeocode', function (e) {
                             var center = e.geocode.center;
                             handleGeocodeResult(center.lat, center.lng, e.geocode.name || '');
                         });
@@ -485,7 +485,7 @@
                             function googleGeocodeAndHandle(query) {
                                 if (!query || !query.trim()) return;
                                 try {
-                                    googleProvider.geocode(query, function(results) {
+                                    googleProvider.geocode(query, function (results) {
                                         console.log('googleProvider.geocode results:', results);
                                         var lat, lng, address;
                                         // Caso: plugin já retorna array de resultados com center
@@ -514,8 +514,8 @@
                                                 var restUrl = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(query) + '&key=' + (window.GOOGLE_API_KEY || '') + '&components=country:BR';
                                                 console.log('Tentando fallback Google REST:', restUrl);
                                                 fetch(restUrl)
-                                                    .then(function(resp) { return resp.json(); })
-                                                    .then(function(gres) {
+                                                    .then(function (resp) { return resp.json(); })
+                                                    .then(function (gres) {
                                                         console.log('Google REST response:', gres);
                                                         if (gres && gres.status === 'OK' && gres.results && gres.results.length > 0) {
                                                             var gg = gres.results[0];
@@ -530,7 +530,7 @@
                                                             alert('Endereço não encontrado (Google)');
                                                         }
                                                     })
-                                                    .catch(function(err) {
+                                                    .catch(function (err) {
                                                         console.error('Erro no fallback Google REST:', err);
                                                         alert('Erro no Geocoding Google');
                                                     });
@@ -554,7 +554,7 @@
                                 }
                             }
 
-                            customInput.addEventListener('keydown', function(e) {
+                            customInput.addEventListener('keydown', function (e) {
                                 if (e.key === 'Enter') {
                                     e.preventDefault();
                                     googleGeocodeAndHandle(this.value);
@@ -565,7 +565,7 @@
                         // Também add o botão existente para delegar ao provider
                         var searchButton = geocoderContainer.querySelector('button');
                         if (searchButton && customInput) {
-                            searchButton.onclick = function() { googleGeocodeAndHandle(customInput.value); };
+                            searchButton.onclick = function () { googleGeocodeAndHandle(customInput.value); };
                         }
 
                         return; // termina initializeGeocoder com Google provider ativo
@@ -578,7 +578,7 @@
                 // conectar input do UI ao performSearchWithOSM
                 var customInput = document.querySelector('.custom-geocoder-input');
                 if (customInput) {
-                    customInput.addEventListener('keypress', function(e) {
+                    customInput.addEventListener('keypress', function (e) {
                         if (e.key === 'Enter') {
                             e.preventDefault();
                             performSearchWithOSM(this.value);
@@ -587,17 +587,17 @@
                 }
                 var searchButton = geocoderContainer.querySelector('button');
                 if (searchButton && customInput) {
-                    searchButton.onclick = function() { performSearchWithOSM(customInput.value); };
+                    searchButton.onclick = function () { performSearchWithOSM(customInput.value); };
                 }
-                
+
                 // Eventos do input
-                searchInput.addEventListener('keypress', function(e) {
+                searchInput.addEventListener('keypress', function (e) {
                     if (e.key === 'Enter') {
                         e.preventDefault();
                         performSearch(this.value);
                     }
                 });
-                
+
                 // Adicionar botão de busca
                 var searchButton = document.createElement('button');
                 searchButton.innerHTML = '🔍';
@@ -621,34 +621,34 @@
                     transition: all 0.3s ease;
                     box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
                 `;
-                
+
                 // Adicionar efeitos hover
-                searchButton.onmouseover = function() {
+                searchButton.onmouseover = function () {
                     this.style.background = 'linear-gradient(135deg, #0056b3, #004085)';
                     this.style.transform = 'scale(1.05)';
                     this.style.boxShadow = '0 4px 8px rgba(0, 123, 255, 0.3)';
                 };
-                
-                searchButton.onmouseout = function() {
+
+                searchButton.onmouseout = function () {
                     this.style.background = 'linear-gradient(135deg, #007bff, #0056b3)';
                     this.style.transform = 'scale(1)';
                     this.style.boxShadow = '0 2px 4px rgba(0, 123, 255, 0.2)';
                 };
-                
-                searchButton.onclick = function() {
+
+                searchButton.onclick = function () {
                     performSearch(searchInput.value);
                 };
-                
+
                 // Tornar o container relativo para o botão
                 geocoderContainer.style.position = 'fixed';
                 geocoderContainer.appendChild(searchButton);
-                
+
             } catch (error) {
                 // Fallback: criar versão mais simples
                 createFallbackGeocoder();
             }
         }
-        
+
         // Função fallback para criar geocoder simples
         function createFallbackGeocoder() {
             var geocoderContainer = document.createElement('div');
@@ -666,12 +666,12 @@
                 border: 1px solid rgba(0, 0, 0, 0.1) !important;
                 display: block !important;
             `;
-            
+
             var title = document.createElement('div');
             title.innerHTML = 'Buscar Endereço';
             title.style.cssText = 'font-weight: 600; margin-bottom: 10px; font-size: 14px;';
             geocoderContainer.appendChild(title);
-            
+
             var fallbackInput = document.createElement('input');
             fallbackInput.type = 'text';
             fallbackInput.placeholder = 'Digite um endereço para buscar...';
@@ -683,7 +683,7 @@
                 font-size: 13px !important;
                 box-sizing: border-box !important;
             `;
-            
+
             geocoderContainer.appendChild(fallbackInput);
             document.body.appendChild(geocoderContainer);
         }
@@ -692,7 +692,7 @@
         $(document).ready(function () {
             // Inicializar o mapa primeiro
             initializeMap();
-            
+
             // Verificar se os dados já estão carregados
             function checkDataAndInitialize() {
                 if (window.json_Mesclado_1 && window.json_Mesclado_1.features) {
@@ -701,12 +701,12 @@
                     setTimeout(checkDataAndInitialize, 500);
                 }
             }
-            
+
             // Iniciar verificação
             checkDataAndInitialize();
-            
+
             // Backup: também escutar o evento
-            window.addEventListener('geoJsonLoaded', function() {
+            window.addEventListener('geoJsonLoaded', function () {
                 initializeApp();
             });
         });
@@ -777,7 +777,7 @@
                 },
                 mouseover: highlightFeature,
             });
-            
+
             // Função auxiliar para formatar propriedades com segurança
             function formatProperty(value) {
                 if (value !== null && value !== undefined) {
@@ -785,7 +785,7 @@
                 }
                 return '';
             }
-            
+
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">SETOR</th>\
@@ -827,7 +827,7 @@
         // 2. Feedback visual ao buscar endereço
         var geocoderInput = document.querySelector('.leaflet-control-geocoder-form input');
         if (geocoderInput) {
-            geocoderInput.addEventListener('keydown', function() {
+            geocoderInput.addEventListener('keydown', function () {
                 var streetViewDiv = document.getElementById('streetViewContainer');
                 streetViewDiv.innerHTML = '<span style="color:#888">Buscando endereço...</span>';
             });
@@ -970,13 +970,13 @@
                                     if (key in features[0].properties) {
                                         for (i = features.length - 1; i >= 0; --i) {
                                             if (selection.indexOf(
-                                                    features[i].properties[key]) < 0 &&
+                                                features[i].properties[key]) < 0 &&
                                                 selection.length > 0) {
                                                 features.splice(i, 1);
                                             }
                                         }
                                     }
-                                } catch (err) {}
+                                } catch (err) { }
                             }
                             if (Filters[key] == "int") {
                                 sliderVals = document.getElementById(
@@ -992,7 +992,7 @@
                                             }
                                         }
                                     }
-                                } catch (err) {}
+                                } catch (err) { }
                             }
                             if (Filters[key] == "real") {
                                 sliderVals = document.getElementById(
@@ -1008,7 +1008,7 @@
                                             }
                                         }
                                     }
-                                } catch (err) {}
+                                } catch (err) { }
                             }
                             if (Filters[key] == "date" ||
                                 Filters[key] == "datetime" ||
@@ -1027,10 +1027,10 @@
                                             }
                                         }
                                     }
-                                } catch (err) {}
+                                } catch (err) { }
                             }
                         }
-                    } catch (err) {}
+                    } catch (err) { }
                     this[lyr["options"]["layerName"]].clearLayers();
                     this[lyr["options"]["layerName"]].addData(features);
                 }
@@ -1038,4 +1038,5 @@
         }
     </script>
 </body>
+
 </html>
