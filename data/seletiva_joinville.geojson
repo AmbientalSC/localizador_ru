@@ -14,7 +14,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -273,7 +273,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -842,7 +842,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -1469,7 +1469,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -1968,7 +1968,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -2712,7 +2712,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -3365,7 +3365,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -4142,7 +4142,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -5250,7 +5250,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -5552,7 +5552,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -6178,7 +6178,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -6685,7 +6685,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -7235,7 +7235,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -7905,7 +7905,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -8512,7 +8512,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -9354,7 +9354,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -10023,7 +10023,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -10743,7 +10743,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -11552,7 +11552,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -12068,7 +12068,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -12715,7 +12715,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -13544,7 +13544,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -13964,7 +13964,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -14434,7 +14434,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -14919,7 +14919,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -15382,7 +15382,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -15812,7 +15812,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -16491,7 +16491,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -17381,7 +17381,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -17794,7 +17794,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -19020,7 +19020,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -19621,7 +19621,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -20217,7 +20217,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -20706,7 +20706,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -21278,7 +21278,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -21980,7 +21980,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -24065,7 +24065,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -24561,7 +24561,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -25097,7 +25097,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -25709,7 +25709,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -27267,7 +27267,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -28137,7 +28137,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -28494,7 +28494,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -29117,7 +29117,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -29756,7 +29756,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -30544,7 +30544,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -31537,7 +31537,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -32208,7 +32208,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -32752,7 +32752,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -33476,7 +33476,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -34259,7 +34259,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -34771,7 +34771,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -35107,7 +35107,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -35547,7 +35547,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -36104,7 +36104,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -36953,7 +36953,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -38159,7 +38159,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -38476,7 +38476,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -39021,7 +39021,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -39897,7 +39897,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -40390,7 +40390,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -41046,7 +41046,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -42013,7 +42013,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -42820,7 +42820,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -43345,7 +43345,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -43910,7 +43910,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -44674,7 +44674,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -45812,7 +45812,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:21",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -46882,7 +46882,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -47608,7 +47608,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -48570,7 +48570,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -49419,7 +49419,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -50011,7 +50011,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -50896,7 +50896,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -52412,7 +52412,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -52821,7 +52821,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -54069,7 +54069,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -55134,7 +55134,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -56161,7 +56161,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -56757,7 +56757,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -57573,7 +57573,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -58518,7 +58518,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -59106,7 +59106,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -59898,7 +59898,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -60573,7 +60573,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -61201,7 +61201,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -62262,7 +62262,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -62945,7 +62945,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -63263,7 +63263,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -64125,7 +64125,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -64810,7 +64810,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -65606,7 +65606,7 @@
                 "FREQUENCIA": "QUI",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -66198,7 +66198,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -66957,7 +66957,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -67843,7 +67843,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -68309,7 +68309,7 @@
                 "FREQUENCIA": "SEX",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -69404,7 +69404,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -69888,7 +69888,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -70349,7 +70349,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -70887,7 +70887,7 @@
                 "FREQUENCIA": "1x POR SEMANA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -71478,7 +71478,7 @@
                 "FREQUENCIA": "2ª SEGUNDA-FEIRA DO MÊS",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -71962,7 +71962,7 @@
                 "FREQUENCIA": "15 DIAS",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -72625,7 +72625,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -73335,7 +73335,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -74309,7 +74309,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -75013,7 +75013,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -75579,7 +75579,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -76468,7 +76468,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -76916,7 +76916,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -77608,7 +77608,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -78911,7 +78911,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -80054,7 +80054,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -80705,7 +80705,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -80974,7 +80974,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -81671,7 +81671,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -82621,7 +82621,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -83172,7 +83172,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -83867,7 +83867,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -85001,7 +85001,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -85586,7 +85586,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -85874,7 +85874,7 @@
                 "FREQUENCIA": "TER – quinzenalmente",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -86637,7 +86637,7 @@
                 "FREQUENCIA": "SEG",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -87398,7 +87398,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -87855,7 +87855,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -88929,7 +88929,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -89296,7 +89296,7 @@
                 "FREQUENCIA": "TER – quinzenalmente",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -89846,7 +89846,7 @@
                 "FREQUENCIA": "TER",
                 "TURNO": "MANHÃ",
                 "HORARIO": "06:00 ÀS 14:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -90579,7 +90579,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -91176,7 +91176,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -91673,7 +91673,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -92253,7 +92253,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -92722,7 +92722,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -93379,7 +93379,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -93842,7 +93842,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -94403,7 +94403,7 @@
                 "FREQUENCIA": "QUA",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -95010,7 +95010,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -95272,7 +95272,7 @@
                 "FREQUENCIA": "SAB",
                 "TURNO": "TARDE",
                 "HORARIO": "14:00 ÀS 22:20",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
@@ -95658,7 +95658,7 @@
                 "FREQUENCIA": "DIÁRIO",
                 "TURNO": "NOITE",
                 "HORARIO": "21:32 ÀS 05:00",
-                "OPERACAO": "Seletiva",
+                "OPERACAO": "SELETIVA",
                 "FILIAL": "JOINVILLE"
             },
             "geometry": {
