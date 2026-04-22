@@ -13,6 +13,7 @@
         "domiciliar_itapema.geojson",
         "domiciliar_itapema_bt.geojson",
         "domiciliar_jaragua_do_sul.geojson",
+        "domiciliar_joacaba.geojson",
         "domiciliar_joinville.geojson",
         "domiciliar_rio_do_sul.geojson",
         "domiciliar_santa_cecilia.geojson",
