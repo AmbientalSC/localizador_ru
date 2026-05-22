@@ -15,7 +15,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-02"
       },
       "geometry": {
@@ -4530,7 +4530,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-09_B"
       },
       "geometry": {
@@ -6131,7 +6131,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-10"
       },
       "geometry": {
@@ -7694,7 +7694,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-07"
       },
       "geometry": {
@@ -15609,7 +15609,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-09"
       },
       "geometry": {
@@ -20317,7 +20317,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-01"
       },
       "geometry": {
@@ -22367,7 +22367,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-06"
       },
       "geometry": {
@@ -24271,7 +24271,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-03"
       },
       "geometry": {
@@ -27585,7 +27585,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-01"
       },
       "geometry": {
@@ -29640,7 +29640,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-05"
       },
       "geometry": {
@@ -31336,7 +31336,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-02"
       },
       "geometry": {
@@ -33670,7 +33670,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-08_A"
       },
       "geometry": {
@@ -35140,7 +35140,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-03"
       },
       "geometry": {
@@ -37198,7 +37198,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-04"
       },
       "geometry": {
@@ -39331,7 +39331,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-06"
       },
       "geometry": {
@@ -41952,7 +41952,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-08_B"
       },
       "geometry": {
@@ -44242,7 +44242,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-10"
       },
       "geometry": {
@@ -47103,7 +47103,7 @@
         "TURNO": "TARDE",
         "HORARIO": "15:20 ÀS 23:28",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "TS-11"
       },
       "geometry": {
@@ -49598,7 +49598,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-04"
       },
       "geometry": {
@@ -52437,7 +52437,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-09_A"
       },
       "geometry": {
@@ -53569,7 +53569,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-05"
       },
       "geometry": {
@@ -56169,7 +56169,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-08_B"
       },
       "geometry": {
@@ -57597,7 +57597,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-07"
       },
       "geometry": {
@@ -59685,7 +59685,7 @@
         "TURNO": "MANHÃ",
         "HORARIO": "07:00 ÀS 15:20",
         "OPERACAO": "SELETIVA",
-        "FILIAL": "BC",
+        "FILIAL": "BALNEÁRIO CAMBORIÚ",
         "SETOR": "MS-08_A"
       },
       "geometry": {
