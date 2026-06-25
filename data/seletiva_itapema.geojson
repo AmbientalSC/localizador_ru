@@ -7922,7 +7922,7 @@
       "properties": {
         "SETOR": "M02",
         "TURNO": "MANHÃ",
-        "FREQUENCIA": "SEX – QUA -SEX",
+        "FREQUENCIA": "SEG – QUA – SEX",
         "OPERACAO": "SELETIVA",
         "FILIAL": "ITAPEMA",
         "HORARIO": "06:00 ÀS 14:20"
