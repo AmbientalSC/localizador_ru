@@ -11,7 +11,7 @@
     {
       "type": "Feature",
       "properties": {
-        "TURNO": "INTEGRAL",
+        "TURNO": "INTEGRAL.",
         "FREQUENCIA": "TER - QUI - SAB",
         "HORARIO": "07:00 ÀS 14:30",
         "OPERACAO": "DOMICILIAR",
