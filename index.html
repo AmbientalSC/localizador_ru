@@ -415,6 +415,12 @@
                 // Depois adicionar os elementos
                 geocoderContainer.appendChild(searchInput);
 
+                // Status da busca (feedback visual)
+                var searchStatus = document.createElement('div');
+                searchStatus.id = 'geocoder-status';
+                searchStatus.style.cssText = 'font-size: 11px; color: #6c757d; margin-top: 6px; min-height: 14px;';
+                geocoderContainer.appendChild(searchStatus);
+
                 var geocodeMarker = null;
                 var googleApiKey = (typeof window.GOOGLE_API_KEY === 'string') ? window.GOOGLE_API_KEY.trim() : '';
                 var hasGoogleApiKey = googleApiKey.length > 0;
@@ -447,23 +453,81 @@
                     map.setView(latlng, 18);
                 }
 
-                // Função de busca customizada usando Nominatim (fallback)
-                function performSearchWithOSM(query) {
-                    if (!query.trim()) return;
-                    var nominatimUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`;
-                    fetch(nominatimUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            if (data && data.length > 0) {
-                                var result = data[0];
-                                handleGeocodeResult(parseFloat(result.lat), parseFloat(result.lon), result.display_name);
-                            } else {
-                                alert('Endereço não encontrado');
+                // Normaliza abreviações de logradouro (Nominatim não resolve "R.", "Av." etc.)
+                function normalizeAddressQuery(q) {
+                    return q
+                        .replace(/\bR\.\s*/gi, 'Rua ')
+                        .replace(/\bAV\.\s*/gi, 'Avenida ')
+                        .replace(/\bROD\.\s*/gi, 'Rodovia ')
+                        .replace(/\bEST\.\s*/gi, 'Estrada ')
+                        .replace(/\bTR\.\s*/gi, 'Travessa ')
+                        .replace(/\bSER\.\s*/gi, 'Servidão ')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+                }
+
+                // Gera tentativas progressivas: completa -> sem número -> sem bairro
+                function buildSearchAttempts(query) {
+                    var normalized = normalizeAddressQuery(query);
+                    var withoutNumber = normalized
+                        .replace(/,\s*\d+[\d\s-]*/, ', ')
+                        .replace(/[,\s]+$/, '')
+                        .trim();
+                    var mainPart = normalized.split('-')[0] || normalized;
+                    var withoutBairro = mainPart
+                        .replace(/,\s*\d+[\d\s-]*/, ', ')
+                        .replace(/[,\s]+$/, '')
+                        .trim();
+
+                    var attempts = [];
+                    var seen = {};
+                    [normalized, withoutNumber, withoutBairro].forEach(function (q) {
+                        if (!q) return;
+                        [q + ' Santa Catarina, Brasil', q + ' Brasil'].forEach(function (candidate) {
+                            if (!seen[candidate]) {
+                                seen[candidate] = true;
+                                attempts.push(candidate);
                             }
-                        })
-                        .catch(error => {
-                            alert('Erro na busca do endereço');
                         });
+                    });
+                    return attempts;
+                }
+
+                // Função de busca customizada usando Nominatim com tentativas progressivas (fallback)
+                function performSearchWithOSM(query) {
+                    var original = (query || '').trim();
+                    if (!original) return;
+                    if (searchStatus) searchStatus.textContent = 'Buscando...';
+                    var attempts = buildSearchAttempts(original);
+                    var index = 0;
+
+                    function tryNext() {
+                        if (index >= attempts.length) {
+                            if (searchStatus) searchStatus.textContent = 'Endereço não encontrado';
+                            alert('Endereço não encontrado.\nTente "Rua Tal, Cidade" ou informe o CEP.');
+                            return;
+                        }
+                        var q = attempts[index];
+                        index += 1;
+                        var nominatimUrl = 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=br&addressdetails=1&limit=5&q=' + encodeURIComponent(q);
+                        fetch(nominatimUrl)
+                            .then(function (response) {
+                                if (!response.ok) throw new Error('HTTP ' + response.status);
+                                return response.json();
+                            })
+                            .then(function (data) {
+                                if (Array.isArray(data) && data.length > 0) {
+                                    var result = data[0];
+                                    if (searchStatus) searchStatus.textContent = 'Encontrado ✓';
+                                    handleGeocodeResult(parseFloat(result.lat), parseFloat(result.lon), result.display_name);
+                                } else {
+                                    tryNext();
+                                }
+                            })
+                            .catch(function () { tryNext(); });
+                    }
+
+                    tryNext();
                 }
 
                 // Se o provider Google do plugin estiver disponível, cria controle Google
@@ -582,7 +646,7 @@
 
                 // Se não entrou no bloco Google provider, mantém o comportamento custom (OSM)
                 // Eventos do input
-                searchInput.addEventListener('keypress', function (e) {
+                searchInput.addEventListener('keydown', function (e) {
                     if (e.key === 'Enter') {
                         e.preventDefault();
                         performSearchWithOSM(this.value);
